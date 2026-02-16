@@ -2,7 +2,7 @@
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/header.svg" width="800" alt="Saad Shafiq - MVP Factory" />
 
-**156+ products shipped.** Most of them before lunch.
+**175+ products shipped.** Most of them before lunch.
 
 </div>
 
@@ -16,12 +16,12 @@
 
 <div align="center">
 
-![Products Shipped](https://img.shields.io/badge/Products_Shipped-156+-2563eb?style=for-the-badge&labelColor=1e1e2e)
+![Products Shipped](https://img.shields.io/badge/Products_Shipped-175+-2563eb?style=for-the-badge&labelColor=1e1e2e)
 &nbsp;&nbsp;
-![SaaS](https://img.shields.io/badge/SaaS-50-0ea5e9?style=flat-square)
-![Extensions](https://img.shields.io/badge/Extensions-16-f59e0b?style=flat-square)
-![Mobile](https://img.shields.io/badge/Mobile-29-10b981?style=flat-square)
-![Web Apps](https://img.shields.io/badge/Web_Apps-56-8b5cf6?style=flat-square)
+![SaaS](https://img.shields.io/badge/SaaS-52-0ea5e9?style=flat-square)
+![Extensions](https://img.shields.io/badge/Extensions-18-f59e0b?style=flat-square)
+![Mobile](https://img.shields.io/badge/Mobile-33-10b981?style=flat-square)
+![Web Apps](https://img.shields.io/badge/Web_Apps-67-8b5cf6?style=flat-square)
 
 </div>
 
@@ -31,14 +31,14 @@
 
 | Product | Type | What It Does |
 |---------|------|-------------|
-| [**mvp-whiteboard-scanner-pro-7060**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-whiteboard-scanner-pro-7060) | `Mobile App` | AI-powered mobile app that cleans photos of whiteboards by removing glare, straightening perspect... |
-| [**mvp-ironmath**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-ironmath) | `Mobile App` | Weightlifting plate calculator and progressive overload tracker for strength athletes. |
-| [**mvp-freelanceflow-5464**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-freelanceflow-5464) | `SaaS` | Lightweight CRM for solo freelancers that tracks client communications and intelligently suggests... |
-| [**mvp-whiteboard-scanner-pro**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-whiteboard-scanner-pro) | `Mobile App` | AI-powered mobile app that cleans photos of whiteboards by removing glare, straightening perspect... |
-| [**mvp-freelanceflow**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-freelanceflow) | `SaaS` | Lightweight CRM for solo freelancers that tracks client communications and intelligently suggests... |
-| [**mvp-callcompanion-3449**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-callcompanion-3449) | `Mobile App` | Real-time AI call assistant that suggests talking points and transcribes key details for socially... |
+| [**mvp-spotcheck-gym-4673**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-spotcheck-gym-4673) | `Mobile App` | Real-time gym equipment availability tracker with personal progress monitoring. |
+| [**mvp-spotcheck-gym**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-spotcheck-gym) | `Mobile App` | Real-time gym equipment availability tracker with personal progress monitoring. |
+| [**mvp-voicestandup-2658**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-voicestandup-2658) | `Web App` | Async voice standups for remote teams that transcribes blockers and posts structured updates to S... |
+| [**mvp-voicestandup**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-voicestandup) | `Web App` | Async voice standups for remote teams that transcribes blockers and posts structured updates to S... |
+| [**mvp-localdoc-grep-506**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-localdoc-grep-506) | `Web App` | Browser-based tool to search and analyze large text document dumps without uploading to servers |... |
+| [**mvp-localdoc-grep**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-localdoc-grep) | `Web App` | Browser-based tool to search and analyze large text document dumps without uploading to servers |... |
 
-<sub>Auto-updated from GitHub API. Last refresh: 2026-02-16 02:07 UTC</sub>
+<sub>Auto-updated from GitHub API. Last refresh: 2026-02-16 06:59 UTC</sub>
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
 
@@ -67,10 +67,10 @@
 | `SaaS` | `Web App` |
 
 <details>
-<summary><strong>Full Product Catalog (156 products)</strong></summary>
+<summary><strong>Full Product Catalog (175 products)</strong></summary>
 <br>
 
-**SaaS** (50)
+**SaaS** (52)
 
 - [mvp-batch-alt-text-generator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-batch-alt-text-generator) — Upload image batches and generate accurate, descriptive alt-text for accessibility compliance and SEO optimization.
 - [mvp-batch-alt-text-generator-3098](https://github.com/malikmuhammadsaadshafiq-dev/mvp-batch-alt-text-generator-3098) — Upload image batches and generate accurate, descriptive alt-text for accessibility compliance and SEO optimization.
@@ -89,6 +89,8 @@
 - [mvp-glucosegenie-ai-666](https://github.com/malikmuhammadsaadshafiq-dev/mvp-glucosegenie-ai-666) — AI-powered metabolic optimization platform that turns CGM data into personalized meal recommendations
 - [mvp-invoiceanchor](https://github.com/malikmuhammadsaadshafiq-dev/mvp-invoiceanchor) — Automated invoice chasing system that sends polite escalating follow-ups and tracks payment status for small service businesses.
 - [mvp-jobchangealert](https://github.com/malikmuhammadsaadshafiq-dev/mvp-jobchangealert) — Monitor LinkedIn for job changes to trigger timely sales outreach when new decision makers arrive.
+- [mvp-kitflow](https://github.com/malikmuhammadsaadshafiq-dev/mvp-kitflow) — Subscription box inventory management platform with drag-and-drop kit builders.
+- [mvp-kitflow-1596](https://github.com/malikmuhammadsaadshafiq-dev/mvp-kitflow-1596) — Subscription box inventory management platform with drag-and-drop kit builders.
 - [mvp-linkpulse](https://github.com/malikmuhammadsaadshafiq-dev/mvp-linkpulse) — Micro-analytics platform for creators to A/B test & optimize link-in-bio pages
 - [mvp-makermetrics](https://github.com/malikmuhammadsaadshafiq-dev/mvp-makermetrics) — A SaaS dashboard that aggregates MRR from Stripe and development velocity from GitHub to calculate holistic indie hacker health metrics and growth trends. | Community-inspired
 - [mvp-makermetrics-5861](https://github.com/malikmuhammadsaadshafiq-dev/mvp-makermetrics-5861) — A SaaS dashboard that aggregates MRR from Stripe and development velocity from GitHub to calculate holistic indie hacker health metrics and growth trends. | Community-inspired
@@ -123,11 +125,13 @@
 - [mvp-winstream](https://github.com/malikmuhammadsaadshafiq-dev/mvp-winstream) — Proposal pipeline dashboard that calculates real-time win rates, response time analytics, and revenue forecasting from stored freelance opportunity data.
 - [mvp-winstream-6864](https://github.com/malikmuhammadsaadshafiq-dev/mvp-winstream-6864) — Proposal pipeline dashboard that calculates real-time win rates, response time analytics, and revenue forecasting from stored freelance opportunity data.
 
-**Chrome Extensions** (16)
+**Chrome Extensions** (18)
 
 - [mvp-bidsmart](https://github.com/malikmuhammadsaadshafiq-dev/mvp-bidsmart) — Smart rate calculator & proposal tracker for freelancers - never underbid again
 - [mvp-citesnap-research](https://github.com/malikmuhammadsaadshafiq-dev/mvp-citesnap-research) — Browser extension for academic researchers to capture, organize, and export citations from web sources with automated metadata extraction.
 - [mvp-citesnap-research-3208](https://github.com/malikmuhammadsaadshafiq-dev/mvp-citesnap-research-3208) — Browser extension for academic researchers to capture, organize, and export citations from web sources with automated metadata extraction.
+- [mvp-colorgrab](https://github.com/malikmuhammadsaadshafiq-dev/mvp-colorgrab) — Eyedropper tool to pick colors from any screen pixel and organize into exportable palettes.
+- [mvp-colorgrab-7546](https://github.com/malikmuhammadsaadshafiq-dev/mvp-colorgrab-7546) — Eyedropper tool to pick colors from any screen pixel and organize into exportable palettes.
 - [mvp-css-reality-check-extensi](https://github.com/malikmuhammadsaadshafiq-dev/mvp-css-reality-check-extensi) — Browser extension that flags impossible design values and accessibility violations on any webpage | Inspired by Reddit community
 - [mvp-deepwork-companion](https://github.com/malikmuhammadsaadshafiq-dev/mvp-deepwork-companion) — Browser extension for tracking productive focus sessions and blocking distractions
 - [mvp-focusfuel](https://github.com/malikmuhammadsaadshafiq-dev/mvp-focusfuel) — Browser extension calculating the true cost of context switching and distractions.
@@ -142,7 +146,7 @@
 - [mvp-social-media-character-co](https://github.com/malikmuhammadsaadshafiq-dev/mvp-social-media-character-co) — Real-time character counter with platform-specific limits for Twitter, LinkedIn, and Instagram including thread splitting.
 - [mvp-subscout](https://github.com/malikmuhammadsaadshafiq-dev/mvp-subscout) — Browser extension tracking SaaS subscriptions and price hikes
 
-**Mobile Apps** (29)
+**Mobile Apps** (33)
 
 - [mvp-bloombuddy](https://github.com/malikmuhammadsaadshafiq-dev/mvp-bloombuddy) — Smart plant care companion with precise dosage calculations
 - [mvp-callcompanion](https://github.com/malikmuhammadsaadshafiq-dev/mvp-callcompanion) — Real-time AI call assistant that suggests talking points and transcribes key details for socially anxious professionals. | Community-inspired
@@ -157,6 +161,8 @@
 - [mvp-handwriting-to-text-scann-9758](https://github.com/malikmuhammadsaadshafiq-dev/mvp-handwriting-to-text-scann-9758) — Convert handwritten notes, whiteboards, and paper documents into editable digital text using OCR
 - [mvp-ironmath](https://github.com/malikmuhammadsaadshafiq-dev/mvp-ironmath) — Weightlifting plate calculator and progressive overload tracker for strength athletes.
 - [mvp-neurotask](https://github.com/malikmuhammadsaadshafiq-dev/mvp-neurotask) — Voice-first task manager that converts ADHD rambling into prioritized action items using urgency detection.
+- [mvp-offline-cooking-converter](https://github.com/malikmuhammadsaadshafiq-dev/mvp-offline-cooking-converter) — Mobile app converting cooking measurements offline with ingredient-specific density.
+- [mvp-offline-cooking-converter-9310](https://github.com/malikmuhammadsaadshafiq-dev/mvp-offline-cooking-converter-9310) — Mobile app converting cooking measurements offline with ingredient-specific density.
 - [mvp-plantdoc](https://github.com/malikmuhammadsaadshafiq-dev/mvp-plantdoc) — Mobile app that diagnoses plant diseases from camera photos and generates personalized treatment schedules with care reminders.
 - [mvp-plantdoc-2565](https://github.com/malikmuhammadsaadshafiq-dev/mvp-plantdoc-2565) — Mobile app that diagnoses plant diseases from camera photos and generates personalized treatment schedules with care reminders.
 - [mvp-receipt-line-item-extract](https://github.com/malikmuhammadsaadshafiq-dev/mvp-receipt-line-item-extract) — Scan physical receipts and automatically extract structured data including individual items, prices, taxes, and merchant info.
@@ -164,6 +170,8 @@
 - [mvp-receiptcarbon](https://github.com/malikmuhammadsaadshafiq-dev/mvp-receiptcarbon) — Mobile app that scans grocery receipts to calculate real-time carbon footprint and suggest eco-friendly swaps.
 - [mvp-splitsavvy](https://github.com/malikmuhammadsaadshafiq-dev/mvp-splitsavvy) — Group expense tracker that simplifies complex debt webs between friends and calculates optimal payment paths.
 - [mvp-splitsnap](https://github.com/malikmuhammadsaadshafiq-dev/mvp-splitsnap) — OCR-powered receipt scanner that instantly calculates fair bill splits with tax & tip
+- [mvp-spotcheck-gym](https://github.com/malikmuhammadsaadshafiq-dev/mvp-spotcheck-gym) — Real-time gym equipment availability tracker with personal progress monitoring.
+- [mvp-spotcheck-gym-4673](https://github.com/malikmuhammadsaadshafiq-dev/mvp-spotcheck-gym-4673) — Real-time gym equipment availability tracker with personal progress monitoring.
 - [mvp-threadeconomy](https://github.com/malikmuhammadsaadshafiq-dev/mvp-threadeconomy) — Wardrobe analytics mobile app tracking clothing utilization and cost-per-wear metrics to promote conscious consumption.
 - [mvp-tip-split-tax-calculator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-tip-split-tax-calculator) — Split restaurant bills accurately by item with automatic tax and tip calculations per person.
 - [mvp-unit-price-comparison-cal](https://github.com/malikmuhammadsaadshafiq-dev/mvp-unit-price-comparison-cal) — Compare product prices across different package sizes and units to instantly find the best value while shopping
@@ -174,7 +182,7 @@
 - [mvp-whiteboard-scanner-pro](https://github.com/malikmuhammadsaadshafiq-dev/mvp-whiteboard-scanner-pro) — AI-powered mobile app that cleans photos of whiteboards by removing glare, straightening perspective, and isolating content.
 - [mvp-whiteboard-scanner-pro-7060](https://github.com/malikmuhammadsaadshafiq-dev/mvp-whiteboard-scanner-pro-7060) — AI-powered mobile app that cleans photos of whiteboards by removing glare, straightening perspective, and isolating content.
 
-**Web Apps** (56)
+**Web Apps** (67)
 
 - [mvp-audioaura](https://github.com/malikmuhammadsaadshafiq-dev/mvp-audioaura) — Parses uploaded Spotify Extended Streaming History JSON exports and uses AI to generate narrative personality insights, temporal listening patterns, and genre evolution analysis. | Community-inspired
 - [mvp-audioaura-9847](https://github.com/malikmuhammadsaadshafiq-dev/mvp-audioaura-9847) — Parses uploaded Spotify Extended Streaming History JSON exports and uses AI to generate narrative personality insights, temporal listening patterns, and genre evolution analysis. | Community-inspired
@@ -185,6 +193,8 @@
 - [mvp-cron-expression-builder-t](https://github.com/malikmuhammadsaadshafiq-dev/mvp-cron-expression-builder-t) — Visual cron schedule constructor with human-readable translations and next-run previews.
 - [mvp-cron-expression-builder-t-8596](https://github.com/malikmuhammadsaadshafiq-dev/mvp-cron-expression-builder-t-8596) — Visual cron schedule constructor with human-readable translations and next-run previews.
 - [mvp-csv-guard](https://github.com/malikmuhammadsaadshafiq-dev/mvp-csv-guard) — Uploads CSV files to server where AI identifies PII columns and applies selected anonymization strategies (hashing, synthetic data replacement, or redaction) before returning sanitized datasets.
+- [mvp-csv-studio](https://github.com/malikmuhammadsaadshafiq-dev/mvp-csv-studio) — Client-side CSV viewer, editor, and converter that processes data locally without server uploads
+- [mvp-csv-studio-9587](https://github.com/malikmuhammadsaadshafiq-dev/mvp-csv-studio-9587) — Client-side CSV viewer, editor, and converter that processes data locally without server uploads
 - [mvp-dataclean-studio](https://github.com/malikmuhammadsaadshafiq-dev/mvp-dataclean-studio) — Client-side CSV/JSON converter with validation, formatting, and schema checking
 - [mvp-dependencyrisk](https://github.com/malikmuhammadsaadshafiq-dev/mvp-dependencyrisk) — Scores npm and pip dependencies for maintenance risk, bus factor, and license compatibility conflicts
 - [mvp-dependencyrisk-4044](https://github.com/malikmuhammadsaadshafiq-dev/mvp-dependencyrisk-4044) — Scores npm and pip dependencies for maintenance risk, bus factor, and license compatibility conflicts
@@ -202,9 +212,14 @@
 - [mvp-intro-equity-calculator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-intro-equity-calculator) — Instant math tool to compare giving equity vs paying commission for business introductions | Inspired by Reddit community
 - [mvp-intro-equity-calculator-3920](https://github.com/malikmuhammadsaadshafiq-dev/mvp-intro-equity-calculator-3920) — Instant math tool to compare giving equity vs paying commission for business introductions | Inspired by Reddit community
 - [mvp-invoiceforge](https://github.com/malikmuhammadsaadshafiq-dev/mvp-invoiceforge) — Generate professional invoices instantly in the browser with client-side PDF export and automatic calculations
+- [mvp-kitchenconvert](https://github.com/malikmuhammadsaadshafiq-dev/mvp-kitchenconvert) — Convert cooking measurements between volume and weight using an ingredient-specific density database.
+- [mvp-kitchenconvert-5197](https://github.com/malikmuhammadsaadshafiq-dev/mvp-kitchenconvert-5197) — Convert cooking measurements between volume and weight using an ingredient-specific density database.
+- [mvp-kitchenconvert-6246](https://github.com/malikmuhammadsaadshafiq-dev/mvp-kitchenconvert-6246) — Convert cooking measurements between volume and weight using an ingredient-specific density database.
 - [mvp-localapi](https://github.com/malikmuhammadsaadshafiq-dev/mvp-localapi) — A browser-based API client that stores collections locally with zero cloud dependencies or subscription fees
 - [mvp-localapi-5902](https://github.com/malikmuhammadsaadshafiq-dev/mvp-localapi-5902) — A browser-based API client that stores collections locally with zero cloud dependencies or subscription fees
 - [mvp-localapi-6861](https://github.com/malikmuhammadsaadshafiq-dev/mvp-localapi-6861) — A browser-based API client that stores collections locally with zero cloud dependencies or subscription fees
+- [mvp-localdoc-grep](https://github.com/malikmuhammadsaadshafiq-dev/mvp-localdoc-grep) — Browser-based tool to search and analyze large text document dumps without uploading to servers | Inspired by Reddit community
+- [mvp-localdoc-grep-506](https://github.com/malikmuhammadsaadshafiq-dev/mvp-localdoc-grep-506) — Browser-based tool to search and analyze large text document dumps without uploading to servers | Inspired by Reddit community
 - [mvp-localdoc-private-chat](https://github.com/malikmuhammadsaadshafiq-dev/mvp-localdoc-private-chat) — Client-side document Q&A using Transformers.js embeddings with zero data leaving the browser | Inspired by Reddit community
 - [mvp-localdoc-private-chat-6194](https://github.com/malikmuhammadsaadshafiq-dev/mvp-localdoc-private-chat-6194) — Client-side document Q&A using Transformers.js embeddings with zero data leaving the browser | Inspired by Reddit community
 - [mvp-localdoc-private-chat-6432](https://github.com/malikmuhammadsaadshafiq-dev/mvp-localdoc-private-chat-6432) — Client-side document Q&A using Transformers.js embeddings with zero data leaving the browser | Inspired by Reddit community
@@ -230,7 +245,11 @@
 - [mvp-tickettriage-3978](https://github.com/malikmuhammadsaadshafiq-dev/mvp-tickettriage-3978) — An AI-assisted support tool that ingests customer service emails or chat logs to classify intent, assign priority scores, and draft contextual response templates.
 - [mvp-tickettriage-6652](https://github.com/malikmuhammadsaadshafiq-dev/mvp-tickettriage-6652) — An AI-assisted support tool that ingests customer service emails or chat logs to classify intent, assign priority scores, and draft contextual response templates.
 - [mvp-tiplink-zero](https://github.com/malikmuhammadsaadshafiq-dev/mvp-tiplink-zero) — Zero-fee crypto tipping platform for creators with instant USDC settlement and on-chain reputation
+- [mvp-toolshare-hub](https://github.com/malikmuhammadsaadshafiq-dev/mvp-toolshare-hub) — Neighborhood equipment lending with automated deposit calculations
+- [mvp-toolshare-hub-2533](https://github.com/malikmuhammadsaadshafiq-dev/mvp-toolshare-hub-2533) — Neighborhood equipment lending with automated deposit calculations
 - [mvp-truckplate](https://github.com/malikmuhammadsaadshafiq-dev/mvp-truckplate) — Collaborative recipe costing platform for food trucks to manage fluctuating ingredient prices and margins.
+- [mvp-voicestandup](https://github.com/malikmuhammadsaadshafiq-dev/mvp-voicestandup) — Async voice standups for remote teams that transcribes blockers and posts structured updates to Slack. | Community-inspired
+- [mvp-voicestandup-2658](https://github.com/malikmuhammadsaadshafiq-dev/mvp-voicestandup-2658) — Async voice standups for remote teams that transcribes blockers and posts structured updates to Slack. | Community-inspired
 - [mvp-zeroad-converter](https://github.com/malikmuhammadsaadshafiq-dev/mvp-zeroad-converter) — A client-side file converter for images and data formats that works instantly without ads or uploads.
 
 **APIs** (4)
