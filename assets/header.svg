@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="210" fill="none">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes gradientShift {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+          0%, 100% { opacity: 0.15; }
+          50% { opacity: 0.4; }
+        }
+        @keyframes sweep {
+          0% { width: 0; left: 50%; }
+          50% { width: 400px; left: calc(50% - 200px); }
+          100% { width: 0; left: 50%; }
+        }
+        @keyframes twinkle {
+          0%, 100% { opacity: 0.1; }
+          50% { opacity: 0.6; }
+        }
+        .container {
+          width: 800px;
+          height: 210px;
+          background: #0d1117;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          overflow: hidden;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        }
+        .name {
+          font-size: 48px;
+          font-weight: 800;
+          background: linear-gradient(135deg, #2563eb, #7c3aed, #ec4899, #f59e0b, #2563eb);
+          background-size: 300% 300%;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          animation: gradientShift 6s ease infinite, fadeIn 1s ease;
+          margin: 0;
+          line-height: 1.2;
+        }
+        .tagline {
+          font-size: 16px;
+          color: #8b949e;
+          margin-top: 8px;
+          animation: fadeIn 1s ease 0.3s both;
+          letter-spacing: 0.5px;
+        }
+        .tagline strong {
+          color: #c9d1d9;
+        }
+        .subtitle {
+          font-size: 13px;
+          color: #6e7681;
+          margin-top: 6px;
+          animation: fadeIn 1s ease 0.6s both;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+        }
+        .sweep-line {
+          position: absolute;
+          bottom: 30px;
+          height: 2px;
+          background: linear-gradient(90deg, transparent, #7c3aed, transparent);
+          animation: sweep 4s ease-in-out infinite;
+          border-radius: 2px;
+        }
+        .dot {
+          position: absolute;
+          width: 3px;
+          height: 3px;
+          border-radius: 50%;
+          animation: twinkle 3s ease-in-out infinite;
+        }
+        .accent-line {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          background: linear-gradient(90deg, #2563eb, #7c3aed, #ec4899, #10b981);
+          background-size: 300% 100%;
+          animation: gradientShift 4s ease infinite;
+        }
+      </style>
+      <div class="container">
+        <div class="dot" style="top:20px;left:60px;background:#2563eb;animation-delay:0s;animation-duration:2.5s"></div>
+        <div class="dot" style="top:50px;left:180px;background:#7c3aed;animation-delay:0.8s;animation-duration:3.2s"></div>
+        <div class="dot" style="top:35px;left:350px;background:#ec4899;animation-delay:1.5s;animation-duration:2.8s"></div>
+        <div class="dot" style="top:60px;left:500px;background:#f59e0b;animation-delay:0.3s;animation-duration:3.5s"></div>
+        <div class="dot" style="top:25px;left:650px;background:#10b981;animation-delay:2s;animation-duration:2.2s"></div>
+        <div class="dot" style="top:70px;left:740px;background:#2563eb;animation-delay:1.2s;animation-duration:4s"></div>
+        <div class="dot" style="top:160px;left:100px;background:#7c3aed;animation-delay:0.5s;animation-duration:3s"></div>
+        <div class="dot" style="top:170px;left:300px;background:#ec4899;animation-delay:1.8s;animation-duration:2.6s"></div>
+        <div class="dot" style="top:155px;left:550px;background:#10b981;animation-delay:0.7s;animation-duration:3.8s"></div>
+        <div class="dot" style="top:180px;left:700px;background:#f59e0b;animation-delay:2.2s;animation-duration:2.4s"></div>
+        <div class="dot" style="top:140px;left:80px;background:#2563eb;animation-delay:1s;animation-duration:3.4s"></div>
+        <div class="dot" style="top:100px;left:720px;background:#ec4899;animation-delay:0.2s;animation-duration:4.2s"></div>
+        <h1 class="name">Saad Shafiq</h1>
+        <div class="tagline"><strong>MVP Factory</strong> — Reddit finds the pain. AI builds the fix.</div>
+        <div class="subtitle">Builder &#8226; Shipper &#8226; AI-Powered Development</div>
+        <div class="sweep-line"></div>
+        <div class="accent-line"></div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

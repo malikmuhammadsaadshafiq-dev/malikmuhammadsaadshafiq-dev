@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="100" fill="none">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes gradientShift {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        @keyframes dotPulse {
+          0%, 100% { opacity: 0.2; transform: scale(0.8); }
+          50% { opacity: 0.8; transform: scale(1.2); }
+        }
+        .footer {
+          width: 800px;
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+          position: relative;
+        }
+        .top-line {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(90deg, #2563eb, #7c3aed, #ec4899, #10b981, #2563eb);
+          background-size: 300% 100%;
+          animation: gradientShift 5s ease infinite;
+        }
+        .quote {
+          font-size: 14px;
+          font-style: italic;
+          color: #8b949e;
+          animation: fadeIn 1s ease;
+          margin-bottom: 4px;
+        }
+        .subquote {
+          font-size: 11px;
+          color: #6e7681;
+          animation: fadeIn 1s ease 0.3s both;
+        }
+        .dots {
+          display: flex;
+          gap: 10px;
+          margin-top: 12px;
+        }
+        .dot {
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          animation: dotPulse 2s ease infinite;
+        }
+        .dot:nth-child(1) { background: #2563eb; animation-delay: 0s; }
+        .dot:nth-child(2) { background: #7c3aed; animation-delay: 0.25s; }
+        .dot:nth-child(3) { background: #ec4899; animation-delay: 0.5s; }
+        .dot:nth-child(4) { background: #10b981; animation-delay: 0.75s; }
+        .dot:nth-child(5) { background: #f59e0b; animation-delay: 1s; }
+      </style>
+      <div class="footer">
+        <div class="top-line"></div>
+        <div class="quote">Why ship one product when you can ship a hundred?</div>
+        <div class="subquote">AI writes the code. Taste decides what gets built. Reddit proves it's needed.</div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

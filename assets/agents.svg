@@ -1,0 +1,342 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="280" fill="none">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-6px); }
+        }
+        @keyframes pulse {
+          0%, 100% { opacity: 0.4; transform: scale(1); }
+          50% { opacity: 1; transform: scale(1.15); }
+        }
+        @keyframes msgRight {
+          0% { left: 80px; opacity: 0; transform: scale(0.5); }
+          15% { opacity: 1; transform: scale(1); }
+          85% { opacity: 1; transform: scale(1); }
+          100% { left: calc(100% - 80px); opacity: 0; transform: scale(0.5); }
+        }
+        @keyframes msgLeft {
+          0% { right: 80px; opacity: 0; transform: scale(0.5); }
+          15% { opacity: 1; transform: scale(1); }
+          85% { opacity: 1; transform: scale(1); }
+          100% { right: calc(100% - 80px); opacity: 0; transform: scale(0.5); }
+        }
+        @keyframes msgDown {
+          0% { top: 50px; opacity: 0; }
+          15% { opacity: 1; }
+          85% { opacity: 1; }
+          100% { top: calc(100% - 50px); opacity: 0; }
+        }
+        @keyframes statusBlink {
+          0%, 100% { background: #10b981; }
+          50% { background: #34d399; box-shadow: 0 0 8px rgba(16,185,129,0.6); }
+        }
+        @keyframes typing {
+          0%, 100% { opacity: 0.3; }
+          50% { opacity: 1; }
+        }
+        @keyframes codeScroll {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-30px); }
+        }
+        @keyframes gradientBg {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        @keyframes fadeInScale {
+          from { opacity: 0; transform: scale(0.8); }
+          to { opacity: 1; transform: scale(1); }
+        }
+        .scene {
+          width: 800px;
+          height: 280px;
+          background: #0d1117;
+          position: relative;
+          overflow: hidden;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+          border-radius: 12px;
+          border: 1px solid rgba(48,54,61,0.6);
+        }
+        .title-bar {
+          text-align: center;
+          padding: 10px 0 6px;
+          font-size: 12px;
+          font-weight: 600;
+          color: #8b949e;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+        .grid-lines {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image:
+            linear-gradient(rgba(48,54,61,0.15) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(48,54,61,0.15) 1px, transparent 1px);
+          background-size: 40px 40px;
+          pointer-events: none;
+        }
+        /* Agents */
+        .agent {
+          position: absolute;
+          width: 100px;
+          text-align: center;
+          animation: fadeInScale 0.6s ease both;
+        }
+        .agent-icon {
+          width: 52px;
+          height: 52px;
+          border-radius: 14px;
+          margin: 0 auto 6px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 22px;
+          font-weight: 800;
+          color: white;
+          position: relative;
+        }
+        .agent-icon .status {
+          position: absolute;
+          bottom: -2px;
+          right: -2px;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border: 2px solid #0d1117;
+          animation: statusBlink 2s ease infinite;
+        }
+        .agent-name {
+          font-size: 11px;
+          font-weight: 700;
+          color: #c9d1d9;
+        }
+        .agent-role {
+          font-size: 9px;
+          color: #6e7681;
+          margin-top: 1px;
+        }
+        /* Agent positions */
+        .a-pm { left: 350px; top: 36px; animation-delay: 0s; }
+        .a-pm .agent-icon { background: linear-gradient(135deg, #7c3aed, #6d28d9); animation: float 3s ease-in-out infinite; }
+        .a-front { left: 60px; top: 100px; animation-delay: 0.1s; }
+        .a-front .agent-icon { background: linear-gradient(135deg, #3b82f6, #2563eb); animation: float 3s ease-in-out 0.5s infinite; }
+        .a-back { left: 640px; top: 100px; animation-delay: 0.2s; }
+        .a-back .agent-icon { background: linear-gradient(135deg, #10b981, #059669); animation: float 3s ease-in-out 1s infinite; }
+        .a-contract { left: 350px; top: 185px; animation-delay: 0.3s; }
+        .a-contract .agent-icon { background: linear-gradient(135deg, #f59e0b, #d97706); animation: float 3s ease-in-out 1.5s infinite; }
+        /* Connection lines */
+        .conn {
+          position: absolute;
+          border: 0;
+          height: 1px;
+          background: rgba(75,85,99,0.3);
+        }
+        .conn-pm-front {
+          top: 85px;
+          left: 138px;
+          width: 240px;
+          transform: rotate(-12deg);
+        }
+        .conn-pm-back {
+          top: 85px;
+          left: 422px;
+          width: 240px;
+          transform: rotate(12deg);
+        }
+        .conn-pm-contract {
+          top: 130px;
+          left: 395px;
+          width: 2px;
+          height: 70px;
+          background: rgba(75,85,99,0.3);
+        }
+        .conn-front-contract {
+          top: 185px;
+          left: 138px;
+          width: 240px;
+          transform: rotate(12deg);
+        }
+        .conn-back-contract {
+          top: 185px;
+          left: 422px;
+          width: 240px;
+          transform: rotate(-12deg);
+        }
+        /* Floating messages */
+        .msg {
+          position: absolute;
+          padding: 3px 8px;
+          border-radius: 6px;
+          font-size: 9px;
+          font-weight: 600;
+          white-space: nowrap;
+          pointer-events: none;
+        }
+        .msg-1 {
+          top: 72px;
+          background: rgba(124,58,237,0.2);
+          color: #a78bfa;
+          border: 1px solid rgba(124,58,237,0.3);
+          animation: msgRight 4s ease-in-out infinite;
+        }
+        .msg-2 {
+          top: 105px;
+          background: rgba(16,185,129,0.2);
+          color: #34d399;
+          border: 1px solid rgba(16,185,129,0.3);
+          animation: msgLeft 4.5s ease-in-out 1.5s infinite;
+        }
+        .msg-3 {
+          top: 170px;
+          background: rgba(59,130,246,0.2);
+          color: #60a5fa;
+          border: 1px solid rgba(59,130,246,0.3);
+          animation: msgRight 5s ease-in-out 0.8s infinite;
+        }
+        .msg-4 {
+          top: 195px;
+          background: rgba(245,158,11,0.2);
+          color: #fbbf24;
+          border: 1px solid rgba(245,158,11,0.3);
+          animation: msgLeft 3.8s ease-in-out 2.2s infinite;
+        }
+        /* Data packets (small dots traveling along connections) */
+        .packet {
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          animation: pulse 2s ease infinite;
+        }
+        .p1 { top: 78px; left: 250px; background: #a78bfa; animation-delay: 0s; }
+        .p2 { top: 78px; left: 540px; background: #34d399; animation-delay: 0.7s; }
+        .p3 { top: 155px; left: 395px; background: #f59e0b; animation-delay: 1.4s; }
+        .p4 { top: 190px; left: 250px; background: #60a5fa; animation-delay: 0.3s; }
+        .p5 { top: 190px; left: 540px; background: #34d399; animation-delay: 1s; }
+        /* Code output */
+        .output-box {
+          position: absolute;
+          bottom: 8px;
+          right: 12px;
+          width: 140px;
+          height: 40px;
+          background: rgba(22,27,34,0.8);
+          border: 1px solid rgba(48,54,61,0.5);
+          border-radius: 6px;
+          overflow: hidden;
+          padding: 4px 8px;
+          font-family: 'JetBrains Mono', 'Fira Code', monospace;
+          font-size: 7px;
+          color: #6e7681;
+          line-height: 1.5;
+        }
+        .output-box .code-inner {
+          animation: codeScroll 6s linear infinite;
+        }
+        .code-kw { color: #ff7b72; }
+        .code-fn { color: #d2a8ff; }
+        .code-str { color: #a5d6ff; }
+        /* Status box */
+        .status-box {
+          position: absolute;
+          bottom: 8px;
+          left: 12px;
+          padding: 4px 10px;
+          background: rgba(16,185,129,0.1);
+          border: 1px solid rgba(16,185,129,0.2);
+          border-radius: 6px;
+          font-size: 9px;
+          color: #34d399;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+        .live-dot {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #10b981;
+          animation: statusBlink 1.5s ease infinite;
+        }
+        .typing-dots {
+          display: inline-flex;
+          gap: 2px;
+          margin-left: 3px;
+        }
+        .typing-dots span {
+          width: 3px;
+          height: 3px;
+          border-radius: 50%;
+          background: #6e7681;
+          animation: typing 1.2s ease infinite;
+        }
+        .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+      </style>
+      <div class="scene">
+        <div class="grid-lines"></div>
+        <div class="title-bar">AI Squadron — Agents Collaborating</div>
+        <!-- Connection lines -->
+        <div class="conn conn-pm-front"></div>
+        <div class="conn conn-pm-back"></div>
+        <div class="conn conn-pm-contract"></div>
+        <div class="conn conn-front-contract"></div>
+        <div class="conn conn-back-contract"></div>
+        <!-- Data packets -->
+        <div class="packet p1"></div>
+        <div class="packet p2"></div>
+        <div class="packet p3"></div>
+        <div class="packet p4"></div>
+        <div class="packet p5"></div>
+        <!-- Floating messages -->
+        <div class="msg msg-1">assign: build landing page</div>
+        <div class="msg msg-2">push: API routes done</div>
+        <div class="msg msg-3">review: component ready</div>
+        <div class="msg msg-4">deploy: contract verified</div>
+        <!-- Agents -->
+        <div class="agent a-pm">
+          <div class="agent-icon">PM<div class="status"></div></div>
+          <div class="agent-name">PMClaw</div>
+          <div class="agent-role">Coordinator</div>
+        </div>
+        <div class="agent a-front">
+          <div class="agent-icon">FC<div class="status"></div></div>
+          <div class="agent-name">FrontendClaw</div>
+          <div class="agent-role">UI / UX</div>
+        </div>
+        <div class="agent a-back">
+          <div class="agent-icon">BC<div class="status"></div></div>
+          <div class="agent-name">BackendClaw</div>
+          <div class="agent-role">APIs / Logic</div>
+        </div>
+        <div class="agent a-contract">
+          <div class="agent-icon">CC<div class="status"></div></div>
+          <div class="agent-name">ContractClaw</div>
+          <div class="agent-role">Smart Contracts</div>
+        </div>
+        <!-- Code output -->
+        <div class="output-box">
+          <div class="code-inner">
+            <span class="code-kw">export</span> <span class="code-fn">buildMVP</span>();<br/>
+            <span class="code-kw">await</span> deploy(<span class="code-str">"prod"</span>);<br/>
+            <span class="code-fn">test</span>(<span class="code-str">"all"</span>).pass;<br/>
+            <span class="code-kw">const</span> ship = <span class="code-str">true</span>;<br/>
+            <span class="code-kw">export</span> <span class="code-fn">buildMVP</span>();<br/>
+            <span class="code-kw">await</span> deploy(<span class="code-str">"prod"</span>);<br/>
+          </div>
+        </div>
+        <!-- Status -->
+        <div class="status-box">
+          <div class="live-dot"></div>
+          4 agents active
+          <div class="typing-dots"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
