@@ -2,7 +2,7 @@
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/header.svg" width="800" alt="Saad Shafiq - MVP Factory" />
 
-**247+ products shipped.** Most of them before lunch.
+**268+ products shipped.** Most of them before lunch.
 
 </div>
 
@@ -16,12 +16,12 @@
 
 <div align="center">
 
-![Products Shipped](https://img.shields.io/badge/Products_Shipped-247+-2563eb?style=for-the-badge&labelColor=1e1e2e)
+![Products Shipped](https://img.shields.io/badge/Products_Shipped-268+-2563eb?style=for-the-badge&labelColor=1e1e2e)
 &nbsp;&nbsp;
-![SaaS](https://img.shields.io/badge/SaaS-61-0ea5e9?style=flat-square)
+![SaaS](https://img.shields.io/badge/SaaS-68-0ea5e9?style=flat-square)
 ![Extensions](https://img.shields.io/badge/Extensions-27-f59e0b?style=flat-square)
-![Mobile](https://img.shields.io/badge/Mobile-45-10b981?style=flat-square)
-![Web Apps](https://img.shields.io/badge/Web_Apps-109-8b5cf6?style=flat-square)
+![Mobile](https://img.shields.io/badge/Mobile-46-10b981?style=flat-square)
+![Web Apps](https://img.shields.io/badge/Web_Apps-122-8b5cf6?style=flat-square)
 
 </div>
 
@@ -31,14 +31,14 @@
 
 | Product | Type | What It Does |
 |---------|------|-------------|
-| [**mvp-smartcrops-2731**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-smartcrops-2731) | `Mobile App` | Mobile app that analyzes photos and suggests optimal crop ratios based on content focal points |
-| [**mvp-smartcrops-2087**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-smartcrops-2087) | `Mobile App` | Mobile app that analyzes photos and suggests optimal crop ratios based on content focal points |
-| [**mvp-smartcrops**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-smartcrops) | `Mobile App` | Mobile app that analyzes photos and suggests optimal crop ratios based on content focal points |
-| [**mvp-sheet2markdown-9897**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sheet2markdown-9897) | `Web App` | Instantly convert copied spreadsheet data (Excel/Google Sheets) into formatted Markdown tables |
-| [**mvp-sheet2markdown-8554**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sheet2markdown-8554) | `Web App` | Instantly convert copied spreadsheet data (Excel/Google Sheets) into formatted Markdown tables |
-| [**mvp-sheet2markdown**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sheet2markdown) | `Web App` | Instantly convert copied spreadsheet data (Excel/Google Sheets) into formatted Markdown tables |
+| [**mvp-privacyscan-728**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-privacyscan-728) | `Web App` | Automated privacy compliance scanner that crawls websites to detect trackers, cookies, and data c... |
+| [**mvp-privacyscan**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-privacyscan) | `Web App` | Automated privacy compliance scanner that crawls websites to detect trackers, cookies, and data c... |
+| [**mvp-screensorts-8478**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-screensorts-8478) | `Web App` | Client-side screenshot organizer and compressor | Inspired by Reddit community |
+| [**mvp-screensorts**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-screensorts) | `Web App` | Client-side screenshot organizer and compressor | Inspired by Reddit community |
+| [**mvp-legacy-stack-translator-7225**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-legacy-stack-translator-7225) | `SaaS` | AI assistant that translates outdated PHP/MySQL patterns to modern secure equivalents | Inspired ... |
+| [**mvp-legacy-stack-translator**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-legacy-stack-translator) | `SaaS` | AI assistant that translates outdated PHP/MySQL patterns to modern secure equivalents | Inspired ... |
 
-<sub>Auto-updated from GitHub API. Last refresh: 2026-02-17 01:53 UTC</sub>
+<sub>Auto-updated from GitHub API. Last refresh: 2026-02-17 06:55 UTC</sub>
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
 
@@ -67,10 +67,10 @@
 | `SaaS` | `Web App` |
 
 <details>
-<summary><strong>Full Product Catalog (247 products)</strong></summary>
+<summary><strong>Full Product Catalog (268 products)</strong></summary>
 <br>
 
-**SaaS** (61)
+**SaaS** (68)
 
 - [mvp-batch-alt-text-generator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-batch-alt-text-generator) — Upload image batches and generate accurate, descriptive alt-text for accessibility compliance and SEO optimization.
 - [mvp-batch-alt-text-generator-3098](https://github.com/malikmuhammadsaadshafiq-dev/mvp-batch-alt-text-generator-3098) — Upload image batches and generate accurate, descriptive alt-text for accessibility compliance and SEO optimization.
@@ -81,6 +81,8 @@
 - [mvp-coldemailcoach](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldemailcoach) — AI-powered cold email optimization platform with deliverability testing and automated follow-up sequences.
 - [mvp-coldemailcoach-6128](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldemailcoach-6128) — AI-powered cold email optimization platform with deliverability testing and automated follow-up sequences.
 - [mvp-commitcategorizer](https://github.com/malikmuhammadsaadshafiq-dev/mvp-commitcategorizer) — Analyzes git repository history using LLM to classify commits into features, bugs, and tech debt, then generates accurate time-tracking reports for developers.
+- [mvp-csv-bridge](https://github.com/malikmuhammadsaadshafiq-dev/mvp-csv-bridge) — AI-powered column mapping tool that automatically matches fields between different CSV schemas for merging datasets.
+- [mvp-csv-bridge-5608](https://github.com/malikmuhammadsaadshafiq-dev/mvp-csv-bridge-5608) — AI-powered column mapping tool that automatically matches fields between different CSV schemas for merging datasets.
 - [mvp-dropdeploy](https://github.com/malikmuhammadsaadshafiq-dev/mvp-dropdeploy) — Zero-configuration static site hosting for the post-Heroku era
 - [mvp-fixflow](https://github.com/malikmuhammadsaadshafiq-dev/mvp-fixflow) — Tenant-maintenance coordination platform for property managers and residents.
 - [mvp-freelancedesk](https://github.com/malikmuhammadsaadshafiq-dev/mvp-freelancedesk) — All-in-one project workspace combining time tracking, invoice generation, and client progress dashboards.
@@ -94,6 +96,8 @@
 - [mvp-jobchangealert](https://github.com/malikmuhammadsaadshafiq-dev/mvp-jobchangealert) — Monitor LinkedIn for job changes to trigger timely sales outreach when new decision makers arrive.
 - [mvp-kitflow](https://github.com/malikmuhammadsaadshafiq-dev/mvp-kitflow) — Subscription box inventory management platform with drag-and-drop kit builders.
 - [mvp-kitflow-1596](https://github.com/malikmuhammadsaadshafiq-dev/mvp-kitflow-1596) — Subscription box inventory management platform with drag-and-drop kit builders.
+- [mvp-legacy-stack-translator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-legacy-stack-translator) — AI assistant that translates outdated PHP/MySQL patterns to modern secure equivalents | Inspired by Reddit community
+- [mvp-legacy-stack-translator-7225](https://github.com/malikmuhammadsaadshafiq-dev/mvp-legacy-stack-translator-7225) — AI assistant that translates outdated PHP/MySQL patterns to modern secure equivalents | Inspired by Reddit community
 - [mvp-linkpulse](https://github.com/malikmuhammadsaadshafiq-dev/mvp-linkpulse) — Micro-analytics platform for creators to A/B test & optimize link-in-bio pages
 - [mvp-makermetrics](https://github.com/malikmuhammadsaadshafiq-dev/mvp-makermetrics) — A SaaS dashboard that aggregates MRR from Stripe and development velocity from GitHub to calculate holistic indie hacker health metrics and growth trends. | Community-inspired
 - [mvp-makermetrics-5861](https://github.com/malikmuhammadsaadshafiq-dev/mvp-makermetrics-5861) — A SaaS dashboard that aggregates MRR from Stripe and development velocity from GitHub to calculate holistic indie hacker health metrics and growth trends. | Community-inspired
@@ -122,6 +126,9 @@
 - [mvp-subredditscout](https://github.com/malikmuhammadsaadshafiq-dev/mvp-subredditscout) — Find high-intent Reddit threads for authentic brand engagement before they trend
 - [mvp-subsentiment](https://github.com/malikmuhammadsaadshafiq-dev/mvp-subsentiment) — Micro-SaaS monitoring Reddit brand sentiment in specific subreddits with trend alerts. | Community-inspired
 - [mvp-subsentiment-4134](https://github.com/malikmuhammadsaadshafiq-dev/mvp-subsentiment-4134) — Micro-SaaS monitoring Reddit brand sentiment in specific subreddits with trend alerts. | Community-inspired
+- [mvp-subsleuth](https://github.com/malikmuhammadsaadshafiq-dev/mvp-subsleuth) — Automatically detect and track SaaS subscriptions from email receipts to prevent forgotten recurring charges. | Community-inspired
+- [mvp-subsleuth-3141](https://github.com/malikmuhammadsaadshafiq-dev/mvp-subsleuth-3141) — Automatically detect and track SaaS subscriptions from email receipts to prevent forgotten recurring charges. | Community-inspired
+- [mvp-subsleuth-3810](https://github.com/malikmuhammadsaadshafiq-dev/mvp-subsleuth-3810) — Automatically detect and track SaaS subscriptions from email receipts to prevent forgotten recurring charges. | Community-inspired
 - [mvp-teamsub-monitor](https://github.com/malikmuhammadsaadshafiq-dev/mvp-teamsub-monitor) — SaaS dashboard for tracking organizational software subscriptions, utilization rates, and renewal workflows.
 - [mvp-tonecraft](https://github.com/malikmuhammadsaadshafiq-dev/mvp-tonecraft) — Matches support response tone to historical ticket embeddings and generates contextual replies that maintain brand voice consistency using retrieval-augmented generation
 - [mvp-tonecraft-6995](https://github.com/malikmuhammadsaadshafiq-dev/mvp-tonecraft-6995) — Matches support response tone to historical ticket embeddings and generates contextual replies that maintain brand voice consistency using retrieval-augmented generation
@@ -164,7 +171,7 @@
 - [mvp-viewportsnap](https://github.com/malikmuhammadsaadshafiq-dev/mvp-viewportsnap) — Instantly resize browser windows to exact mobile, tablet, or custom dimensions for responsive testing.
 - [mvp-viewportsnap-466](https://github.com/malikmuhammadsaadshafiq-dev/mvp-viewportsnap-466) — Instantly resize browser windows to exact mobile, tablet, or custom dimensions for responsive testing.
 
-**Mobile Apps** (45)
+**Mobile Apps** (46)
 
 - [mvp-aspect-ratio-calculator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-aspect-ratio-calculator) — Calculate missing dimensions for images, videos, or designs while maintaining exact aspect ratios.
 - [mvp-bloombuddy](https://github.com/malikmuhammadsaadshafiq-dev/mvp-bloombuddy) — Smart plant care companion with precise dosage calculations
@@ -198,6 +205,7 @@
 - [mvp-smartcrops](https://github.com/malikmuhammadsaadshafiq-dev/mvp-smartcrops) — Mobile app that analyzes photos and suggests optimal crop ratios based on content focal points
 - [mvp-smartcrops-2087](https://github.com/malikmuhammadsaadshafiq-dev/mvp-smartcrops-2087) — Mobile app that analyzes photos and suggests optimal crop ratios based on content focal points
 - [mvp-smartcrops-2731](https://github.com/malikmuhammadsaadshafiq-dev/mvp-smartcrops-2731) — Mobile app that analyzes photos and suggests optimal crop ratios based on content focal points
+- [mvp-smartcrops-3964](https://github.com/malikmuhammadsaadshafiq-dev/mvp-smartcrops-3964) — Mobile app that analyzes photos and suggests optimal crop ratios based on content focal points
 - [mvp-splitsavvy](https://github.com/malikmuhammadsaadshafiq-dev/mvp-splitsavvy) — Group expense tracker that simplifies complex debt webs between friends and calculates optimal payment paths.
 - [mvp-splitsnap](https://github.com/malikmuhammadsaadshafiq-dev/mvp-splitsnap) — OCR-powered receipt scanner that instantly calculates fair bill splits with tax & tip
 - [mvp-spotcheck-gym](https://github.com/malikmuhammadsaadshafiq-dev/mvp-spotcheck-gym) — Real-time gym equipment availability tracker with personal progress monitoring.
@@ -212,7 +220,7 @@
 - [mvp-whiteboard-scanner-pro](https://github.com/malikmuhammadsaadshafiq-dev/mvp-whiteboard-scanner-pro) — AI-powered mobile app that cleans photos of whiteboards by removing glare, straightening perspective, and isolating content.
 - [mvp-whiteboard-scanner-pro-7060](https://github.com/malikmuhammadsaadshafiq-dev/mvp-whiteboard-scanner-pro-7060) — AI-powered mobile app that cleans photos of whiteboards by removing glare, straightening perspective, and isolating content.
 
-**Web Apps** (109)
+**Web Apps** (122)
 
 - [mvp-audioaura](https://github.com/malikmuhammadsaadshafiq-dev/mvp-audioaura) — Parses uploaded Spotify Extended Streaming History JSON exports and uses AI to generate narrative personality insights, temporal listening patterns, and genre evolution analysis. | Community-inspired
 - [mvp-audioaura-9847](https://github.com/malikmuhammadsaadshafiq-dev/mvp-audioaura-9847) — Parses uploaded Spotify Extended Streaming History JSON exports and uses AI to generate narrative personality insights, temporal listening patterns, and genre evolution analysis. | Community-inspired
@@ -256,6 +264,9 @@
 - [mvp-focuscontext](https://github.com/malikmuhammadsaadshafiq-dev/mvp-focuscontext) — Browser extension that saves coding sessions with AI-generated context notes so developers can resume work instantly after interruptions.
 - [mvp-framefocus](https://github.com/malikmuhammadsaadshafiq-dev/mvp-framefocus) — Intelligently crops images to multiple aspect ratios using computer vision to preserve focal subjects (faces, text, products) for social media batch processing | Community-inspired
 - [mvp-framefocus-2477](https://github.com/malikmuhammadsaadshafiq-dev/mvp-framefocus-2477) — Intelligently crops images to multiple aspect ratios using computer vision to preserve focal subjects (faces, text, products) for social media batch processing | Community-inspired
+- [mvp-gatekeeperflow](https://github.com/malikmuhammadsaadshafiq-dev/mvp-gatekeeperflow) — Interactive cold call scenario trainer for bypassing gatekeepers and handling objections | Inspired by Reddit community
+- [mvp-gatekeeperflow-7337](https://github.com/malikmuhammadsaadshafiq-dev/mvp-gatekeeperflow-7337) — Interactive cold call scenario trainer for bypassing gatekeepers and handling objections | Inspired by Reddit community
+- [mvp-gatekeeperflow-9175](https://github.com/malikmuhammadsaadshafiq-dev/mvp-gatekeeperflow-9175) — Interactive cold call scenario trainer for bypassing gatekeepers and handling objections | Inspired by Reddit community
 - [mvp-intro-equity-calculator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-intro-equity-calculator) — Instant math tool to compare giving equity vs paying commission for business introductions | Inspired by Reddit community
 - [mvp-intro-equity-calculator-3920](https://github.com/malikmuhammadsaadshafiq-dev/mvp-intro-equity-calculator-3920) — Instant math tool to compare giving equity vs paying commission for business introductions | Inspired by Reddit community
 - [mvp-inventoryturn](https://github.com/malikmuhammadsaadshafiq-dev/mvp-inventoryturn) — Retail inventory analytics dashboard that calculates stock turnover rates, days of inventory remaining, and automated reorder points from sales data. | Community-inspired
@@ -290,8 +301,15 @@
 - [mvp-nested-json-flattener-1827](https://github.com/malikmuhammadsaadshafiq-dev/mvp-nested-json-flattener-1827) — Transform complex nested API responses into flat CSV files instantly with interactive field selection and preview.
 - [mvp-plant-parenthood-pro](https://github.com/malikmuhammadsaadshafiq-dev/mvp-plant-parenthood-pro) — Smart plant care dashboard that calculates personalized watering schedules and tracks growth progress through photo timelines.
 - [mvp-plant-parenthood-pro-6207](https://github.com/malikmuhammadsaadshafiq-dev/mvp-plant-parenthood-pro-6207) — Smart plant care dashboard that calculates personalized watering schedules and tracks growth progress through photo timelines.
+- [mvp-privacyscan](https://github.com/malikmuhammadsaadshafiq-dev/mvp-privacyscan) — Automated privacy compliance scanner that crawls websites to detect trackers, cookies, and data collection points, then generates compliant privacy policies using AI.
+- [mvp-privacyscan-728](https://github.com/malikmuhammadsaadshafiq-dev/mvp-privacyscan-728) — Automated privacy compliance scanner that crawls websites to detect trackers, cookies, and data collection points, then generates compliant privacy policies using AI.
 - [mvp-quickratio](https://github.com/malikmuhammadsaadshafiq-dev/mvp-quickratio) — Aspect ratio calculator that computes responsive dimensions and generates CSS code instantly
+- [mvp-routereader](https://github.com/malikmuhammadsaadshafiq-dev/mvp-routereader) — Analyzes pasted backend source code using LLM to extract and document REST API endpoints with their HTTP methods, routes, and request parameters.
+- [mvp-routereader-703](https://github.com/malikmuhammadsaadshafiq-dev/mvp-routereader-703) — Analyzes pasted backend source code using LLM to extract and document REST API endpoints with their HTTP methods, routes, and request parameters.
+- [mvp-routereader-827](https://github.com/malikmuhammadsaadshafiq-dev/mvp-routereader-827) — Analyzes pasted backend source code using LLM to extract and document REST API endpoints with their HTTP methods, routes, and request parameters.
 - [mvp-schemaflow](https://github.com/malikmuhammadsaadshafiq-dev/mvp-schemaflow) — Interactive JSON-to-TypeScript visualizer with editable node diagrams
+- [mvp-screensorts](https://github.com/malikmuhammadsaadshafiq-dev/mvp-screensorts) — Client-side screenshot organizer and compressor | Inspired by Reddit community
+- [mvp-screensorts-8478](https://github.com/malikmuhammadsaadshafiq-dev/mvp-screensorts-8478) — Client-side screenshot organizer and compressor | Inspired by Reddit community
 - [mvp-sheet2markdown](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sheet2markdown) — Instantly convert copied spreadsheet data (Excel/Google Sheets) into formatted Markdown tables
 - [mvp-sheet2markdown-8554](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sheet2markdown-8554) — Instantly convert copied spreadsheet data (Excel/Google Sheets) into formatted Markdown tables
 - [mvp-sheet2markdown-9897](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sheet2markdown-9897) — Instantly convert copied spreadsheet data (Excel/Google Sheets) into formatted Markdown tables
@@ -314,6 +332,9 @@
 - [mvp-tiplink-zero](https://github.com/malikmuhammadsaadshafiq-dev/mvp-tiplink-zero) — Zero-fee crypto tipping platform for creators with instant USDC settlement and on-chain reputation
 - [mvp-toolshare-hub](https://github.com/malikmuhammadsaadshafiq-dev/mvp-toolshare-hub) — Neighborhood equipment lending with automated deposit calculations
 - [mvp-toolshare-hub-2533](https://github.com/malikmuhammadsaadshafiq-dev/mvp-toolshare-hub-2533) — Neighborhood equipment lending with automated deposit calculations
+- [mvp-transcriptforge](https://github.com/malikmuhammadsaadshafiq-dev/mvp-transcriptforge) — Processes raw meeting transcript files (VTT/SRT/TXT) to remove filler words, fix grammar, and extract structured action items with assigned owners using LLM analysis.
+- [mvp-transcriptforge-5006](https://github.com/malikmuhammadsaadshafiq-dev/mvp-transcriptforge-5006) — Processes raw meeting transcript files (VTT/SRT/TXT) to remove filler words, fix grammar, and extract structured action items with assigned owners using LLM analysis.
+- [mvp-transcriptforge-6609](https://github.com/malikmuhammadsaadshafiq-dev/mvp-transcriptforge-6609) — Processes raw meeting transcript files (VTT/SRT/TXT) to remove filler words, fix grammar, and extract structured action items with assigned owners using LLM analysis.
 - [mvp-truckplate](https://github.com/malikmuhammadsaadshafiq-dev/mvp-truckplate) — Collaborative recipe costing platform for food trucks to manage fluctuating ingredient prices and margins.
 - [mvp-voicefill](https://github.com/malikmuhammadsaadshafiq-dev/mvp-voicefill) — Fill web forms hands-free using browser-native speech recognition with intelligent field mapping.
 - [mvp-voicefill-2259](https://github.com/malikmuhammadsaadshafiq-dev/mvp-voicefill-2259) — Fill web forms hands-free using browser-native speech recognition with intelligent field mapping.
