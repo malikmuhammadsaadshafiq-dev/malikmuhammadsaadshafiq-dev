@@ -2,7 +2,7 @@
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/header.svg" width="800" alt="Saad Shafiq - MVP Factory" />
 
-**360+ products shipped.** Most of them before lunch.
+**381+ products shipped.** Most of them before lunch.
 
 </div>
 
@@ -16,12 +16,12 @@
 
 <div align="center">
 
-![Products Shipped](https://img.shields.io/badge/Products_Shipped-360+-2563eb?style=for-the-badge&labelColor=1e1e2e)
+![Products Shipped](https://img.shields.io/badge/Products_Shipped-381+-2563eb?style=for-the-badge&labelColor=1e1e2e)
 &nbsp;&nbsp;
-![SaaS](https://img.shields.io/badge/SaaS-88-0ea5e9?style=flat-square)
-![Extensions](https://img.shields.io/badge/Extensions-34-f59e0b?style=flat-square)
-![Mobile](https://img.shields.io/badge/Mobile-53-10b981?style=flat-square)
-![Web Apps](https://img.shields.io/badge/Web_Apps-180-8b5cf6?style=flat-square)
+![SaaS](https://img.shields.io/badge/SaaS-90-0ea5e9?style=flat-square)
+![Extensions](https://img.shields.io/badge/Extensions-39-f59e0b?style=flat-square)
+![Mobile](https://img.shields.io/badge/Mobile-56-10b981?style=flat-square)
+![Web Apps](https://img.shields.io/badge/Web_Apps-191-8b5cf6?style=flat-square)
 
 </div>
 
@@ -31,14 +31,14 @@
 
 | Product | Type | What It Does |
 |---------|------|-------------|
-| [**mvp-brewvault-inventory-7065**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-brewvault-inventory-7065) | `Web App` | Web-based brewing calculator and inventory manager for homebrewers tracking fermentation stages a... |
-| [**mvp-brewvault-inventory**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-brewvault-inventory) | `Web App` | Web-based brewing calculator and inventory manager for homebrewers tracking fermentation stages a... |
-| [**mvp-projectscope-4396**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-projectscope-4396) | `Web App` | Estimate side project development hours based on feature complexity and experience level | Inspir... |
-| [**mvp-projectscope**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-projectscope) | `Web App` | Estimate side project development hours based on feature complexity and experience level | Inspir... |
-| [**mvp-focusguard-3060**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-focusguard-3060) | `Chrome Extension` | Browser extension that blocks distracting websites during focus sessions with a visual countdown ... |
-| [**mvp-focusguard**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-focusguard) | `Chrome Extension` | Browser extension that blocks distracting websites during focus sessions with a visual countdown ... |
+| [**mvp-office-flora-collective-7997**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-office-flora-collective-7997) | `SaaS` | Collaborative plant management system for hybrid offices with automated care scheduling and respo... |
+| [**mvp-office-flora-collective**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-office-flora-collective) | `SaaS` | Collaborative plant management system for hybrid offices with automated care scheduling and respo... |
+| [**mvp-deepguard-live-6098**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-deepguard-live-6098) | `Chrome Extension` | Browser extension providing real-time deepfake detection overlay for video calls and streams |
+| [**mvp-deepguard-live**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-deepguard-live) | `Chrome Extension` | Browser extension providing real-time deepfake detection overlay for video calls and streams |
+| [**mvp-antisell-calc-5482**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-antisell-calc-5482) | `Web App` | Calculate ROI comparing aggressive sales tactics vs anti-selling approaches | Inspired by Reddit ... |
+| [**mvp-antisell-calc**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-antisell-calc) | `Web App` | Calculate ROI comparing aggressive sales tactics vs anti-selling approaches | Inspired by Reddit ... |
 
-<sub>Auto-updated from GitHub API. Last refresh: 2026-02-18 06:58 UTC</sub>
+<sub>Auto-updated from GitHub API. Last refresh: 2026-02-18 12:58 UTC</sub>
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
 
@@ -67,10 +67,10 @@
 | `SaaS` | `Web App` |
 
 <details>
-<summary><strong>Full Product Catalog (360 products)</strong></summary>
+<summary><strong>Full Product Catalog (381 products)</strong></summary>
 <br>
 
-**SaaS** (88)
+**SaaS** (90)
 
 - [mvp-batch-alt-text-generator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-batch-alt-text-generator) — Upload image batches and generate accurate, descriptive alt-text for accessibility compliance and SEO optimization.
 - [mvp-batch-alt-text-generator-3098](https://github.com/malikmuhammadsaadshafiq-dev/mvp-batch-alt-text-generator-3098) — Upload image batches and generate accurate, descriptive alt-text for accessibility compliance and SEO optimization.
@@ -113,6 +113,8 @@
 - [mvp-nanocollab](https://github.com/malikmuhammadsaadshafiq-dev/mvp-nanocollab) — Marketplace connecting local brick-and-mortar businesses with micro-influencers for authentic hyper-local marketing campaigns.
 - [mvp-natural-language-cron-bui](https://github.com/malikmuhammadsaadshafiq-dev/mvp-natural-language-cron-bui) — Convert plain English scheduling descriptions like 'every Monday at 2pm' into valid cron expressions
 - [mvp-neighbortools](https://github.com/malikmuhammadsaadshafiq-dev/mvp-neighbortools) — Community-powered tool lending platform with automated deposit calculation and return tracking.
+- [mvp-office-flora-collective](https://github.com/malikmuhammadsaadshafiq-dev/mvp-office-flora-collective) — Collaborative plant management system for hybrid offices with automated care scheduling and responsibility tracking.
+- [mvp-office-flora-collective-7997](https://github.com/malikmuhammadsaadshafiq-dev/mvp-office-flora-collective-7997) — Collaborative plant management system for hybrid offices with automated care scheduling and responsibility tracking.
 - [mvp-plantparent-pro](https://github.com/malikmuhammadsaadshafiq-dev/mvp-plantparent-pro) — Smart plant care management system that schedules watering and tracks growth
 - [mvp-plantparent-pro-7750](https://github.com/malikmuhammadsaadshafiq-dev/mvp-plantparent-pro-7750) — Smart plant care management system that schedules watering and tracks growth
 - [mvp-plantparent-pro-8459](https://github.com/malikmuhammadsaadshafiq-dev/mvp-plantparent-pro-8459) — Smart plant care management system that schedules watering and tracks growth
@@ -161,7 +163,7 @@
 - [mvp-winstream](https://github.com/malikmuhammadsaadshafiq-dev/mvp-winstream) — Proposal pipeline dashboard that calculates real-time win rates, response time analytics, and revenue forecasting from stored freelance opportunity data.
 - [mvp-winstream-6864](https://github.com/malikmuhammadsaadshafiq-dev/mvp-winstream-6864) — Proposal pipeline dashboard that calculates real-time win rates, response time analytics, and revenue forecasting from stored freelance opportunity data.
 
-**Chrome Extensions** (34)
+**Chrome Extensions** (39)
 
 - [mvp-bidsmart](https://github.com/malikmuhammadsaadshafiq-dev/mvp-bidsmart) — Smart rate calculator & proposal tracker for freelancers - never underbid again
 - [mvp-botornot-repo](https://github.com/malikmuhammadsaadshafiq-dev/mvp-botornot-repo) — Browser extension detecting AI-generated GitHub issues and PRs | Inspired by Reddit community
@@ -175,6 +177,8 @@
 - [mvp-colorgrab](https://github.com/malikmuhammadsaadshafiq-dev/mvp-colorgrab) — Eyedropper tool to pick colors from any screen pixel and organize into exportable palettes.
 - [mvp-colorgrab-7546](https://github.com/malikmuhammadsaadshafiq-dev/mvp-colorgrab-7546) — Eyedropper tool to pick colors from any screen pixel and organize into exportable palettes.
 - [mvp-css-reality-check-extensi](https://github.com/malikmuhammadsaadshafiq-dev/mvp-css-reality-check-extensi) — Browser extension that flags impossible design values and accessibility violations on any webpage | Inspired by Reddit community
+- [mvp-deepguard-live](https://github.com/malikmuhammadsaadshafiq-dev/mvp-deepguard-live) — Browser extension providing real-time deepfake detection overlay for video calls and streams
+- [mvp-deepguard-live-6098](https://github.com/malikmuhammadsaadshafiq-dev/mvp-deepguard-live-6098) — Browser extension providing real-time deepfake detection overlay for video calls and streams
 - [mvp-deepwork-companion](https://github.com/malikmuhammadsaadshafiq-dev/mvp-deepwork-companion) — Browser extension for tracking productive focus sessions and blocking distractions
 - [mvp-design-to-dev-unit-conver](https://github.com/malikmuhammadsaadshafiq-dev/mvp-design-to-dev-unit-conver) — Browser extension that converts CSS pixel values to rem, vw, or clamp() instantly on any webpage | Inspired by Reddit community
 - [mvp-design-to-dev-unit-conver-8879](https://github.com/malikmuhammadsaadshafiq-dev/mvp-design-to-dev-unit-conver-8879) — Browser extension that converts CSS pixel values to rem, vw, or clamp() instantly on any webpage | Inspired by Reddit community
@@ -193,18 +197,24 @@
 - [mvp-pomodoropure](https://github.com/malikmuhammadsaadshafiq-dev/mvp-pomodoropure) — Zero-distraction browser extension timer with automatic session logging
 - [mvp-recipecalc](https://github.com/malikmuhammadsaadshafiq-dev/mvp-recipecalc) — Browser extension that instantly analyzes recipe ingredients and calculates nutritional values with dietary filtering.
 - [mvp-reciperescue](https://github.com/malikmuhammadsaadshafiq-dev/mvp-reciperescue) — Chrome extension that extracts clean recipes from food blogs, removing SEO fluff and generating shopping lists.
+- [mvp-smart-commit-message-gene](https://github.com/malikmuhammadsaadshafiq-dev/mvp-smart-commit-message-gene) — Browser extension that analyzes GitHub/GitLab diffs and suggests clear, conventional commit messages.
 - [mvp-social-media-character-co](https://github.com/malikmuhammadsaadshafiq-dev/mvp-social-media-character-co) — Real-time character counter with platform-specific limits for Twitter, LinkedIn, and Instagram including thread splitting.
+- [mvp-stackaudit](https://github.com/malikmuhammadsaadshafiq-dev/mvp-stackaudit) — Browser extension that detects over-engineered tech stacks on any website | Inspired by Reddit community
+- [mvp-stackaudit-4312](https://github.com/malikmuhammadsaadshafiq-dev/mvp-stackaudit-4312) — Browser extension that detects over-engineered tech stacks on any website | Inspired by Reddit community
 - [mvp-subscout](https://github.com/malikmuhammadsaadshafiq-dev/mvp-subscout) — Browser extension tracking SaaS subscriptions and price hikes
 - [mvp-viewportsnap](https://github.com/malikmuhammadsaadshafiq-dev/mvp-viewportsnap) — Instantly resize browser windows to exact mobile, tablet, or custom dimensions for responsive testing.
 - [mvp-viewportsnap-466](https://github.com/malikmuhammadsaadshafiq-dev/mvp-viewportsnap-466) — Instantly resize browser windows to exact mobile, tablet, or custom dimensions for responsive testing.
 
-**Mobile Apps** (53)
+**Mobile Apps** (56)
 
 - [mvp-aspect-ratio-calculator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-aspect-ratio-calculator) — Calculate missing dimensions for images, videos, or designs while maintaining exact aspect ratios.
 - [mvp-bloombuddy](https://github.com/malikmuhammadsaadshafiq-dev/mvp-bloombuddy) — Smart plant care companion with precise dosage calculations
 - [mvp-callcompanion](https://github.com/malikmuhammadsaadshafiq-dev/mvp-callcompanion) — Real-time AI call assistant that suggests talking points and transcribes key details for socially anxious professionals. | Community-inspired
 - [mvp-callcompanion-2099](https://github.com/malikmuhammadsaadshafiq-dev/mvp-callcompanion-2099) — Real-time AI call assistant that suggests talking points and transcribes key details for socially anxious professionals. | Community-inspired
 - [mvp-callcompanion-3449](https://github.com/malikmuhammadsaadshafiq-dev/mvp-callcompanion-3449) — Real-time AI call assistant that suggests talking points and transcribes key details for socially anxious professionals. | Community-inspired
+- [mvp-chainreaction](https://github.com/malikmuhammadsaadshafiq-dev/mvp-chainreaction) — Habit tracker visualizing routines as breakable chains with strength analytics.
+- [mvp-chainreaction-648](https://github.com/malikmuhammadsaadshafiq-dev/mvp-chainreaction-648) — Habit tracker visualizing routines as breakable chains with strength analytics.
+- [mvp-chainreaction-9093](https://github.com/malikmuhammadsaadshafiq-dev/mvp-chainreaction-9093) — Habit tracker visualizing routines as breakable chains with strength analytics.
 - [mvp-doselogic](https://github.com/malikmuhammadsaadshafiq-dev/mvp-doselogic) — Intelligent medication tracker that calculates optimal dosing times and cross-references drug interactions.
 - [mvp-focusforge](https://github.com/malikmuhammadsaadshafiq-dev/mvp-focusforge) — Body-doubling matchmaking app for ADHD professionals with optional crypto accountability staking
 - [mvp-focusforge-8247](https://github.com/malikmuhammadsaadshafiq-dev/mvp-focusforge-8247) — Body-doubling matchmaking app for ADHD professionals with optional crypto accountability staking
@@ -254,8 +264,10 @@
 - [mvp-whiteboard-scanner-pro](https://github.com/malikmuhammadsaadshafiq-dev/mvp-whiteboard-scanner-pro) — AI-powered mobile app that cleans photos of whiteboards by removing glare, straightening perspective, and isolating content.
 - [mvp-whiteboard-scanner-pro-7060](https://github.com/malikmuhammadsaadshafiq-dev/mvp-whiteboard-scanner-pro-7060) — AI-powered mobile app that cleans photos of whiteboards by removing glare, straightening perspective, and isolating content.
 
-**Web Apps** (180)
+**Web Apps** (191)
 
+- [mvp-antisell-calc](https://github.com/malikmuhammadsaadshafiq-dev/mvp-antisell-calc) — Calculate ROI comparing aggressive sales tactics vs anti-selling approaches | Inspired by Reddit community
+- [mvp-antisell-calc-5482](https://github.com/malikmuhammadsaadshafiq-dev/mvp-antisell-calc-5482) — Calculate ROI comparing aggressive sales tactics vs anti-selling approaches | Inspired by Reddit community
 - [mvp-audioaura](https://github.com/malikmuhammadsaadshafiq-dev/mvp-audioaura) — Parses uploaded Spotify Extended Streaming History JSON exports and uses AI to generate narrative personality insights, temporal listening patterns, and genre evolution analysis. | Community-inspired
 - [mvp-audioaura-9847](https://github.com/malikmuhammadsaadshafiq-dev/mvp-audioaura-9847) — Parses uploaded Spotify Extended Streaming History JSON exports and uses AI to generate narrative personality insights, temporal listening patterns, and genre evolution analysis. | Community-inspired
 - [mvp-bodydouble](https://github.com/malikmuhammadsaadshafiq-dev/mvp-bodydouble) — Virtual coworking rooms where remote workers sync pomodoro timers and get AI accountability when alone.
@@ -271,6 +283,8 @@
 - [mvp-coldbrief](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldbrief) — Pre-call briefing sheet generator for B2B cold calling | Inspired by Reddit community
 - [mvp-coldbrief-9158](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldbrief-9158) — Pre-call briefing sheet generator for B2B cold calling | Inspired by Reddit community
 - [mvp-coldbrief-9282](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldbrief-9282) — Pre-call briefing sheet generator for B2B cold calling | Inspired by Reddit community
+- [mvp-collabcanvas](https://github.com/malikmuhammadsaadshafiq-dev/mvp-collabcanvas) — Real-time infinite canvas for remote design sprints with built-in voting and timer features
+- [mvp-collabcanvas-1514](https://github.com/malikmuhammadsaadshafiq-dev/mvp-collabcanvas-1514) — Real-time infinite canvas for remote design sprints with built-in voting and timer features
 - [mvp-contentroi-calc](https://github.com/malikmuhammadsaadshafiq-dev/mvp-contentroi-calc) — Calculator proving low-view content can generate high SaaS revenue | Inspired by Reddit community
 - [mvp-contentroi-calc-3517](https://github.com/malikmuhammadsaadshafiq-dev/mvp-contentroi-calc-3517) — Calculator proving low-view content can generate high SaaS revenue | Inspired by Reddit community
 - [mvp-contextcollab](https://github.com/malikmuhammadsaadshafiq-dev/mvp-contextcollab) — Browser extension that captures your open tabs and context into shareable briefings for async team handoffs.
@@ -316,6 +330,9 @@
 - [mvp-firstsite-check-4746](https://github.com/malikmuhammadsaadshafiq-dev/mvp-firstsite-check-4746) — Validator ensuring beginner portfolios meet essential web standards | Inspired by Reddit community
 - [mvp-focuscontext](https://github.com/malikmuhammadsaadshafiq-dev/mvp-focuscontext) — Browser extension that saves coding sessions with AI-generated context notes so developers can resume work instantly after interruptions.
 - [mvp-focusflow](https://github.com/malikmuhammadsaadshafiq-dev/mvp-focusflow) — AI-powered browser extension that detects doomscrolling patterns and gently intervenes with micro-tasks to restore focus. | Community-inspired
+- [mvp-foreignkeyflow](https://github.com/malikmuhammadsaadshafiq-dev/mvp-foreignkeyflow) — Generates realistic relational mock databases with referential integrity, automatically handling foreign key constraints across multiple interconnected tables
+- [mvp-foreignkeyflow-7514](https://github.com/malikmuhammadsaadshafiq-dev/mvp-foreignkeyflow-7514) — Generates realistic relational mock databases with referential integrity, automatically handling foreign key constraints across multiple interconnected tables
+- [mvp-foreignkeyflow-7727](https://github.com/malikmuhammadsaadshafiq-dev/mvp-foreignkeyflow-7727) — Generates realistic relational mock databases with referential integrity, automatically handling foreign key constraints across multiple interconnected tables
 - [mvp-framefocus](https://github.com/malikmuhammadsaadshafiq-dev/mvp-framefocus) — Intelligently crops images to multiple aspect ratios using computer vision to preserve focal subjects (faces, text, products) for social media batch processing | Community-inspired
 - [mvp-framefocus-2477](https://github.com/malikmuhammadsaadshafiq-dev/mvp-framefocus-2477) — Intelligently crops images to multiple aspect ratios using computer vision to preserve focal subjects (faces, text, products) for social media batch processing | Community-inspired
 - [mvp-gatekeeperflow](https://github.com/malikmuhammadsaadshafiq-dev/mvp-gatekeeperflow) — Interactive cold call scenario trainer for bypassing gatekeepers and handling objections | Inspired by Reddit community
@@ -367,6 +384,8 @@
 - [mvp-pantrylogic-6561](https://github.com/malikmuhammadsaadshafiq-dev/mvp-pantrylogic-6561) — Household web app for tracking food inventory expiration dates with barcode scanning and waste reduction analytics.
 - [mvp-plant-parenthood-pro](https://github.com/malikmuhammadsaadshafiq-dev/mvp-plant-parenthood-pro) — Smart plant care dashboard that calculates personalized watering schedules and tracks growth progress through photo timelines.
 - [mvp-plant-parenthood-pro-6207](https://github.com/malikmuhammadsaadshafiq-dev/mvp-plant-parenthood-pro-6207) — Smart plant care dashboard that calculates personalized watering schedules and tracks growth progress through photo timelines.
+- [mvp-policyprism](https://github.com/malikmuhammadsaadshafiq-dev/mvp-policyprism) — A web utility that extracts and categorizes data collection practices from privacy policy text to generate compliance risk reports and structured data maps. | Community-inspired
+- [mvp-policyprism-9904](https://github.com/malikmuhammadsaadshafiq-dev/mvp-policyprism-9904) — A web utility that extracts and categorizes data collection practices from privacy policy text to generate compliance risk reports and structured data maps. | Community-inspired
 - [mvp-pressurecheck](https://github.com/malikmuhammadsaadshafiq-dev/mvp-pressurecheck) — Sales email tone analyzer that identifies pushy language and suggests anti-sell alternatives | Inspired by Reddit community
 - [mvp-pressurecheck-5537](https://github.com/malikmuhammadsaadshafiq-dev/mvp-pressurecheck-5537) — Sales email tone analyzer that identifies pushy language and suggests anti-sell alternatives | Inspired by Reddit community
 - [mvp-privacyscan](https://github.com/malikmuhammadsaadshafiq-dev/mvp-privacyscan) — Automated privacy compliance scanner that crawls websites to detect trackers, cookies, and data collection points, then generates compliant privacy policies using AI.
@@ -375,6 +394,8 @@
 - [mvp-projectscope](https://github.com/malikmuhammadsaadshafiq-dev/mvp-projectscope) — Estimate side project development hours based on feature complexity and experience level | Inspired by Reddit community
 - [mvp-projectscope-4396](https://github.com/malikmuhammadsaadshafiq-dev/mvp-projectscope-4396) — Estimate side project development hours based on feature complexity and experience level | Inspired by Reddit community
 - [mvp-quickratio](https://github.com/malikmuhammadsaadshafiq-dev/mvp-quickratio) — Aspect ratio calculator that computes responsive dimensions and generates CSS code instantly
+- [mvp-ratiokitchen](https://github.com/malikmuhammadsaadshafiq-dev/mvp-ratiokitchen) — Collaborative recipe scaling calculator enabling precise ingredient adjustments for arbitrary serving sizes with dietary filtering.
+- [mvp-ratiokitchen-2844](https://github.com/malikmuhammadsaadshafiq-dev/mvp-ratiokitchen-2844) — Collaborative recipe scaling calculator enabling precise ingredient adjustments for arbitrary serving sizes with dietary filtering.
 - [mvp-referral-fee-benchmark-ca](https://github.com/malikmuhammadsaadshafiq-dev/mvp-referral-fee-benchmark-ca) — Calculate fair cash referral fees by industry to counter equity demands. | Inspired by Reddit community
 - [mvp-referral-fee-benchmark-ca-522](https://github.com/malikmuhammadsaadshafiq-dev/mvp-referral-fee-benchmark-ca-522) — Calculate fair cash referral fees by industry to counter equity demands. | Inspired by Reddit community
 - [mvp-routereader](https://github.com/malikmuhammadsaadshafiq-dev/mvp-routereader) — Analyzes pasted backend source code using LLM to extract and document REST API endpoints with their HTTP methods, routes, and request parameters.
