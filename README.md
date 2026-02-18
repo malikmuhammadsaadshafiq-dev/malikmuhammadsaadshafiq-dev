@@ -2,7 +2,7 @@
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/header.svg" width="800" alt="Saad Shafiq - MVP Factory" />
 
-**313+ products shipped.** Most of them before lunch.
+**341+ products shipped.** Most of them before lunch.
 
 </div>
 
@@ -16,12 +16,12 @@
 
 <div align="center">
 
-![Products Shipped](https://img.shields.io/badge/Products_Shipped-313+-2563eb?style=for-the-badge&labelColor=1e1e2e)
+![Products Shipped](https://img.shields.io/badge/Products_Shipped-341+-2563eb?style=for-the-badge&labelColor=1e1e2e)
 &nbsp;&nbsp;
-![SaaS](https://img.shields.io/badge/SaaS-84-0ea5e9?style=flat-square)
-![Extensions](https://img.shields.io/badge/Extensions-30-f59e0b?style=flat-square)
-![Mobile](https://img.shields.io/badge/Mobile-50-10b981?style=flat-square)
-![Web Apps](https://img.shields.io/badge/Web_Apps-144-8b5cf6?style=flat-square)
+![SaaS](https://img.shields.io/badge/SaaS-85-0ea5e9?style=flat-square)
+![Extensions](https://img.shields.io/badge/Extensions-32-f59e0b?style=flat-square)
+![Mobile](https://img.shields.io/badge/Mobile-53-10b981?style=flat-square)
+![Web Apps](https://img.shields.io/badge/Web_Apps-166-8b5cf6?style=flat-square)
 
 </div>
 
@@ -31,14 +31,14 @@
 
 | Product | Type | What It Does |
 |---------|------|-------------|
-| [**mvp-designrealitycheck-3743**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-designrealitycheck-3743) | `Web App` | Calculator that scores UI design complexity and estimates implementation hours | Inspired by Redd... |
-| [**mvp-designrealitycheck-2339**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-designrealitycheck-2339) | `Web App` | Calculator that scores UI design complexity and estimates implementation hours | Inspired by Redd... |
-| [**mvp-designrealitycheck**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-designrealitycheck) | `Web App` | Calculator that scores UI design complexity and estimates implementation hours | Inspired by Redd... |
-| [**mvp-contractscope-935**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-contractscope-935) | `Web App` | Compares two versions of a project contract to detect scope creep clauses and budget risk using A... |
-| [**mvp-contractscope**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-contractscope) | `Web App` | Compares two versions of a project contract to detect scope creep clauses and budget risk using A... |
-| [**mvp-subbox-inventory-manager-9163**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-subbox-inventory-manager-9163) | `SaaS` | SaaS platform for subscription box businesses to manage inventory, customer preferences, and fulf... |
+| [**mvp-coldbrief-9282**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldbrief-9282) | `Web App` | Pre-call briefing sheet generator for B2B cold calling | Inspired by Reddit community |
+| [**mvp-coldbrief-9158**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldbrief-9158) | `Web App` | Pre-call briefing sheet generator for B2B cold calling | Inspired by Reddit community |
+| [**mvp-coldbrief**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldbrief) | `Web App` | Pre-call briefing sheet generator for B2B cold calling | Inspired by Reddit community |
+| [**mvp-pressurecheck-5537**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-pressurecheck-5537) | `Web App` | Sales email tone analyzer that identifies pushy language and suggests anti-sell alternatives | In... |
+| [**mvp-pressurecheck**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-pressurecheck) | `Web App` | Sales email tone analyzer that identifies pushy language and suggests anti-sell alternatives | In... |
+| [**mvp-launchlint-4771**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-launchlint-4771) | `Web App` | Zero-ad pre-launch checklist validator for first-time web developers | Inspired by Reddit community |
 
-<sub>Auto-updated from GitHub API. Last refresh: 2026-02-17 18:54 UTC</sub>
+<sub>Auto-updated from GitHub API. Last refresh: 2026-02-18 01:57 UTC</sub>
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
 
@@ -67,10 +67,10 @@
 | `SaaS` | `Web App` |
 
 <details>
-<summary><strong>Full Product Catalog (313 products)</strong></summary>
+<summary><strong>Full Product Catalog (341 products)</strong></summary>
 <br>
 
-**SaaS** (84)
+**SaaS** (85)
 
 - [mvp-batch-alt-text-generator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-batch-alt-text-generator) — Upload image batches and generate accurate, descriptive alt-text for accessibility compliance and SEO optimization.
 - [mvp-batch-alt-text-generator-3098](https://github.com/malikmuhammadsaadshafiq-dev/mvp-batch-alt-text-generator-3098) — Upload image batches and generate accurate, descriptive alt-text for accessibility compliance and SEO optimization.
@@ -131,6 +131,7 @@
 - [mvp-shelflife-analytics](https://github.com/malikmuhammadsaadshafiq-dev/mvp-shelflife-analytics) — Calculates inventory aging using FIFO methodology and visualizes dead stock accumulation for small retailers | Community-inspired
 - [mvp-shipnotes](https://github.com/malikmuhammadsaadshafiq-dev/mvp-shipnotes) — AI changelog generator that reads git commit history and diffs to automatically categorize changes and write human-readable release notes.
 - [mvp-silence-snipper](https://github.com/malikmuhammadsaadshafiq-dev/mvp-silence-snipper) — Automated audio/video editor that detects and removes dead air and filler words from recordings using voice activity detection.
+- [mvp-specsync](https://github.com/malikmuhammadsaadshafiq-dev/mvp-specsync) — AI-powered API documentation validator that crawls live endpoints and compares them against OpenAPI specifications to detect drift and auto-generate missing docs. | Community-inspired
 - [mvp-standupsync](https://github.com/malikmuhammadsaadshafiq-dev/mvp-standupsync) — Async daily standup tool using voice messages with AI transcription, automatic blocker detection, and Slack integration. | Community-inspired
 - [mvp-standupsync-3423](https://github.com/malikmuhammadsaadshafiq-dev/mvp-standupsync-3423) — Async daily standup tool using voice messages with AI transcription, automatic blocker detection, and Slack integration. | Community-inspired
 - [mvp-standupsync-4015](https://github.com/malikmuhammadsaadshafiq-dev/mvp-standupsync-4015) — Async daily standup tool using voice messages with AI transcription, automatic blocker detection, and Slack integration. | Community-inspired
@@ -157,7 +158,7 @@
 - [mvp-winstream](https://github.com/malikmuhammadsaadshafiq-dev/mvp-winstream) — Proposal pipeline dashboard that calculates real-time win rates, response time analytics, and revenue forecasting from stored freelance opportunity data.
 - [mvp-winstream-6864](https://github.com/malikmuhammadsaadshafiq-dev/mvp-winstream-6864) — Proposal pipeline dashboard that calculates real-time win rates, response time analytics, and revenue forecasting from stored freelance opportunity data.
 
-**Chrome Extensions** (30)
+**Chrome Extensions** (32)
 
 - [mvp-bidsmart](https://github.com/malikmuhammadsaadshafiq-dev/mvp-bidsmart) — Smart rate calculator & proposal tracker for freelancers - never underbid again
 - [mvp-botornot-repo](https://github.com/malikmuhammadsaadshafiq-dev/mvp-botornot-repo) — Browser extension detecting AI-generated GitHub issues and PRs | Inspired by Reddit community
@@ -172,6 +173,8 @@
 - [mvp-colorgrab-7546](https://github.com/malikmuhammadsaadshafiq-dev/mvp-colorgrab-7546) — Eyedropper tool to pick colors from any screen pixel and organize into exportable palettes.
 - [mvp-css-reality-check-extensi](https://github.com/malikmuhammadsaadshafiq-dev/mvp-css-reality-check-extensi) — Browser extension that flags impossible design values and accessibility violations on any webpage | Inspired by Reddit community
 - [mvp-deepwork-companion](https://github.com/malikmuhammadsaadshafiq-dev/mvp-deepwork-companion) — Browser extension for tracking productive focus sessions and blocking distractions
+- [mvp-design-to-dev-unit-conver](https://github.com/malikmuhammadsaadshafiq-dev/mvp-design-to-dev-unit-conver) — Browser extension that converts CSS pixel values to rem, vw, or clamp() instantly on any webpage | Inspired by Reddit community
+- [mvp-design-to-dev-unit-conver-8879](https://github.com/malikmuhammadsaadshafiq-dev/mvp-design-to-dev-unit-conver-8879) — Browser extension that converts CSS pixel values to rem, vw, or clamp() instantly on any webpage | Inspired by Reddit community
 - [mvp-focusfuel](https://github.com/malikmuhammadsaadshafiq-dev/mvp-focusfuel) — Browser extension calculating the true cost of context switching and distractions.
 - [mvp-formula-translator-extens](https://github.com/malikmuhammadsaadshafiq-dev/mvp-formula-translator-extens) — Browser extension that explains complex Excel formulas in plain English and generates formulas from natural language descriptions.
 - [mvp-humancheck](https://github.com/malikmuhammadsaadshafiq-dev/mvp-humancheck) — Browser extension that highlights AI-generated text and surfaces authentic human discussions
@@ -190,7 +193,7 @@
 - [mvp-viewportsnap](https://github.com/malikmuhammadsaadshafiq-dev/mvp-viewportsnap) — Instantly resize browser windows to exact mobile, tablet, or custom dimensions for responsive testing.
 - [mvp-viewportsnap-466](https://github.com/malikmuhammadsaadshafiq-dev/mvp-viewportsnap-466) — Instantly resize browser windows to exact mobile, tablet, or custom dimensions for responsive testing.
 
-**Mobile Apps** (50)
+**Mobile Apps** (53)
 
 - [mvp-aspect-ratio-calculator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-aspect-ratio-calculator) — Calculate missing dimensions for images, videos, or designs while maintaining exact aspect ratios.
 - [mvp-bloombuddy](https://github.com/malikmuhammadsaadshafiq-dev/mvp-bloombuddy) — Smart plant care companion with precise dosage calculations
@@ -222,6 +225,9 @@
 - [mvp-receipt-line-item-extract-9555](https://github.com/malikmuhammadsaadshafiq-dev/mvp-receipt-line-item-extract-9555) — Scan physical receipts and automatically extract structured data including individual items, prices, taxes, and merchant info.
 - [mvp-receiptcarbon](https://github.com/malikmuhammadsaadshafiq-dev/mvp-receiptcarbon) — Mobile app that scans grocery receipts to calculate real-time carbon footprint and suggest eco-friendly swaps.
 - [mvp-receiptlens](https://github.com/malikmuhammadsaadshafiq-dev/mvp-receiptlens) — Mobile receipt scanner that uses on-device AI to extract line items and calculate splits
+- [mvp-rehabrep](https://github.com/malikmuhammadsaadshafiq-dev/mvp-rehabrep) — Mobile companion for physical therapy patients to log exercises, track recovery progress, and calculate rehabilitation metrics while syncing with clinicians.
+- [mvp-rehabrep-2157](https://github.com/malikmuhammadsaadshafiq-dev/mvp-rehabrep-2157) — Mobile companion for physical therapy patients to log exercises, track recovery progress, and calculate rehabilitation metrics while syncing with clinicians.
+- [mvp-rehabrep-2690](https://github.com/malikmuhammadsaadshafiq-dev/mvp-rehabrep-2690) — Mobile companion for physical therapy patients to log exercises, track recovery progress, and calculate rehabilitation metrics while syncing with clinicians.
 - [mvp-shiftcalc](https://github.com/malikmuhammadsaadshafiq-dev/mvp-shiftcalc) — Calculate complex weekly pay including overtime tiers, night differentials, and unpaid breaks
 - [mvp-smartcrops](https://github.com/malikmuhammadsaadshafiq-dev/mvp-smartcrops) — Mobile app that analyzes photos and suggests optimal crop ratios based on content focal points
 - [mvp-smartcrops-2087](https://github.com/malikmuhammadsaadshafiq-dev/mvp-smartcrops-2087) — Mobile app that analyzes photos and suggests optimal crop ratios based on content focal points
@@ -243,7 +249,7 @@
 - [mvp-whiteboard-scanner-pro](https://github.com/malikmuhammadsaadshafiq-dev/mvp-whiteboard-scanner-pro) — AI-powered mobile app that cleans photos of whiteboards by removing glare, straightening perspective, and isolating content.
 - [mvp-whiteboard-scanner-pro-7060](https://github.com/malikmuhammadsaadshafiq-dev/mvp-whiteboard-scanner-pro-7060) — AI-powered mobile app that cleans photos of whiteboards by removing glare, straightening perspective, and isolating content.
 
-**Web Apps** (144)
+**Web Apps** (166)
 
 - [mvp-audioaura](https://github.com/malikmuhammadsaadshafiq-dev/mvp-audioaura) — Parses uploaded Spotify Extended Streaming History JSON exports and uses AI to generate narrative personality insights, temporal listening patterns, and genre evolution analysis. | Community-inspired
 - [mvp-audioaura-9847](https://github.com/malikmuhammadsaadshafiq-dev/mvp-audioaura-9847) — Parses uploaded Spotify Extended Streaming History JSON exports and uses AI to generate narrative personality insights, temporal listening patterns, and genre evolution analysis. | Community-inspired
@@ -255,6 +261,9 @@
 - [mvp-chromasim](https://github.com/malikmuhammadsaadshafiq-dev/mvp-chromasim) — Preview how your designs appear to color blind users using real-time canvas filters for Deuteranopia, Protanopia, and Tritanopia
 - [mvp-chromasim-3380](https://github.com/malikmuhammadsaadshafiq-dev/mvp-chromasim-3380) — Preview how your designs appear to color blind users using real-time canvas filters for Deuteranopia, Protanopia, and Tritanopia
 - [mvp-clauseguard](https://github.com/malikmuhammadsaadshafiq-dev/mvp-clauseguard) — AI contract analyzer that instantly flags risky or unusual clauses in Terms of Service and rental agreements before signing.
+- [mvp-coldbrief](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldbrief) — Pre-call briefing sheet generator for B2B cold calling | Inspired by Reddit community
+- [mvp-coldbrief-9158](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldbrief-9158) — Pre-call briefing sheet generator for B2B cold calling | Inspired by Reddit community
+- [mvp-coldbrief-9282](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldbrief-9282) — Pre-call briefing sheet generator for B2B cold calling | Inspired by Reddit community
 - [mvp-contentroi-calc](https://github.com/malikmuhammadsaadshafiq-dev/mvp-contentroi-calc) — Calculator proving low-view content can generate high SaaS revenue | Inspired by Reddit community
 - [mvp-contentroi-calc-3517](https://github.com/malikmuhammadsaadshafiq-dev/mvp-contentroi-calc-3517) — Calculator proving low-view content can generate high SaaS revenue | Inspired by Reddit community
 - [mvp-contextcollab](https://github.com/malikmuhammadsaadshafiq-dev/mvp-contextcollab) — Browser extension that captures your open tabs and context into shareable briefings for async team handoffs.
@@ -301,6 +310,9 @@
 - [mvp-gatekeeperflow](https://github.com/malikmuhammadsaadshafiq-dev/mvp-gatekeeperflow) — Interactive cold call scenario trainer for bypassing gatekeepers and handling objections | Inspired by Reddit community
 - [mvp-gatekeeperflow-7337](https://github.com/malikmuhammadsaadshafiq-dev/mvp-gatekeeperflow-7337) — Interactive cold call scenario trainer for bypassing gatekeepers and handling objections | Inspired by Reddit community
 - [mvp-gatekeeperflow-9175](https://github.com/malikmuhammadsaadshafiq-dev/mvp-gatekeeperflow-9175) — Interactive cold call scenario trainer for bypassing gatekeepers and handling objections | Inspired by Reddit community
+- [mvp-heic-instant-converter](https://github.com/malikmuhammadsaadshafiq-dev/mvp-heic-instant-converter) — Drag-and-drop HEIC to JPG converter with zero ads, runs entirely in browser. | Inspired by Reddit community
+- [mvp-heic-instant-converter-2626](https://github.com/malikmuhammadsaadshafiq-dev/mvp-heic-instant-converter-2626) — Drag-and-drop HEIC to JPG converter with zero ads, runs entirely in browser. | Inspired by Reddit community
+- [mvp-heic-instant-converter-3298](https://github.com/malikmuhammadsaadshafiq-dev/mvp-heic-instant-converter-3298) — Drag-and-drop HEIC to JPG converter with zero ads, runs entirely in browser. | Inspired by Reddit community
 - [mvp-icp-forge](https://github.com/malikmuhammadsaadshafiq-dev/mvp-icp-forge) — Generate ideal customer profiles from your product description using AI analysis | Inspired by Reddit community
 - [mvp-intro-equity-calculator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-intro-equity-calculator) — Instant math tool to compare giving equity vs paying commission for business introductions | Inspired by Reddit community
 - [mvp-intro-equity-calculator-3920](https://github.com/malikmuhammadsaadshafiq-dev/mvp-intro-equity-calculator-3920) — Instant math tool to compare giving equity vs paying commission for business introductions | Inspired by Reddit community
@@ -310,6 +322,9 @@
 - [mvp-kitchenconvert](https://github.com/malikmuhammadsaadshafiq-dev/mvp-kitchenconvert) — Convert cooking measurements between volume and weight using an ingredient-specific density database.
 - [mvp-kitchenconvert-5197](https://github.com/malikmuhammadsaadshafiq-dev/mvp-kitchenconvert-5197) — Convert cooking measurements between volume and weight using an ingredient-specific density database.
 - [mvp-kitchenconvert-6246](https://github.com/malikmuhammadsaadshafiq-dev/mvp-kitchenconvert-6246) — Convert cooking measurements between volume and weight using an ingredient-specific density database.
+- [mvp-launchlint](https://github.com/malikmuhammadsaadshafiq-dev/mvp-launchlint) — Zero-ad pre-launch checklist validator for first-time web developers | Inspired by Reddit community
+- [mvp-launchlint-3925](https://github.com/malikmuhammadsaadshafiq-dev/mvp-launchlint-3925) — Zero-ad pre-launch checklist validator for first-time web developers | Inspired by Reddit community
+- [mvp-launchlint-4771](https://github.com/malikmuhammadsaadshafiq-dev/mvp-launchlint-4771) — Zero-ad pre-launch checklist validator for first-time web developers | Inspired by Reddit community
 - [mvp-leaselens](https://github.com/malikmuhammadsaadshafiq-dev/mvp-leaselens) — AI-powered rental lease analyzer that extracts critical terms, calculates total move-in costs, and identifies risky clauses from uploaded lease documents. | Community-inspired
 - [mvp-leaselens-5668](https://github.com/malikmuhammadsaadshafiq-dev/mvp-leaselens-5668) — AI-powered rental lease analyzer that extracts critical terms, calculates total move-in costs, and identifies risky clauses from uploaded lease documents. | Community-inspired
 - [mvp-localapi](https://github.com/malikmuhammadsaadshafiq-dev/mvp-localapi) — A browser-based API client that stores collections locally with zero cloud dependencies or subscription fees
@@ -331,15 +346,24 @@
 - [mvp-macromorph-3077](https://github.com/malikmuhammadsaadshafiq-dev/mvp-macromorph-3077) — Recipe ingredient substitution calculator with instant nutritional recalculation.
 - [mvp-macromorph-4318](https://github.com/malikmuhammadsaadshafiq-dev/mvp-macromorph-4318) — Recipe ingredient substitution calculator with instant nutritional recalculation.
 - [mvp-mbox-archive-viewer](https://github.com/malikmuhammadsaadshafiq-dev/mvp-mbox-archive-viewer) — Client-side email archive viewer for MBOX and EML files with threaded conversation view | Inspired by Reddit community
+- [mvp-micro-audience-revenue-ca](https://github.com/malikmuhammadsaadshafiq-dev/mvp-micro-audience-revenue-ca) — Calculate SaaS revenue potential from small YouTube audiences vs ad revenue. | Inspired by Reddit community
+- [mvp-micro-audience-revenue-ca-9483](https://github.com/malikmuhammadsaadshafiq-dev/mvp-micro-audience-revenue-ca-9483) — Calculate SaaS revenue potential from small YouTube audiences vs ad revenue. | Inspired by Reddit community
 - [mvp-nested-json-flatten-conve](https://github.com/malikmuhammadsaadshafiq-dev/mvp-nested-json-flatten-conve) — Convert complex nested JSON objects to flat CSV format with dot-notation columns, handling arrays automatically.
 - [mvp-nested-json-flattener](https://github.com/malikmuhammadsaadshafiq-dev/mvp-nested-json-flattener) — Transform complex nested API responses into flat CSV files instantly with interactive field selection and preview.
 - [mvp-nested-json-flattener-1827](https://github.com/malikmuhammadsaadshafiq-dev/mvp-nested-json-flattener-1827) — Transform complex nested API responses into flat CSV files instantly with interactive field selection and preview.
+- [mvp-pantrylogic](https://github.com/malikmuhammadsaadshafiq-dev/mvp-pantrylogic) — Household web app for tracking food inventory expiration dates with barcode scanning and waste reduction analytics.
+- [mvp-pantrylogic-5930](https://github.com/malikmuhammadsaadshafiq-dev/mvp-pantrylogic-5930) — Household web app for tracking food inventory expiration dates with barcode scanning and waste reduction analytics.
+- [mvp-pantrylogic-6561](https://github.com/malikmuhammadsaadshafiq-dev/mvp-pantrylogic-6561) — Household web app for tracking food inventory expiration dates with barcode scanning and waste reduction analytics.
 - [mvp-plant-parenthood-pro](https://github.com/malikmuhammadsaadshafiq-dev/mvp-plant-parenthood-pro) — Smart plant care dashboard that calculates personalized watering schedules and tracks growth progress through photo timelines.
 - [mvp-plant-parenthood-pro-6207](https://github.com/malikmuhammadsaadshafiq-dev/mvp-plant-parenthood-pro-6207) — Smart plant care dashboard that calculates personalized watering schedules and tracks growth progress through photo timelines.
+- [mvp-pressurecheck](https://github.com/malikmuhammadsaadshafiq-dev/mvp-pressurecheck) — Sales email tone analyzer that identifies pushy language and suggests anti-sell alternatives | Inspired by Reddit community
+- [mvp-pressurecheck-5537](https://github.com/malikmuhammadsaadshafiq-dev/mvp-pressurecheck-5537) — Sales email tone analyzer that identifies pushy language and suggests anti-sell alternatives | Inspired by Reddit community
 - [mvp-privacyscan](https://github.com/malikmuhammadsaadshafiq-dev/mvp-privacyscan) — Automated privacy compliance scanner that crawls websites to detect trackers, cookies, and data collection points, then generates compliant privacy policies using AI.
 - [mvp-privacyscan-1752](https://github.com/malikmuhammadsaadshafiq-dev/mvp-privacyscan-1752) — Automated privacy compliance scanner that crawls websites to detect trackers, cookies, and data collection points, then generates compliant privacy policies using AI.
 - [mvp-privacyscan-728](https://github.com/malikmuhammadsaadshafiq-dev/mvp-privacyscan-728) — Automated privacy compliance scanner that crawls websites to detect trackers, cookies, and data collection points, then generates compliant privacy policies using AI.
 - [mvp-quickratio](https://github.com/malikmuhammadsaadshafiq-dev/mvp-quickratio) — Aspect ratio calculator that computes responsive dimensions and generates CSS code instantly
+- [mvp-referral-fee-benchmark-ca](https://github.com/malikmuhammadsaadshafiq-dev/mvp-referral-fee-benchmark-ca) — Calculate fair cash referral fees by industry to counter equity demands. | Inspired by Reddit community
+- [mvp-referral-fee-benchmark-ca-522](https://github.com/malikmuhammadsaadshafiq-dev/mvp-referral-fee-benchmark-ca-522) — Calculate fair cash referral fees by industry to counter equity demands. | Inspired by Reddit community
 - [mvp-routereader](https://github.com/malikmuhammadsaadshafiq-dev/mvp-routereader) — Analyzes pasted backend source code using LLM to extract and document REST API endpoints with their HTTP methods, routes, and request parameters.
 - [mvp-routereader-703](https://github.com/malikmuhammadsaadshafiq-dev/mvp-routereader-703) — Analyzes pasted backend source code using LLM to extract and document REST API endpoints with their HTTP methods, routes, and request parameters.
 - [mvp-routereader-827](https://github.com/malikmuhammadsaadshafiq-dev/mvp-routereader-827) — Analyzes pasted backend source code using LLM to extract and document REST API endpoints with their HTTP methods, routes, and request parameters.
@@ -355,10 +379,14 @@
 - [mvp-splitwisespace](https://github.com/malikmuhammadsaadshafiq-dev/mvp-splitwisespace) — Collaborative expense management for shared living spaces and offices
 - [mvp-splitwisespace-3470](https://github.com/malikmuhammadsaadshafiq-dev/mvp-splitwisespace-3470) — Collaborative expense management for shared living spaces and offices
 - [mvp-splitwisespace-4133](https://github.com/malikmuhammadsaadshafiq-dev/mvp-splitwisespace-4133) — Collaborative expense management for shared living spaces and offices
+- [mvp-sprint-velocity-impact-ca](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sprint-velocity-impact-ca) — Measure actual AI tooling impact on development velocity and quality. | Inspired by Reddit community
+- [mvp-sprint-velocity-impact-ca-7123](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sprint-velocity-impact-ca-7123) — Measure actual AI tooling impact on development velocity and quality. | Inspired by Reddit community
 - [mvp-sprintstarter](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sprintstarter) — 5-hour MVP challenge dashboard with tech stack picker and checkpoint timer | Inspired by Reddit community
 - [mvp-sprintstarter-2354](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sprintstarter-2354) — 5-hour MVP challenge dashboard with tech stack picker and checkpoint timer | Inspired by Reddit community
 - [mvp-sprintstarter-3500](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sprintstarter-3500) — 5-hour MVP challenge dashboard with tech stack picker and checkpoint timer | Inspired by Reddit community
 - [mvp-squooshlocal](https://github.com/malikmuhammadsaadshafiq-dev/mvp-squooshlocal) — Client-side image compressor and format converter using Canvas API | Inspired by Reddit community
+- [mvp-stack-complexity-scorer](https://github.com/malikmuhammadsaadshafiq-dev/mvp-stack-complexity-scorer) — Audit your tech stack for over-engineering and maintenance burden. | Inspired by Reddit community
+- [mvp-stack-complexity-scorer-5474](https://github.com/malikmuhammadsaadshafiq-dev/mvp-stack-complexity-scorer-5474) — Audit your tech stack for over-engineering and maintenance burden. | Inspired by Reddit community
 - [mvp-stacktranslate](https://github.com/malikmuhammadsaadshafiq-dev/mvp-stacktranslate) — Converts cryptic error stack traces into plain English explanations with specific fix suggestions
 - [mvp-stackvalidator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-stackvalidator) — Uploads infrastructure configuration files to detect security misconfigurations, hardcoded secrets using entropy analysis, and port conflicts in docker-compose setups. | Community-inspired
 - [mvp-stackvalidator-1166](https://github.com/malikmuhammadsaadshafiq-dev/mvp-stackvalidator-1166) — Uploads infrastructure configuration files to detect security misconfigurations, hardcoded secrets using entropy analysis, and port conflicts in docker-compose setups. | Community-inspired
