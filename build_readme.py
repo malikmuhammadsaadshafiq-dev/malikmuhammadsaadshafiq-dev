@@ -193,15 +193,20 @@ def build_readme(repos):
     lines.append(f"**{total_mvp_count}+ products shipped.** Most of them before lunch.\n")
     lines.append("</div>\n")
 
-    # ── Section 2: Animated Pipeline ──
-    lines.append('<div align="center">\n')
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/pipeline.svg" width="800" alt="Reddit → AI → Claude Code → Live MVP" />\n')
-    lines.append("</div>\n")
-
     # ── Divider ──
     lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg" width="800" />\n')
 
-    # ── Section 3: Stats Bar ──
+    # ── Section 2: Live Activity Indicator ──
+    lines.append('<div align="center">\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/activity.svg" width="800" alt="Pipeline Active — Researching + Building 24/7" />\n')
+    lines.append("</div>\n")
+
+    # ── Section 3: Stats Dashboard ──
+    lines.append('<div align="center">\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/stats.svg" width="800" alt="{total_mvp_count}+ Products | 220+ Posts/Cycle | 87% Rejected | 5 AI Agents | 30m Cycles" />\n')
+    lines.append("</div>\n")
+
+    # ── Section 4: Stats Badges ──
     lines.append('<div align="center">\n')
     lines.append(
         f"![Products Shipped](https://img.shields.io/badge/Products_Shipped-{total_mvp_count}+-2563eb?style=for-the-badge&labelColor=1e1e2e)"
@@ -237,10 +242,38 @@ def build_readme(repos):
     # ── Divider ──
     lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg" width="800" />\n')
 
-    # ── Section 4.5: AI Squadron ──
+    # ── Section 5.5: AI Squadron ──
     lines.append('<div align="center">\n')
     lines.append("### AI Squadron\n")
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/agents.svg" width="800" alt="AI Squadron — 4 agents collaborating" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/agents.svg" width="800" alt="AI Squadron — 5 agents collaborating: PM, Research, Validation, Frontend, Backend" />\n')
+    lines.append("</div>\n")
+
+    # ── Pipeline Flow ──
+    lines.append('<div align="center">\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/pipeline.svg" width="800" alt="Decoupled Pipeline: Loop 1 Research+Validate every 30m | Loop 2 Build+Deploy every 20m" />\n')
+    lines.append("</div>\n")
+
+    # ── Divider ──
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg" width="800" />\n')
+
+    # ── Section 5.6: Tech Stack ──
+    lines.append('<div align="center">\n')
+    lines.append("### Tech Stack\n")
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/tech-stack.svg" width="800" alt="Languages: TypeScript 95%, JavaScript 88%, Python 72%, Solidity 60% | Frameworks: React, Next.js, Node.js, Tailwind, Claude Code, Kimi K2.5" />\n')
+    lines.append("</div>\n")
+
+    # ── Divider ──
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg" width="800" />\n')
+
+    # ── Section 5.7: GitHub Stats ──
+    lines.append('<div align="center">\n')
+    lines.append("### GitHub Stats\n")
+    lines.append(f'<a href="https://github.com/{USERNAME}">\n')
+    lines.append(f'<img src="https://github-readme-streak-stats.herokuapp.com?user={USERNAME}&theme=github-dark-blue&hide_border=true&background=0D1117&ring=7c3aed&fire=ec4899&currStreakLabel=c9d1d9&sideLabels=8b949e&dates=6e7681" width="49%" alt="GitHub Streak" />\n')
+    lines.append("</a>\n")
+    lines.append(f'<a href="https://github.com/{USERNAME}">\n')
+    lines.append(f'<img src="https://github-readme-stats.vercel.app/api/top-langs/?username={USERNAME}&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=7c3aed&text_color=c9d1d9&langs_count=8" width="38%" alt="Top Languages" />\n')
+    lines.append("</a>\n")
     lines.append("</div>\n")
 
     # ── Divider ──
@@ -314,19 +347,30 @@ def build_readme(repos):
 
     lines.append("</details>\n")
 
-    # ── Section 7: Tech Stack ──
+    # ── Section 8: Activity Graph ──
+    lines.append('<div align="center">\n')
+    lines.append(f'<a href="https://github.com/{USERNAME}">\n')
+    lines.append(f'<img src="https://github-readme-activity-graph.vercel.app/graph?username={USERNAME}&theme=github-dark&hide_border=true&bg_color=0D1117&color=c9d1d9&line=7c3aed&point=ec4899&area=true&area_color=7c3aed" width="98%" alt="Contribution Graph" />\n')
+    lines.append("</a>\n")
+    lines.append("</div>\n")
+
+    # ── Section 9: Tech Badges ──
     lines.append('<div align="center">\n')
     lines.append(
         "![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)\n"
         "![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)\n"
         "![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=next.js&logoColor=white)\n"
         "![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)\n"
-        "![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=black)\n"
+        "![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)\n"
+        "![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)\n"
         "![Claude](https://img.shields.io/badge/Claude_Code-191919?style=flat-square&logo=anthropic&logoColor=white)\n"
+        "![Vercel](https://img.shields.io/badge/Vercel-000?style=flat-square&logo=vercel&logoColor=white)\n"
+        "![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)\n"
+        "![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)\n"
     )
     lines.append("</div>\n")
 
-    # ── Section 8: Animated Footer ──
+    # ── Section 10: Animated Footer ──
     lines.append('<div align="center">\n')
     lines.append(f'<img src="{REPO_URL}/raw/main/assets/footer.svg" width="800" alt="Why ship one product when you can ship a hundred?" />\n')
     lines.append("</div>\n")

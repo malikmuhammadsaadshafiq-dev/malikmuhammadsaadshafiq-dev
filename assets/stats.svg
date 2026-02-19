@@ -131,7 +131,7 @@
       <div class="stats-wrap">
         <div class="stat-card">
           <div class="live-badge"><div class="live-dot"></div>live</div>
-          <div class="stat-number">457+</div>
+          <div class="stat-number">450+</div>
           <div class="stat-label">Products</div>
           <div class="stat-sub">shipped to prod</div>
           <div class="stat-bar"><div class="stat-bar-fill" style="--fill-w:95%;width:95%;background:linear-gradient(90deg,#2563eb,#58a6ff)"></div></div>
