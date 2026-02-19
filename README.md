@@ -2,13 +2,13 @@
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/header.svg" width="800" alt="Saad Shafiq - MVP Factory" />
 
-**453+ products shipped.** Most of them before lunch.
+**457+ products shipped.** Most of them before lunch.
 
 </div>
 
 <div align="center">
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/pipeline.svg" width="800" alt="Decoupled Pipeline: Research+Validate → Queue → Build → Deploy" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/pipeline.svg" width="800" alt="Reddit → AI → Claude Code → Live MVP" />
 
 </div>
 
@@ -16,12 +16,12 @@
 
 <div align="center">
 
-![Products Shipped](https://img.shields.io/badge/Products_Shipped-453+-2563eb?style=for-the-badge&labelColor=1e1e2e)
+![Products Shipped](https://img.shields.io/badge/Products_Shipped-457+-2563eb?style=for-the-badge&labelColor=1e1e2e)
 &nbsp;&nbsp;
 ![SaaS](https://img.shields.io/badge/SaaS-103-0ea5e9?style=flat-square)
 ![Extensions](https://img.shields.io/badge/Extensions-41-f59e0b?style=flat-square)
-![Mobile](https://img.shields.io/badge/Mobile-65-10b981?style=flat-square)
-![Web Apps](https://img.shields.io/badge/Web_Apps-239-8b5cf6?style=flat-square)
+![Mobile](https://img.shields.io/badge/Mobile-68-10b981?style=flat-square)
+![Web Apps](https://img.shields.io/badge/Web_Apps-240-8b5cf6?style=flat-square)
 
 </div>
 
@@ -31,14 +31,14 @@
 
 | Product | Type | What It Does |
 |---------|------|-------------|
+| [**mvp-moodplate-8093**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-moodplate-8093) | `Mobile App` | Emotional wellness cooking assistant that matches recipes to your current mood |
+| [**mvp-moodplate-7186**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-moodplate-7186) | `Mobile App` | Emotional wellness cooking assistant that matches recipes to your current mood |
+| [**mvp-moodplate**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-moodplate) | `Mobile App` | Emotional wellness cooking assistant that matches recipes to your current mood |
+| [**mvp-local-bulk-file-renamer-4389**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-local-bulk-file-renamer-4389) | `Web App` | Privacy-first batch file renamer with regex support and live preview running entirely in the brow... |
 | [**mvp-local-bulk-file-renamer**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-local-bulk-file-renamer) | `Web App` | Privacy-first batch file renamer with regex support and live preview running entirely in the brow... |
 | [**mvp-lockfilelens-2993**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-lockfilelens-2993) | `Web App` | Analyzes package lockfile diffs to surface security vulnerabilities and bundle size impacts befor... |
-| [**mvp-lockfilelens**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-lockfilelens) | `Web App` | Analyzes package lockfile diffs to surface security vulnerabilities and bundle size impacts befor... |
-| [**mvp-clipcraft-436**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-clipcraft-436) | `Web App` | Visual CSS clip-path editor with live preview and drag-to-adjust polygon vertices for complex sha... |
-| [**mvp-clipcraft**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-clipcraft) | `Web App` | Visual CSS clip-path editor with live preview and drag-to-adjust polygon vertices for complex sha... |
-| [**mvp-pixelperfect-dpi-9266**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-pixelperfect-dpi-9266) | `Web App` | Calculate pixel density (PPI/DPI) and optimal viewing distance for any screen or print size. |
 
-<sub>Auto-updated from GitHub API. Last refresh: 2026-02-19 06:57 UTC</sub>
+<sub>Auto-updated from GitHub API. Last refresh: 2026-02-19 11:19 UTC</sub>
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
 
@@ -46,7 +46,7 @@
 
 ### AI Squadron
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/agents.svg" width="800" alt="AI Squadron — 5 agents collaborating: RA, VA, FA, BA, PM" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/agents.svg" width="800" alt="AI Squadron — 4 agents collaborating" />
 
 </div>
 
@@ -67,7 +67,7 @@
 | `SaaS` | `Web App` |
 
 <details>
-<summary><strong>Full Product Catalog (453 products)</strong></summary>
+<summary><strong>Full Product Catalog (457 products)</strong></summary>
 <br>
 
 **SaaS** (103)
@@ -220,7 +220,7 @@
 - [mvp-viewportsnap](https://github.com/malikmuhammadsaadshafiq-dev/mvp-viewportsnap) — Instantly resize browser windows to exact mobile, tablet, or custom dimensions for responsive testing.
 - [mvp-viewportsnap-466](https://github.com/malikmuhammadsaadshafiq-dev/mvp-viewportsnap-466) — Instantly resize browser windows to exact mobile, tablet, or custom dimensions for responsive testing.
 
-**Mobile Apps** (65)
+**Mobile Apps** (68)
 
 - [mvp-aspect-ratio-calculator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-aspect-ratio-calculator) — Calculate missing dimensions for images, videos, or designs while maintaining exact aspect ratios.
 - [mvp-bloombuddy](https://github.com/malikmuhammadsaadshafiq-dev/mvp-bloombuddy) — Smart plant care companion with precise dosage calculations
@@ -248,6 +248,9 @@
 - [mvp-handwriting-to-text-scann-9758](https://github.com/malikmuhammadsaadshafiq-dev/mvp-handwriting-to-text-scann-9758) — Convert handwritten notes, whiteboards, and paper documents into editable digital text using OCR
 - [mvp-handwritten-note-digitali](https://github.com/malikmuhammadsaadshafiq-dev/mvp-handwritten-note-digitali) — Mobile scanner using on-device AI to convert handwritten pages into editable, searchable text.
 - [mvp-ironmath](https://github.com/malikmuhammadsaadshafiq-dev/mvp-ironmath) — Weightlifting plate calculator and progressive overload tracker for strength athletes.
+- [mvp-moodplate](https://github.com/malikmuhammadsaadshafiq-dev/mvp-moodplate) — Emotional wellness cooking assistant that matches recipes to your current mood
+- [mvp-moodplate-7186](https://github.com/malikmuhammadsaadshafiq-dev/mvp-moodplate-7186) — Emotional wellness cooking assistant that matches recipes to your current mood
+- [mvp-moodplate-8093](https://github.com/malikmuhammadsaadshafiq-dev/mvp-moodplate-8093) — Emotional wellness cooking assistant that matches recipes to your current mood
 - [mvp-neurotask](https://github.com/malikmuhammadsaadshafiq-dev/mvp-neurotask) — Voice-first task manager that converts ADHD rambling into prioritized action items using urgency detection.
 - [mvp-offline-cooking-converter](https://github.com/malikmuhammadsaadshafiq-dev/mvp-offline-cooking-converter) — Mobile app converting cooking measurements offline with ingredient-specific density.
 - [mvp-offline-cooking-converter-9310](https://github.com/malikmuhammadsaadshafiq-dev/mvp-offline-cooking-converter-9310) — Mobile app converting cooking measurements offline with ingredient-specific density.
@@ -288,7 +291,7 @@
 - [mvp-whiteboard-scanner-pro](https://github.com/malikmuhammadsaadshafiq-dev/mvp-whiteboard-scanner-pro) — AI-powered mobile app that cleans photos of whiteboards by removing glare, straightening perspective, and isolating content.
 - [mvp-whiteboard-scanner-pro-7060](https://github.com/malikmuhammadsaadshafiq-dev/mvp-whiteboard-scanner-pro-7060) — AI-powered mobile app that cleans photos of whiteboards by removing glare, straightening perspective, and isolating content.
 
-**Web Apps** (239)
+**Web Apps** (240)
 
 - [mvp-antisell-calc](https://github.com/malikmuhammadsaadshafiq-dev/mvp-antisell-calc) — Calculate ROI comparing aggressive sales tactics vs anti-selling approaches | Inspired by Reddit community
 - [mvp-antisell-calc-5482](https://github.com/malikmuhammadsaadshafiq-dev/mvp-antisell-calc-5482) — Calculate ROI comparing aggressive sales tactics vs anti-selling approaches | Inspired by Reddit community
@@ -398,6 +401,7 @@
 - [mvp-leaselens](https://github.com/malikmuhammadsaadshafiq-dev/mvp-leaselens) — AI-powered rental lease analyzer that extracts critical terms, calculates total move-in costs, and identifies risky clauses from uploaded lease documents. | Community-inspired
 - [mvp-leaselens-5668](https://github.com/malikmuhammadsaadshafiq-dev/mvp-leaselens-5668) — AI-powered rental lease analyzer that extracts critical terms, calculates total move-in costs, and identifies risky clauses from uploaded lease documents. | Community-inspired
 - [mvp-local-bulk-file-renamer](https://github.com/malikmuhammadsaadshafiq-dev/mvp-local-bulk-file-renamer) — Privacy-first batch file renamer with regex support and live preview running entirely in the browser | Inspired by Reddit community
+- [mvp-local-bulk-file-renamer-4389](https://github.com/malikmuhammadsaadshafiq-dev/mvp-local-bulk-file-renamer-4389) — Privacy-first batch file renamer with regex support and live preview running entirely in the browser | Inspired by Reddit community
 - [mvp-localapi](https://github.com/malikmuhammadsaadshafiq-dev/mvp-localapi) — A browser-based API client that stores collections locally with zero cloud dependencies or subscription fees
 - [mvp-localapi-5902](https://github.com/malikmuhammadsaadshafiq-dev/mvp-localapi-5902) — A browser-based API client that stores collections locally with zero cloud dependencies or subscription fees
 - [mvp-localapi-6861](https://github.com/malikmuhammadsaadshafiq-dev/mvp-localapi-6861) — A browser-based API client that stores collections locally with zero cloud dependencies or subscription fees
