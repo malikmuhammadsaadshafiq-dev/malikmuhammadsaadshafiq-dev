@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="90" fill="none">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes pulse {
+          0%, 100% { opacity: 0.3; }
+          50% { opacity: 1; }
+        }
+        @keyframes waveBar {
+          0%, 100% { height: 8px; }
+          50% { height: var(--max-h); }
+        }
+        @keyframes slideIn {
+          from { opacity: 0; transform: translateX(-20px); }
+          to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes typing {
+          0%, 100% { opacity: 0.3; }
+          50% { opacity: 1; }
+        }
+        @keyframes borderPulse {
+          0%, 100% { border-color: rgba(16,185,129,0.2); }
+          50% { border-color: rgba(16,185,129,0.4); }
+        }
+        .act-wrap {
+          width: 800px;
+          height: 90px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+          background: #0d1117;
+          border-radius: 12px;
+          border: 1px solid rgba(48,54,61,0.6);
+          display: flex;
+          align-items: center;
+          padding: 0 24px;
+          gap: 24px;
+          animation: borderPulse 4s ease infinite;
+        }
+        .act-status {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          flex-shrink: 0;
+          animation: slideIn 0.6s ease;
+        }
+        .act-dot-wrap {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          background: rgba(16,185,129,0.1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+        }
+        .act-dot {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: #10b981;
+          animation: pulse 1.5s ease infinite;
+        }
+        .act-dot-wrap::after {
+          content: '';
+          position: absolute;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          border: 2px solid rgba(16,185,129,0.3);
+          animation: pulse 1.5s ease infinite;
+        }
+        .act-text {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+        }
+        .act-label {
+          font-size: 13px;
+          font-weight: 700;
+          color: #c9d1d9;
+        }
+        .act-label span {
+          color: #34d399;
+        }
+        .act-sublabel {
+          font-size: 10px;
+          color: #6e7681;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+        }
+        .typing-dots {
+          display: inline-flex;
+          gap: 2px;
+        }
+        .typing-dots i {
+          width: 3px;
+          height: 3px;
+          border-radius: 50%;
+          background: #6e7681;
+          display: inline-block;
+          animation: typing 1.2s ease infinite;
+        }
+        .typing-dots i:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dots i:nth-child(3) { animation-delay: 0.4s; }
+        .act-divider {
+          width: 1px;
+          height: 40px;
+          background: rgba(48,54,61,0.5);
+          flex-shrink: 0;
+        }
+        .act-wave {
+          display: flex;
+          align-items: flex-end;
+          gap: 3px;
+          height: 36px;
+          flex-shrink: 0;
+        }
+        .wave-bar {
+          width: 4px;
+          border-radius: 2px;
+          animation: waveBar 1.2s ease-in-out infinite;
+        }
+        .wb1 { --max-h: 36px; background: #2563eb; animation-delay: 0s; }
+        .wb2 { --max-h: 24px; background: #7c3aed; animation-delay: 0.1s; }
+        .wb3 { --max-h: 30px; background: #ec4899; animation-delay: 0.2s; }
+        .wb4 { --max-h: 18px; background: #f59e0b; animation-delay: 0.3s; }
+        .wb5 { --max-h: 28px; background: #10b981; animation-delay: 0.4s; }
+        .wb6 { --max-h: 20px; background: #2563eb; animation-delay: 0.5s; }
+        .wb7 { --max-h: 34px; background: #7c3aed; animation-delay: 0.6s; }
+        .wb8 { --max-h: 22px; background: #ec4899; animation-delay: 0.7s; }
+        .wb9 { --max-h: 26px; background: #f59e0b; animation-delay: 0.15s; }
+        .wb10 { --max-h: 32px; background: #10b981; animation-delay: 0.35s; }
+        .wb11 { --max-h: 16px; background: #2563eb; animation-delay: 0.55s; }
+        .wb12 { --max-h: 28px; background: #7c3aed; animation-delay: 0.25s; }
+        .act-metrics {
+          display: flex;
+          gap: 16px;
+          margin-left: auto;
+          flex-shrink: 0;
+        }
+        .act-metric {
+          text-align: center;
+          animation: slideIn 0.6s ease both;
+        }
+        .act-metric:nth-child(1) { animation-delay: 0.2s; }
+        .act-metric:nth-child(2) { animation-delay: 0.3s; }
+        .act-metric:nth-child(3) { animation-delay: 0.4s; }
+        .am-num {
+          font-size: 18px;
+          font-weight: 800;
+          line-height: 1;
+        }
+        .am-label {
+          font-size: 8px;
+          color: #6e7681;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          margin-top: 3px;
+        }
+      </style>
+      <div class="act-wrap">
+        <div class="act-status">
+          <div class="act-dot-wrap"><div class="act-dot"></div></div>
+          <div class="act-text">
+            <div class="act-label">Pipeline <span>Active</span></div>
+            <div class="act-sublabel">
+              Researching + Building
+              <span class="typing-dots"><i></i><i></i><i></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="act-divider"></div>
+        <div class="act-wave">
+          <div class="wave-bar wb1"></div>
+          <div class="wave-bar wb2"></div>
+          <div class="wave-bar wb3"></div>
+          <div class="wave-bar wb4"></div>
+          <div class="wave-bar wb5"></div>
+          <div class="wave-bar wb6"></div>
+          <div class="wave-bar wb7"></div>
+          <div class="wave-bar wb8"></div>
+          <div class="wave-bar wb9"></div>
+          <div class="wave-bar wb10"></div>
+          <div class="wave-bar wb11"></div>
+          <div class="wave-bar wb12"></div>
+        </div>
+        <div class="act-divider"></div>
+        <div class="act-metrics">
+          <div class="act-metric">
+            <div class="am-num" style="color:#58a6ff">24/7</div>
+            <div class="am-label">Uptime</div>
+          </div>
+          <div class="act-metric">
+            <div class="am-num" style="color:#f59e0b">~48</div>
+            <div class="am-label">Cycles/Day</div>
+          </div>
+          <div class="act-metric">
+            <div class="am-num" style="color:#34d399">&#8734;</div>
+            <div class="am-label">Ship Mode</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
