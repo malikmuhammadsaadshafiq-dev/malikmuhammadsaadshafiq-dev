@@ -8,7 +8,7 @@
 
 <div align="center">
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/pipeline.svg" width="800" alt="Reddit → AI → Claude Code → Live MVP" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/pipeline.svg" width="800" alt="Decoupled Pipeline: Research+Validate → Queue → Build → Deploy" />
 
 </div>
 
@@ -46,7 +46,7 @@
 
 ### AI Squadron
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/agents.svg" width="800" alt="AI Squadron — 4 agents collaborating" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/agents.svg" width="800" alt="AI Squadron — 5 agents collaborating: RA, VA, FA, BA, PM" />
 
 </div>
 

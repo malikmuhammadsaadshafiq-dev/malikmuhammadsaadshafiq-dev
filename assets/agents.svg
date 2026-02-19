@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="280" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" fill="none">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
@@ -22,12 +22,6 @@
           85% { opacity: 1; transform: scale(1); }
           100% { right: calc(100% - 80px); opacity: 0; transform: scale(0.5); }
         }
-        @keyframes msgDown {
-          0% { top: 50px; opacity: 0; }
-          15% { opacity: 1; }
-          85% { opacity: 1; }
-          100% { top: calc(100% - 50px); opacity: 0; }
-        }
         @keyframes statusBlink {
           0%, 100% { background: #10b981; }
           50% { background: #34d399; box-shadow: 0 0 8px rgba(16,185,129,0.6); }
@@ -40,18 +34,13 @@
           0% { transform: translateY(0); }
           100% { transform: translateY(-30px); }
         }
-        @keyframes gradientBg {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
         @keyframes fadeInScale {
           from { opacity: 0; transform: scale(0.8); }
           to { opacity: 1; transform: scale(1); }
         }
         .scene {
           width: 800px;
-          height: 280px;
+          height: 300px;
           background: #0d1117;
           position: relative;
           overflow: hidden;
@@ -80,7 +69,6 @@
           background-size: 40px 40px;
           pointer-events: none;
         }
-        /* Agents */
         .agent {
           position: absolute;
           width: 100px;
@@ -95,7 +83,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 22px;
+          font-size: 20px;
           font-weight: 800;
           color: white;
           position: relative;
@@ -120,15 +108,17 @@
           color: #6e7681;
           margin-top: 1px;
         }
-        /* Agent positions */
+        /* 5 Agent positions - pentagon layout */
         .a-pm { left: 350px; top: 36px; animation-delay: 0s; }
         .a-pm .agent-icon { background: linear-gradient(135deg, #7c3aed, #6d28d9); animation: float 3s ease-in-out infinite; }
-        .a-front { left: 60px; top: 100px; animation-delay: 0.1s; }
-        .a-front .agent-icon { background: linear-gradient(135deg, #3b82f6, #2563eb); animation: float 3s ease-in-out 0.5s infinite; }
-        .a-back { left: 640px; top: 100px; animation-delay: 0.2s; }
-        .a-back .agent-icon { background: linear-gradient(135deg, #10b981, #059669); animation: float 3s ease-in-out 1s infinite; }
-        .a-contract { left: 350px; top: 185px; animation-delay: 0.3s; }
-        .a-contract .agent-icon { background: linear-gradient(135deg, #f59e0b, #d97706); animation: float 3s ease-in-out 1.5s infinite; }
+        .a-research { left: 40px; top: 110px; animation-delay: 0.1s; }
+        .a-research .agent-icon { background: linear-gradient(135deg, #f59e0b, #d97706); animation: float 3s ease-in-out 0.4s infinite; }
+        .a-validation { left: 190px; top: 200px; animation-delay: 0.2s; }
+        .a-validation .agent-icon { background: linear-gradient(135deg, #ef4444, #dc2626); animation: float 3s ease-in-out 0.8s infinite; }
+        .a-front { left: 500px; top: 200px; animation-delay: 0.3s; }
+        .a-front .agent-icon { background: linear-gradient(135deg, #3b82f6, #2563eb); animation: float 3s ease-in-out 1.2s infinite; }
+        .a-back { left: 660px; top: 110px; animation-delay: 0.4s; }
+        .a-back .agent-icon { background: linear-gradient(135deg, #10b981, #059669); animation: float 3s ease-in-out 1.6s infinite; }
         /* Connection lines */
         .conn {
           position: absolute;
@@ -136,37 +126,13 @@
           height: 1px;
           background: rgba(75,85,99,0.3);
         }
-        .conn-pm-front {
-          top: 85px;
-          left: 138px;
-          width: 240px;
-          transform: rotate(-12deg);
-        }
-        .conn-pm-back {
-          top: 85px;
-          left: 422px;
-          width: 240px;
-          transform: rotate(12deg);
-        }
-        .conn-pm-contract {
-          top: 130px;
-          left: 395px;
-          width: 2px;
-          height: 70px;
-          background: rgba(75,85,99,0.3);
-        }
-        .conn-front-contract {
-          top: 185px;
-          left: 138px;
-          width: 240px;
-          transform: rotate(12deg);
-        }
-        .conn-back-contract {
-          top: 185px;
-          left: 422px;
-          width: 240px;
-          transform: rotate(-12deg);
-        }
+        .conn-pm-research { top: 88px; left: 110px; width: 268px; transform: rotate(-14deg); }
+        .conn-pm-back { top: 88px; left: 422px; width: 268px; transform: rotate(14deg); }
+        .conn-pm-validation { top: 130px; left: 300px; width: 120px; transform: rotate(48deg); }
+        .conn-pm-front { top: 130px; left: 420px; width: 120px; transform: rotate(-48deg); }
+        .conn-research-validation { top: 185px; left: 115px; width: 130px; transform: rotate(25deg); }
+        .conn-front-back { top: 185px; left: 580px; width: 130px; transform: rotate(-25deg); }
+        .conn-validation-front { top: 232px; left: 270px; width: 260px; }
         /* Floating messages */
         .msg {
           position: absolute;
@@ -179,33 +145,33 @@
         }
         .msg-1 {
           top: 72px;
-          background: rgba(124,58,237,0.2);
-          color: #a78bfa;
-          border: 1px solid rgba(124,58,237,0.3);
+          background: rgba(245,158,11,0.2);
+          color: #fbbf24;
+          border: 1px solid rgba(245,158,11,0.3);
           animation: msgRight 4s ease-in-out infinite;
         }
         .msg-2 {
-          top: 105px;
+          top: 110px;
           background: rgba(16,185,129,0.2);
           color: #34d399;
           border: 1px solid rgba(16,185,129,0.3);
           animation: msgLeft 4.5s ease-in-out 1.5s infinite;
         }
         .msg-3 {
-          top: 170px;
-          background: rgba(59,130,246,0.2);
-          color: #60a5fa;
-          border: 1px solid rgba(59,130,246,0.3);
+          top: 175px;
+          background: rgba(239,68,68,0.2);
+          color: #f87171;
+          border: 1px solid rgba(239,68,68,0.3);
           animation: msgRight 5s ease-in-out 0.8s infinite;
         }
         .msg-4 {
-          top: 195px;
-          background: rgba(245,158,11,0.2);
-          color: #fbbf24;
-          border: 1px solid rgba(245,158,11,0.3);
+          top: 245px;
+          background: rgba(59,130,246,0.2);
+          color: #60a5fa;
+          border: 1px solid rgba(59,130,246,0.3);
           animation: msgLeft 3.8s ease-in-out 2.2s infinite;
         }
-        /* Data packets (small dots traveling along connections) */
+        /* Data packets */
         .packet {
           position: absolute;
           width: 5px;
@@ -213,11 +179,11 @@
           border-radius: 50%;
           animation: pulse 2s ease infinite;
         }
-        .p1 { top: 78px; left: 250px; background: #a78bfa; animation-delay: 0s; }
-        .p2 { top: 78px; left: 540px; background: #34d399; animation-delay: 0.7s; }
-        .p3 { top: 155px; left: 395px; background: #f59e0b; animation-delay: 1.4s; }
-        .p4 { top: 190px; left: 250px; background: #60a5fa; animation-delay: 0.3s; }
-        .p5 { top: 190px; left: 540px; background: #34d399; animation-delay: 1s; }
+        .p1 { top: 78px; left: 220px; background: #fbbf24; animation-delay: 0s; }
+        .p2 { top: 78px; left: 570px; background: #34d399; animation-delay: 0.7s; }
+        .p3 { top: 155px; left: 340px; background: #f87171; animation-delay: 1.4s; }
+        .p4 { top: 155px; left: 470px; background: #60a5fa; animation-delay: 0.3s; }
+        .p5 { top: 232px; left: 400px; background: #a78bfa; animation-delay: 1s; }
         /* Code output */
         .output-box {
           position: absolute;
@@ -280,13 +246,15 @@
       </style>
       <div class="scene">
         <div class="grid-lines"></div>
-        <div class="title-bar">AI Squadron — Agents Collaborating</div>
+        <div class="title-bar">AI Squadron — 5 Agents Collaborating</div>
         <!-- Connection lines -->
-        <div class="conn conn-pm-front"></div>
+        <div class="conn conn-pm-research"></div>
         <div class="conn conn-pm-back"></div>
-        <div class="conn conn-pm-contract"></div>
-        <div class="conn conn-front-contract"></div>
-        <div class="conn conn-back-contract"></div>
+        <div class="conn conn-pm-validation"></div>
+        <div class="conn conn-pm-front"></div>
+        <div class="conn conn-research-validation"></div>
+        <div class="conn conn-front-back"></div>
+        <div class="conn conn-validation-front"></div>
         <!-- Data packets -->
         <div class="packet p1"></div>
         <div class="packet p2"></div>
@@ -294,37 +262,42 @@
         <div class="packet p4"></div>
         <div class="packet p5"></div>
         <!-- Floating messages -->
-        <div class="msg msg-1">assign: build landing page</div>
-        <div class="msg msg-2">push: API routes done</div>
-        <div class="msg msg-3">review: component ready</div>
-        <div class="msg msg-4">deploy: contract verified</div>
+        <div class="msg msg-1">scrape: 220 posts from 5 sources</div>
+        <div class="msg msg-2">push: API routes complete</div>
+        <div class="msg msg-3">reject: score 4.5/10</div>
+        <div class="msg msg-4">deploy: Vercel live</div>
         <!-- Agents -->
         <div class="agent a-pm">
           <div class="agent-icon">PM<div class="status"></div></div>
-          <div class="agent-name">PMClaw</div>
-          <div class="agent-role">Coordinator</div>
+          <div class="agent-name">PMAgent</div>
+          <div class="agent-role">Orchestrator</div>
+        </div>
+        <div class="agent a-research">
+          <div class="agent-icon">RA<div class="status"></div></div>
+          <div class="agent-name">ResearchAgent</div>
+          <div class="agent-role">5 Data Sources</div>
+        </div>
+        <div class="agent a-validation">
+          <div class="agent-icon">VA<div class="status"></div></div>
+          <div class="agent-name">ValidationAgent</div>
+          <div class="agent-role">Market Scoring</div>
         </div>
         <div class="agent a-front">
-          <div class="agent-icon">FC<div class="status"></div></div>
-          <div class="agent-name">FrontendClaw</div>
-          <div class="agent-role">UI / UX</div>
+          <div class="agent-icon">FA<div class="status"></div></div>
+          <div class="agent-name">FrontendAgent</div>
+          <div class="agent-role">UX Psychology</div>
         </div>
         <div class="agent a-back">
-          <div class="agent-icon">BC<div class="status"></div></div>
-          <div class="agent-name">BackendClaw</div>
+          <div class="agent-icon">BA<div class="status"></div></div>
+          <div class="agent-name">BackendAgent</div>
           <div class="agent-role">APIs / Logic</div>
-        </div>
-        <div class="agent a-contract">
-          <div class="agent-icon">CC<div class="status"></div></div>
-          <div class="agent-name">ContractClaw</div>
-          <div class="agent-role">Smart Contracts</div>
         </div>
         <!-- Code output -->
         <div class="output-box">
           <div class="code-inner">
             <span class="code-kw">export</span> <span class="code-fn">buildMVP</span>();<br/>
             <span class="code-kw">await</span> deploy(<span class="code-str">"prod"</span>);<br/>
-            <span class="code-fn">test</span>(<span class="code-str">"all"</span>).pass;<br/>
+            <span class="code-fn">validate</span>(score: <span class="code-str">7.2</span>);<br/>
             <span class="code-kw">const</span> ship = <span class="code-str">true</span>;<br/>
             <span class="code-kw">export</span> <span class="code-fn">buildMVP</span>();<br/>
             <span class="code-kw">await</span> deploy(<span class="code-str">"prod"</span>);<br/>
@@ -333,7 +306,7 @@
         <!-- Status -->
         <div class="status-box">
           <div class="live-dot"></div>
-          4 agents active
+          5 agents active
           <div class="typing-dots"><span></span><span></span><span></span></div>
         </div>
       </div>
