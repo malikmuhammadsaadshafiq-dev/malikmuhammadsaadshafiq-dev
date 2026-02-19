@@ -44,19 +44,17 @@
 | [**mvp-local-bulk-file-renamer**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-local-bulk-file-renamer) | `Web App` | Privacy-first batch file renamer with regex support and live preview running entirely in the brow... |
 | [**mvp-lockfilelens-2993**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-lockfilelens-2993) | `Web App` | Analyzes package lockfile diffs to surface security vulnerabilities and bundle size impacts befor... |
 
-<sub>Auto-updated from GitHub API. Last refresh: 2026-02-19 12:28 UTC</sub>
+<sub>Auto-updated from GitHub API. Last refresh: 2026-02-19 12:31 UTC</sub>
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
 
 <div align="center">
 
-### AI Squadron
+<h3>AI Squadron</h3>
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/agents.svg" width="800" alt="AI Squadron — 5 agents collaborating: PM, Research, Validation, Frontend, Backend" />
 
-</div>
-
-<div align="center">
+<br/>
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/pipeline.svg" width="800" alt="Decoupled Pipeline: Loop 1 Research+Validate every 30m | Loop 2 Build+Deploy every 20m" />
 
@@ -66,7 +64,7 @@
 
 <div align="center">
 
-### Tech Stack
+<h3>Tech Stack</h3>
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/tech-stack.svg" width="800" alt="Languages: TypeScript 95%, JavaScript 88%, Python 72%, Solidity 60% | Frameworks: React, Next.js, Node.js, Tailwind, Claude Code, Kimi K2.5" />
 
@@ -76,7 +74,7 @@
 
 <div align="center">
 
-### GitHub Stats
+<h3>GitHub Stats</h3>
 
 <a href="https://github.com/malikmuhammadsaadshafiq-dev">
 

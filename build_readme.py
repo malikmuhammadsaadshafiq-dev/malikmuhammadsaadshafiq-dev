@@ -244,12 +244,9 @@ def build_readme(repos):
 
     # ── Section 5.5: AI Squadron ──
     lines.append('<div align="center">\n')
-    lines.append("### AI Squadron\n")
+    lines.append('<h3>AI Squadron</h3>\n')
     lines.append(f'<img src="{REPO_URL}/raw/main/assets/agents.svg" width="800" alt="AI Squadron — 5 agents collaborating: PM, Research, Validation, Frontend, Backend" />\n')
-    lines.append("</div>\n")
-
-    # ── Pipeline Flow ──
-    lines.append('<div align="center">\n')
+    lines.append(f'<br/>\n')
     lines.append(f'<img src="{REPO_URL}/raw/main/assets/pipeline.svg" width="800" alt="Decoupled Pipeline: Loop 1 Research+Validate every 30m | Loop 2 Build+Deploy every 20m" />\n')
     lines.append("</div>\n")
 
@@ -258,7 +255,7 @@ def build_readme(repos):
 
     # ── Section 5.6: Tech Stack ──
     lines.append('<div align="center">\n')
-    lines.append("### Tech Stack\n")
+    lines.append('<h3>Tech Stack</h3>\n')
     lines.append(f'<img src="{REPO_URL}/raw/main/assets/tech-stack.svg" width="800" alt="Languages: TypeScript 95%, JavaScript 88%, Python 72%, Solidity 60% | Frameworks: React, Next.js, Node.js, Tailwind, Claude Code, Kimi K2.5" />\n')
     lines.append("</div>\n")
 
@@ -267,7 +264,7 @@ def build_readme(repos):
 
     # ── Section 5.7: GitHub Stats ──
     lines.append('<div align="center">\n')
-    lines.append("### GitHub Stats\n")
+    lines.append('<h3>GitHub Stats</h3>\n')
     lines.append(f'<a href="https://github.com/{USERNAME}">\n')
     lines.append(f'<img src="https://github-readme-streak-stats.herokuapp.com?user={USERNAME}&theme=github-dark-blue&hide_border=true&background=0D1117&ring=7c3aed&fire=ec4899&currStreakLabel=c9d1d9&sideLabels=8b949e&dates=6e7681" width="49%" alt="GitHub Streak" />\n')
     lines.append("</a>\n")
