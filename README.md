@@ -2,7 +2,7 @@
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/header.svg" width="800" alt="Saad Shafiq - MVP Factory" />
 
-**405+ products shipped.** Most of them before lunch.
+**433+ products shipped.** Most of them before lunch.
 
 </div>
 
@@ -16,12 +16,12 @@
 
 <div align="center">
 
-![Products Shipped](https://img.shields.io/badge/Products_Shipped-405+-2563eb?style=for-the-badge&labelColor=1e1e2e)
+![Products Shipped](https://img.shields.io/badge/Products_Shipped-433+-2563eb?style=for-the-badge&labelColor=1e1e2e)
 &nbsp;&nbsp;
-![SaaS](https://img.shields.io/badge/SaaS-93-0ea5e9?style=flat-square)
+![SaaS](https://img.shields.io/badge/SaaS-103-0ea5e9?style=flat-square)
 ![Extensions](https://img.shields.io/badge/Extensions-39-f59e0b?style=flat-square)
-![Mobile](https://img.shields.io/badge/Mobile-63-10b981?style=flat-square)
-![Web Apps](https://img.shields.io/badge/Web_Apps-205-8b5cf6?style=flat-square)
+![Mobile](https://img.shields.io/badge/Mobile-65-10b981?style=flat-square)
+![Web Apps](https://img.shields.io/badge/Web_Apps-221-8b5cf6?style=flat-square)
 
 </div>
 
@@ -31,14 +31,14 @@
 
 | Product | Type | What It Does |
 |---------|------|-------------|
-| [**mvp-metastrip-70**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-metastrip-70) | `Web App` | View and remove EXIF metadata from images to protect privacy before sharing. |
-| [**mvp-metastrip-49**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-metastrip-49) | `Web App` | View and remove EXIF metadata from images to protect privacy before sharing. |
-| [**mvp-metastrip**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-metastrip) | `Web App` | View and remove EXIF metadata from images to protect privacy before sharing. |
-| [**mvp-toolshare-pro-8649**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-toolshare-pro-8649) | `Web App` | Neighborhood tool lending library with verified user profiles and automated deposit handling. |
-| [**mvp-toolshare-pro**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-toolshare-pro) | `Web App` | Neighborhood tool lending library with verified user profiles and automated deposit handling. |
-| [**mvp-redactlocal-6512**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-redactlocal-6512) | `Web App` | Client-side PDF redaction tool that blacks out sensitive info permanently before sharing | Inspir... |
+| [**mvp-flowprompt-6097**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-flowprompt-6097) | `Web App` | Browser-based teleprompter with adjustable speed and mirror mode for professional video calls | I... |
+| [**mvp-stackslim**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-stackslim) | `Web App` | Analyze JavaScript bundle size and find lighter alternatives to over-engineered dependencies | In... |
+| [**mvp-vibeguard-4193**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-vibeguard-4193) | `SaaS` | Security and quality scanner for vibe-coded projects that identifies vulnerabilities without comp... |
+| [**mvp-flowprompt**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-flowprompt) | `Web App` | Browser-based teleprompter with adjustable speed and mirror mode for professional video calls | I... |
+| [**mvp-vibeguard-2727**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-vibeguard-2727) | `SaaS` | Security and quality scanner for vibe-coded projects that identifies vulnerabilities without comp... |
+| [**mvp-vibeguard**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-vibeguard) | `SaaS` | Security and quality scanner for vibe-coded projects that identifies vulnerabilities without comp... |
 
-<sub>Auto-updated from GitHub API. Last refresh: 2026-02-18 18:51 UTC</sub>
+<sub>Auto-updated from GitHub API. Last refresh: 2026-02-19 01:56 UTC</sub>
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
 
@@ -67,10 +67,10 @@
 | `SaaS` | `Web App` |
 
 <details>
-<summary><strong>Full Product Catalog (405 products)</strong></summary>
+<summary><strong>Full Product Catalog (433 products)</strong></summary>
 <br>
 
-**SaaS** (93)
+**SaaS** (103)
 
 - [mvp-batch-alt-text-generator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-batch-alt-text-generator) — Upload image batches and generate accurate, descriptive alt-text for accessibility compliance and SEO optimization.
 - [mvp-batch-alt-text-generator-3098](https://github.com/malikmuhammadsaadshafiq-dev/mvp-batch-alt-text-generator-3098) — Upload image batches and generate accurate, descriptive alt-text for accessibility compliance and SEO optimization.
@@ -100,9 +100,13 @@
 - [mvp-jobchangealert](https://github.com/malikmuhammadsaadshafiq-dev/mvp-jobchangealert) — Monitor LinkedIn for job changes to trigger timely sales outreach when new decision makers arrive.
 - [mvp-kitflow](https://github.com/malikmuhammadsaadshafiq-dev/mvp-kitflow) — Subscription box inventory management platform with drag-and-drop kit builders.
 - [mvp-kitflow-1596](https://github.com/malikmuhammadsaadshafiq-dev/mvp-kitflow-1596) — Subscription box inventory management platform with drag-and-drop kit builders.
+- [mvp-leaklens](https://github.com/malikmuhammadsaadshafiq-dev/mvp-leaklens) — AI-powered document analyzer for large text dumps to extract entities, timelines, and relationships | Inspired by Reddit community
 - [mvp-legacy-stack-translator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-legacy-stack-translator) — AI assistant that translates outdated PHP/MySQL patterns to modern secure equivalents | Inspired by Reddit community
 - [mvp-legacy-stack-translator-7225](https://github.com/malikmuhammadsaadshafiq-dev/mvp-legacy-stack-translator-7225) — AI assistant that translates outdated PHP/MySQL patterns to modern secure equivalents | Inspired by Reddit community
 - [mvp-linkpulse](https://github.com/malikmuhammadsaadshafiq-dev/mvp-linkpulse) — Micro-analytics platform for creators to A/B test & optimize link-in-bio pages
+- [mvp-linkrot-guard](https://github.com/malikmuhammadsaadshafiq-dev/mvp-linkrot-guard) — SaaS that continuously monitors documentation and blogs for dead links, auto-suggesting Wayback Machine alternatives.
+- [mvp-linkrot-guard-4808](https://github.com/malikmuhammadsaadshafiq-dev/mvp-linkrot-guard-4808) — SaaS that continuously monitors documentation and blogs for dead links, auto-suggesting Wayback Machine alternatives.
+- [mvp-linkrot-guard-4826](https://github.com/malikmuhammadsaadshafiq-dev/mvp-linkrot-guard-4826) — SaaS that continuously monitors documentation and blogs for dead links, auto-suggesting Wayback Machine alternatives.
 - [mvp-makermetrics](https://github.com/malikmuhammadsaadshafiq-dev/mvp-makermetrics) — A SaaS dashboard that aggregates MRR from Stripe and development velocity from GitHub to calculate holistic indie hacker health metrics and growth trends. | Community-inspired
 - [mvp-makermetrics-5861](https://github.com/malikmuhammadsaadshafiq-dev/mvp-makermetrics-5861) — A SaaS dashboard that aggregates MRR from Stripe and development velocity from GitHub to calculate holistic indie hacker health metrics and growth trends. | Community-inspired
 - [mvp-marginmeter](https://github.com/malikmuhammadsaadshafiq-dev/mvp-marginmeter) — Calculates real-time project profitability by combining imported time tracking data with fixed costs, contractor rates, and expense allocations
@@ -133,6 +137,9 @@
 - [mvp-shelflife-analytics](https://github.com/malikmuhammadsaadshafiq-dev/mvp-shelflife-analytics) — Calculates inventory aging using FIFO methodology and visualizes dead stock accumulation for small retailers | Community-inspired
 - [mvp-shipnotes](https://github.com/malikmuhammadsaadshafiq-dev/mvp-shipnotes) — AI changelog generator that reads git commit history and diffs to automatically categorize changes and write human-readable release notes.
 - [mvp-silence-snipper](https://github.com/malikmuhammadsaadshafiq-dev/mvp-silence-snipper) — Automated audio/video editor that detects and removes dead air and filler words from recordings using voice activity detection.
+- [mvp-sitepersona](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sitepersona) — Generate Ideal Customer Profiles from any website URL using AI content analysis | Inspired by Reddit community
+- [mvp-sitepersona-467](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sitepersona-467) — Generate Ideal Customer Profiles from any website URL using AI content analysis | Inspired by Reddit community
+- [mvp-sitepersona-9151](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sitepersona-9151) — Generate Ideal Customer Profiles from any website URL using AI content analysis | Inspired by Reddit community
 - [mvp-specsync](https://github.com/malikmuhammadsaadshafiq-dev/mvp-specsync) — AI-powered API documentation validator that crawls live endpoints and compares them against OpenAPI specifications to detect drift and auto-generate missing docs. | Community-inspired
 - [mvp-sqldialect](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sqldialect) — AI-powered tool that translates SQL queries between database dialects and explains complex query logic
 - [mvp-sqldialect-8490](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sqldialect-8490) — AI-powered tool that translates SQL queries between database dialects and explains complex query logic
@@ -158,6 +165,9 @@
 - [mvp-tonecraft](https://github.com/malikmuhammadsaadshafiq-dev/mvp-tonecraft) — Matches support response tone to historical ticket embeddings and generates contextual replies that maintain brand voice consistency using retrieval-augmented generation
 - [mvp-tonecraft-6995](https://github.com/malikmuhammadsaadshafiq-dev/mvp-tonecraft-6995) — Matches support response tone to historical ticket embeddings and generates contextual replies that maintain brand voice consistency using retrieval-augmented generation
 - [mvp-trendminer](https://github.com/malikmuhammadsaadshafiq-dev/mvp-trendminer) — AI tool that monitors X and Reddit to surface rising complaints and unmet needs for startup validation.
+- [mvp-vibeguard](https://github.com/malikmuhammadsaadshafiq-dev/mvp-vibeguard) — Security and quality scanner for vibe-coded projects that identifies vulnerabilities without complex setup | Inspired by Reddit community
+- [mvp-vibeguard-2727](https://github.com/malikmuhammadsaadshafiq-dev/mvp-vibeguard-2727) — Security and quality scanner for vibe-coded projects that identifies vulnerabilities without complex setup | Inspired by Reddit community
+- [mvp-vibeguard-4193](https://github.com/malikmuhammadsaadshafiq-dev/mvp-vibeguard-4193) — Security and quality scanner for vibe-coded projects that identifies vulnerabilities without complex setup | Inspired by Reddit community
 - [mvp-voicedraft](https://github.com/malikmuhammadsaadshafiq-dev/mvp-voicedraft) — Converts rambling voice memos into structured, SEO-optimized blog drafts for newsletters and LinkedIn.
 - [mvp-voicesync](https://github.com/malikmuhammadsaadshafiq-dev/mvp-voicesync) — Async voice messaging platform that transcribes and extracts action items using AI for remote teams.
 - [mvp-wastewise-kitchen](https://github.com/malikmuhammadsaadshafiq-dev/mvp-wastewise-kitchen) — Restaurant inventory management system focused on reducing food waste through predictive analytics and daily waste logging.
@@ -208,7 +218,7 @@
 - [mvp-viewportsnap](https://github.com/malikmuhammadsaadshafiq-dev/mvp-viewportsnap) — Instantly resize browser windows to exact mobile, tablet, or custom dimensions for responsive testing.
 - [mvp-viewportsnap-466](https://github.com/malikmuhammadsaadshafiq-dev/mvp-viewportsnap-466) — Instantly resize browser windows to exact mobile, tablet, or custom dimensions for responsive testing.
 
-**Mobile Apps** (63)
+**Mobile Apps** (65)
 
 - [mvp-aspect-ratio-calculator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-aspect-ratio-calculator) — Calculate missing dimensions for images, videos, or designs while maintaining exact aspect ratios.
 - [mvp-bloombuddy](https://github.com/malikmuhammadsaadshafiq-dev/mvp-bloombuddy) — Smart plant care companion with precise dosage calculations
@@ -218,6 +228,8 @@
 - [mvp-chainreaction](https://github.com/malikmuhammadsaadshafiq-dev/mvp-chainreaction) — Habit tracker visualizing routines as breakable chains with strength analytics.
 - [mvp-chainreaction-648](https://github.com/malikmuhammadsaadshafiq-dev/mvp-chainreaction-648) — Habit tracker visualizing routines as breakable chains with strength analytics.
 - [mvp-chainreaction-9093](https://github.com/malikmuhammadsaadshafiq-dev/mvp-chainreaction-9093) — Habit tracker visualizing routines as breakable chains with strength analytics.
+- [mvp-dilutionmaster](https://github.com/malikmuhammadsaadshafiq-dev/mvp-dilutionmaster) — Calculate precise chemical mixing ratios for laboratory solutions, cleaning products, and industrial concentrates using C1V1=C2V2 formulas
+- [mvp-dilutionmaster-7627](https://github.com/malikmuhammadsaadshafiq-dev/mvp-dilutionmaster-7627) — Calculate precise chemical mixing ratios for laboratory solutions, cleaning products, and industrial concentrates using C1V1=C2V2 formulas
 - [mvp-doselogic](https://github.com/malikmuhammadsaadshafiq-dev/mvp-doselogic) — Intelligent medication tracker that calculates optimal dosing times and cross-references drug interactions.
 - [mvp-focusforge](https://github.com/malikmuhammadsaadshafiq-dev/mvp-focusforge) — Body-doubling matchmaking app for ADHD professionals with optional crypto accountability staking
 - [mvp-focusforge-8247](https://github.com/malikmuhammadsaadshafiq-dev/mvp-focusforge-8247) — Body-doubling matchmaking app for ADHD professionals with optional crypto accountability staking
@@ -274,7 +286,7 @@
 - [mvp-whiteboard-scanner-pro](https://github.com/malikmuhammadsaadshafiq-dev/mvp-whiteboard-scanner-pro) — AI-powered mobile app that cleans photos of whiteboards by removing glare, straightening perspective, and isolating content.
 - [mvp-whiteboard-scanner-pro-7060](https://github.com/malikmuhammadsaadshafiq-dev/mvp-whiteboard-scanner-pro-7060) — AI-powered mobile app that cleans photos of whiteboards by removing glare, straightening perspective, and isolating content.
 
-**Web Apps** (205)
+**Web Apps** (221)
 
 - [mvp-antisell-calc](https://github.com/malikmuhammadsaadshafiq-dev/mvp-antisell-calc) — Calculate ROI comparing aggressive sales tactics vs anti-selling approaches | Inspired by Reddit community
 - [mvp-antisell-calc-5482](https://github.com/malikmuhammadsaadshafiq-dev/mvp-antisell-calc-5482) — Calculate ROI comparing aggressive sales tactics vs anti-selling approaches | Inspired by Reddit community
@@ -293,6 +305,8 @@
 - [mvp-coldbrief](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldbrief) — Pre-call briefing sheet generator for B2B cold calling | Inspired by Reddit community
 - [mvp-coldbrief-9158](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldbrief-9158) — Pre-call briefing sheet generator for B2B cold calling | Inspired by Reddit community
 - [mvp-coldbrief-9282](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldbrief-9282) — Pre-call briefing sheet generator for B2B cold calling | Inspired by Reddit community
+- [mvp-coldcallcalc](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldcallcalc) — Real-time sales metrics calculator that reverse-engineers daily dialing targets from quota goals. | Inspired by Reddit community
+- [mvp-coldcallcalc-5449](https://github.com/malikmuhammadsaadshafiq-dev/mvp-coldcallcalc-5449) — Real-time sales metrics calculator that reverse-engineers daily dialing targets from quota goals. | Inspired by Reddit community
 - [mvp-collabcanvas](https://github.com/malikmuhammadsaadshafiq-dev/mvp-collabcanvas) — Real-time infinite canvas for remote design sprints with built-in voting and timer features
 - [mvp-collabcanvas-1514](https://github.com/malikmuhammadsaadshafiq-dev/mvp-collabcanvas-1514) — Real-time infinite canvas for remote design sprints with built-in voting and timer features
 - [mvp-contentroi-calc](https://github.com/malikmuhammadsaadshafiq-dev/mvp-contentroi-calc) — Calculator proving low-view content can generate high SaaS revenue | Inspired by Reddit community
@@ -334,6 +348,8 @@
 - [mvp-docusift](https://github.com/malikmuhammadsaadshafiq-dev/mvp-docusift) — Client-side document explorer for massive text archives with instant search | Inspired by Reddit community
 - [mvp-docusift-7513](https://github.com/malikmuhammadsaadshafiq-dev/mvp-docusift-7513) — Client-side document explorer for massive text archives with instant search | Inspired by Reddit community
 - [mvp-email-archive-viewer](https://github.com/malikmuhammadsaadshafiq-dev/mvp-email-archive-viewer) — Client-side .eml and .mbox file browser with instant search and zero uploads
+- [mvp-emailpreviewsandbox](https://github.com/malikmuhammadsaadshafiq-dev/mvp-emailpreviewsandbox) — Client-side HTML email template tester that simulates Gmail, Outlook, and Apple Mail rendering constraints. | Inspired by Reddit community
+- [mvp-emailpreviewsandbox-2960](https://github.com/malikmuhammadsaadshafiq-dev/mvp-emailpreviewsandbox-2960) — Client-side HTML email template tester that simulates Gmail, Outlook, and Apple Mail rendering constraints. | Inspired by Reddit community
 - [mvp-endpointaudit](https://github.com/malikmuhammadsaadshafiq-dev/mvp-endpointaudit) — Analyzes OpenAPI/Swagger specifications using LLMs to detect security vulnerabilities, missing authentication, and exposed sensitive data patterns | Community-inspired
 - [mvp-endpointaudit-1370](https://github.com/malikmuhammadsaadshafiq-dev/mvp-endpointaudit-1370) — Analyzes OpenAPI/Swagger specifications using LLMs to detect security vulnerabilities, missing authentication, and exposed sensitive data patterns | Community-inspired
 - [mvp-faviconforge](https://github.com/malikmuhammadsaadshafiq-dev/mvp-faviconforge) — Generate multi-resolution favicon packages from text, emoji, or uploaded images instantly
@@ -342,6 +358,8 @@
 - [mvp-file-hash-verifier-9291](https://github.com/malikmuhammadsaadshafiq-dev/mvp-file-hash-verifier-9291) — Client-side file integrity checker generating MD5, SHA-1, and SHA-256 hashes via browser crypto APIs.
 - [mvp-firstsite-check](https://github.com/malikmuhammadsaadshafiq-dev/mvp-firstsite-check) — Validator ensuring beginner portfolios meet essential web standards | Inspired by Reddit community
 - [mvp-firstsite-check-4746](https://github.com/malikmuhammadsaadshafiq-dev/mvp-firstsite-check-4746) — Validator ensuring beginner portfolios meet essential web standards | Inspired by Reddit community
+- [mvp-flowprompt](https://github.com/malikmuhammadsaadshafiq-dev/mvp-flowprompt) — Browser-based teleprompter with adjustable speed and mirror mode for professional video calls | Inspired by Reddit community
+- [mvp-flowprompt-6097](https://github.com/malikmuhammadsaadshafiq-dev/mvp-flowprompt-6097) — Browser-based teleprompter with adjustable speed and mirror mode for professional video calls | Inspired by Reddit community
 - [mvp-focuscontext](https://github.com/malikmuhammadsaadshafiq-dev/mvp-focuscontext) — Browser extension that saves coding sessions with AI-generated context notes so developers can resume work instantly after interruptions.
 - [mvp-focusflow](https://github.com/malikmuhammadsaadshafiq-dev/mvp-focusflow) — AI-powered browser extension that detects doomscrolling patterns and gently intervenes with micro-tasks to restore focus. | Community-inspired
 - [mvp-foreignkeyflow](https://github.com/malikmuhammadsaadshafiq-dev/mvp-foreignkeyflow) — Generates realistic relational mock databases with referential integrity, automatically handling foreign key constraints across multiple interconnected tables
@@ -442,9 +460,13 @@
 - [mvp-sprintstarter](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sprintstarter) — 5-hour MVP challenge dashboard with tech stack picker and checkpoint timer | Inspired by Reddit community
 - [mvp-sprintstarter-2354](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sprintstarter-2354) — 5-hour MVP challenge dashboard with tech stack picker and checkpoint timer | Inspired by Reddit community
 - [mvp-sprintstarter-3500](https://github.com/malikmuhammadsaadshafiq-dev/mvp-sprintstarter-3500) — 5-hour MVP challenge dashboard with tech stack picker and checkpoint timer | Inspired by Reddit community
+- [mvp-spriteslicer](https://github.com/malikmuhammadsaadshafiq-dev/mvp-spriteslicer) — Browser-based tool to split PNG sprite sheets into individual images with visual grid selection. | Inspired by Reddit community
+- [mvp-spriteslicer-167](https://github.com/malikmuhammadsaadshafiq-dev/mvp-spriteslicer-167) — Browser-based tool to split PNG sprite sheets into individual images with visual grid selection. | Inspired by Reddit community
+- [mvp-spriteslicer-411](https://github.com/malikmuhammadsaadshafiq-dev/mvp-spriteslicer-411) — Browser-based tool to split PNG sprite sheets into individual images with visual grid selection. | Inspired by Reddit community
 - [mvp-squooshlocal](https://github.com/malikmuhammadsaadshafiq-dev/mvp-squooshlocal) — Client-side image compressor and format converter using Canvas API | Inspired by Reddit community
 - [mvp-stack-complexity-scorer](https://github.com/malikmuhammadsaadshafiq-dev/mvp-stack-complexity-scorer) — Audit your tech stack for over-engineering and maintenance burden. | Inspired by Reddit community
 - [mvp-stack-complexity-scorer-5474](https://github.com/malikmuhammadsaadshafiq-dev/mvp-stack-complexity-scorer-5474) — Audit your tech stack for over-engineering and maintenance burden. | Inspired by Reddit community
+- [mvp-stackslim](https://github.com/malikmuhammadsaadshafiq-dev/mvp-stackslim) — Analyze JavaScript bundle size and find lighter alternatives to over-engineered dependencies | Inspired by Reddit community
 - [mvp-stacktranslate](https://github.com/malikmuhammadsaadshafiq-dev/mvp-stacktranslate) — Converts cryptic error stack traces into plain English explanations with specific fix suggestions
 - [mvp-stackvalidator](https://github.com/malikmuhammadsaadshafiq-dev/mvp-stackvalidator) — Uploads infrastructure configuration files to detect security misconfigurations, hardcoded secrets using entropy analysis, and port conflicts in docker-compose setups. | Community-inspired
 - [mvp-stackvalidator-1166](https://github.com/malikmuhammadsaadshafiq-dev/mvp-stackvalidator-1166) — Uploads infrastructure configuration files to detect security misconfigurations, hardcoded secrets using entropy analysis, and port conflicts in docker-compose setups. | Community-inspired
@@ -471,8 +493,14 @@
 - [mvp-transcriptforge-5006](https://github.com/malikmuhammadsaadshafiq-dev/mvp-transcriptforge-5006) — Processes raw meeting transcript files (VTT/SRT/TXT) to remove filler words, fix grammar, and extract structured action items with assigned owners using LLM analysis.
 - [mvp-transcriptforge-6609](https://github.com/malikmuhammadsaadshafiq-dev/mvp-transcriptforge-6609) — Processes raw meeting transcript files (VTT/SRT/TXT) to remove filler words, fix grammar, and extract structured action items with assigned owners using LLM analysis.
 - [mvp-truckplate](https://github.com/malikmuhammadsaadshafiq-dev/mvp-truckplate) — Collaborative recipe costing platform for food trucks to manage fluctuating ingredient prices and margins.
+- [mvp-typeinfer](https://github.com/malikmuhammadsaadshafiq-dev/mvp-typeinfer) — Statistically analyzes CSV column values to infer SQL data types, string lengths, and suggest optimized database schemas with CREATE TABLE statements | Community-inspired
+- [mvp-typeinfer-2890](https://github.com/malikmuhammadsaadshafiq-dev/mvp-typeinfer-2890) — Statistically analyzes CSV column values to infer SQL data types, string lengths, and suggest optimized database schemas with CREATE TABLE statements | Community-inspired
+- [mvp-typeinfer-3808](https://github.com/malikmuhammadsaadshafiq-dev/mvp-typeinfer-3808) — Statistically analyzes CSV column values to infer SQL data types, string lengths, and suggest optimized database schemas with CREATE TABLE statements | Community-inspired
 - [mvp-vcard-forge](https://github.com/malikmuhammadsaadshafiq-dev/mvp-vcard-forge) — Generate digital contact cards with scannable QR codes and downloadable .vcf files for instant professional networking
 - [mvp-vcard-forge-9162](https://github.com/malikmuhammadsaadshafiq-dev/mvp-vcard-forge-9162) — Generate digital contact cards with scannable QR codes and downloadable .vcf files for instant professional networking
+- [mvp-vibedebug](https://github.com/malikmuhammadsaadshafiq-dev/mvp-vibedebug) — Paste broken code from vibe-coding attempts and get targeted fixes without generic AI fluff. | Inspired by Reddit community
+- [mvp-vibedebug-6597](https://github.com/malikmuhammadsaadshafiq-dev/mvp-vibedebug-6597) — Paste broken code from vibe-coding attempts and get targeted fixes without generic AI fluff. | Inspired by Reddit community
+- [mvp-vibedebug-8315](https://github.com/malikmuhammadsaadshafiq-dev/mvp-vibedebug-8315) — Paste broken code from vibe-coding attempts and get targeted fixes without generic AI fluff. | Inspired by Reddit community
 - [mvp-voicefill](https://github.com/malikmuhammadsaadshafiq-dev/mvp-voicefill) — Fill web forms hands-free using browser-native speech recognition with intelligent field mapping.
 - [mvp-voicefill-2259](https://github.com/malikmuhammadsaadshafiq-dev/mvp-voicefill-2259) — Fill web forms hands-free using browser-native speech recognition with intelligent field mapping.
 - [mvp-voicestandup](https://github.com/malikmuhammadsaadshafiq-dev/mvp-voicestandup) — Async voice standups for remote teams that transcribes blockers and posts structured updates to Slack. | Community-inspired
