@@ -8,17 +8,11 @@
 
 <div align="center">
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/activity.svg" width="800" alt="Pipeline Active — Researching + Building 24/7" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/pipeline.svg" width="800" alt="Reddit → AI → Claude Code → Live MVP" />
 
 </div>
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
-
-<div align="center">
-
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/stats.svg" width="800" alt="457+ Products | 220+ Posts/Cycle | 87% Rejected | 5 AI Agents | 30m Cycles" />
-
-</div>
 
 <div align="center">
 
@@ -44,7 +38,7 @@
 | [**mvp-local-bulk-file-renamer**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-local-bulk-file-renamer) | `Web App` | Privacy-first batch file renamer with regex support and live preview running entirely in the brow... |
 | [**mvp-lockfilelens-2993**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-lockfilelens-2993) | `Web App` | Analyzes package lockfile diffs to surface security vulnerabilities and bundle size impacts befor... |
 
-<sub>Auto-updated from GitHub API. Last refresh: 2026-02-19 11:19 UTC</sub>
+<sub>Auto-updated from GitHub API. Last refresh: 2026-02-19 11:30 UTC</sub>
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
 
@@ -53,37 +47,6 @@
 ### AI Squadron
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/agents.svg" width="800" alt="AI Squadron — 4 agents collaborating" />
-
-</div>
-
-<div align="center">
-
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/pipeline.svg" width="800" alt="Decoupled Pipeline: Loop 1 Research+Validate every 30m | Loop 2 Build+Deploy every 20m" />
-
-</div>
-
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
-
-<div align="center">
-
-### Tech Stack
-
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/tech-stack.svg" width="800" alt="Languages: TypeScript 95%, JavaScript 88%, Python 72%, Solidity 60%, SQL 78% | Frameworks: React, Next.js, Node.js, Tailwind, Claude Code, Kimi K2.5" />
-
-</div>
-
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
-
-<div align="center">
-
-### GitHub Stats
-
-<a href="https://github.com/malikmuhammadsaadshafiq-dev">
-<img src="https://github-readme-streak-stats.herokuapp.com?user=malikmuhammadsaadshafiq-dev&theme=github-dark-blue&hide_border=true&background=0D1117&ring=7c3aed&fire=ec4899&currStreakLabel=c9d1d9&sideLabels=8b949e&dates=6e7681" width="49%" alt="GitHub Streak" />
-</a>
-<a href="https://github.com/malikmuhammadsaadshafiq-dev">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=malikmuhammadsaadshafiq-dev&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=7c3aed&text_color=c9d1d9&langs_count=8" width="38%" alt="Top Languages" />
-</a>
 
 </div>
 
@@ -586,24 +549,12 @@
 
 <div align="center">
 
-<a href="https://github.com/malikmuhammadsaadshafiq-dev">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=malikmuhammadsaadshafiq-dev&theme=github-dark&hide_border=true&bg_color=0D1117&color=c9d1d9&line=7c3aed&point=ec4899&area=true&area_color=7c3aed" width="98%" alt="Contribution Graph" />
-</a>
-
-</div>
-
-<div align="center">
-
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=next.js&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Claude](https://img.shields.io/badge/Claude_Code-191919?style=flat-square&logo=anthropic&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000?style=flat-square&logo=vercel&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 
 </div>
 
