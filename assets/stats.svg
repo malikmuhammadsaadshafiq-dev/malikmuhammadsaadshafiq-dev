@@ -1,148 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="100" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="132" fill="none">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        @keyframes rise {
-          from { opacity: 0; transform: translateY(8px); }
-          to   { opacity: 1; transform: translateY(0); }
+        @keyframes rise { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fill { from { width: 0; } to { width: var(--w); } }
+        @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+        .panel {
+          position: relative; width: 800px; height: 132px;
+          background: linear-gradient(180deg, #0e141d, #0b1017);
+          border: 1px solid rgba(64,200,200,0.16); border-radius: 10px; overflow: hidden;
+          font-family: ui-monospace, 'Cascadia Mono', 'JetBrains Mono', 'SF Mono', Consolas, 'Liberation Mono', monospace;
+          padding: 13px 18px;
         }
-        @keyframes fill {
-          from { width: 0%; }
-          to   { width: var(--w); }
-        }
-        @keyframes breathe {
-          0%, 100% { opacity: 0.4; }
-          50%      { opacity: 1; }
-        }
-        .wrap {
-          width: 800px;
-          height: 96px;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-          background: #0d1117;
-          border-radius: 12px;
-          border: 1px solid rgba(48,54,61,0.6);
-          display: flex;
-          align-items: center;
-          padding: 0 12px;
-          gap: 10px;
-          position: relative;
-          overflow: hidden;
-        }
-        .wrap::before {
-          content: '';
-          position: absolute;
-          top: 0; left: 24px; right: 24px;
-          height: 1px;
-          background: linear-gradient(90deg, transparent, rgba(139,92,246,0.5), transparent);
-        }
-        .card {
-          flex: 1;
-          padding: 6px 4px;
-          text-align: center;
-          animation: rise 0.5s ease both;
-          position: relative;
-        }
-        .card:nth-child(1) { animation-delay: 0.00s; }
-        .card:nth-child(2) { animation-delay: 0.07s; }
-        .card:nth-child(3) { animation-delay: 0.14s; }
-        .card:nth-child(4) { animation-delay: 0.21s; }
-        .card:nth-child(5) { animation-delay: 0.28s; }
-        .card:nth-child(6) { animation-delay: 0.35s; }
-        .num {
-          font-size: 19px;
-          font-weight: 800;
-          line-height: 1;
-          color: #e6edf3;
-        }
-        .num.accent { color: #a78bfa; }
-        .label {
-          font-size: 7.5px;
-          font-weight: 600;
-          color: #8b949e;
-          text-transform: uppercase;
-          letter-spacing: 0.8px;
-          margin-top: 3px;
-        }
-        .sub {
-          font-size: 7px;
-          color: #56606b;
-          margin-top: 1px;
-        }
-        .bar {
-          height: 2px;
-          background: rgba(48,54,61,0.6);
-          border-radius: 2px;
-          margin-top: 5px;
-          overflow: hidden;
-        }
-        .bar-fill {
-          height: 100%;
-          border-radius: 2px;
-          background: rgba(139,92,246,0.7);
-          animation: fill 1.6s ease both;
-        }
-        .live {
-          position: absolute;
-          top: 0; right: 2px;
-          display: flex;
-          align-items: center;
-          gap: 3px;
-          font-size: 6px;
-          font-weight: 700;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-          color: #34d399;
-        }
-        .live-dot {
-          width: 4px; height: 4px; border-radius: 50%;
-          background: #34d399;
-          animation: breathe 1.8s ease infinite;
-        }
-        .sep { width: 1px; height: 48px; background: rgba(48,54,61,0.45); flex-shrink: 0; }
+        .corner { position: absolute; width: 11px; height: 11px; border: 1.5px solid rgba(63,224,208,0.5); }
+        .c-tl { top: 6px; left: 6px; border-right: 0; border-bottom: 0; }
+        .c-tr { top: 6px; right: 6px; border-left: 0; border-bottom: 0; }
+        .c-bl { bottom: 6px; left: 6px; border-right: 0; border-top: 0; }
+        .c-br { bottom: 6px; right: 6px; border-left: 0; border-top: 0; }
+        .eyebrow { display: flex; justify-content: space-between; align-items: center; font-size: 9px; font-weight: 700; letter-spacing: 2.5px; color: #5f8294; }
+        .eyebrow b { color: #3fe0d0; }
+        .live { display: flex; align-items: center; gap: 5px; color: #36e08a; }
+        .ld { width: 5px; height: 5px; border-radius: 50%; background: #36e08a; box-shadow: 0 0 6px rgba(54,224,138,0.7); animation: blink 1.6s ease infinite; }
+        .row { display: flex; align-items: stretch; margin-top: 11px; }
+        .cell { flex: 1; padding: 0 13px; animation: rise 0.5s ease both; }
+        .cell + .cell { border-left: 1px solid rgba(64,200,200,0.12); }
+        .cell:nth-child(1){animation-delay:0s} .cell:nth-child(2){animation-delay:.07s} .cell:nth-child(3){animation-delay:.14s}
+        .cell:nth-child(4){animation-delay:.21s} .cell:nth-child(5){animation-delay:.28s} .cell:nth-child(6){animation-delay:.35s}
+        .lbl { font-size: 8px; font-weight: 700; letter-spacing: 2px; color: #5f8294; }
+        .val { font-size: 23px; font-weight: 800; color: #eaf3f7; line-height: 1; margin-top: 7px; }
+        .val.cy { color: #3fe0d0; }
+        .val.am { color: #ffb02e; }
+        .unit { font-size: 8px; letter-spacing: 0.5px; color: #56697a; margin-top: 4px; }
+        .bar { height: 2px; background: rgba(64,200,200,0.12); border-radius: 2px; margin-top: 7px; overflow: hidden; }
+        .bf { height: 100%; background: rgba(63,224,208,0.65); border-radius: 2px; animation: fill 1.5s ease both; }
+        .bf.am { background: rgba(255,176,46,0.7); }
       </style>
-      <div class="wrap">
-        <div class="card">
-          <div class="live"><span class="live-dot"></span>live</div>
-          <div class="num">450+</div>
-          <div class="label">Products</div>
-          <div class="sub">shipped to prod</div>
-          <div class="bar"><div class="bar-fill" style="--w:95%;width:95%"></div></div>
-        </div>
-        <div class="sep"></div>
-        <div class="card">
-          <div class="num">220+</div>
-          <div class="label">Posts/Cycle</div>
-          <div class="sub">4 sources scraped</div>
-          <div class="bar"><div class="bar-fill" style="--w:85%;width:85%"></div></div>
-        </div>
-        <div class="sep"></div>
-        <div class="card">
-          <div class="num accent">87%</div>
-          <div class="label">Rejected</div>
-          <div class="sub">only the best ship</div>
-          <div class="bar"><div class="bar-fill" style="--w:87%;width:87%"></div></div>
-        </div>
-        <div class="sep"></div>
-        <div class="card">
-          <div class="num">5.5</div>
-          <div class="label">Min Score</div>
-          <div class="sub">+ top-N fallback</div>
-          <div class="bar"><div class="bar-fill" style="--w:55%;width:55%"></div></div>
-        </div>
-        <div class="sep"></div>
-        <div class="card">
-          <div class="num">8</div>
-          <div class="label">AI Agents</div>
-          <div class="sub">Claude Code tiers</div>
-          <div class="bar"><div class="bar-fill" style="--w:100%;width:100%"></div></div>
-        </div>
-        <div class="sep"></div>
-        <div class="card">
-          <div class="num">30m</div>
-          <div class="label">Cycle Time</div>
-          <div class="sub">research &#8594; deploy</div>
-          <div class="bar"><div class="bar-fill" style="--w:75%;width:75%"></div></div>
+      <div class="panel">
+        <span class="corner c-tl"></span><span class="corner c-tr"></span><span class="corner c-bl"></span><span class="corner c-br"></span>
+        <div class="eyebrow"><span>SYS.01 <b>//</b> TELEMETRY</span><span class="live"><span class="ld"></span>LIVE FEED</span></div>
+        <div class="row">
+          <div class="cell"><div class="lbl">OUTPUT</div><div class="val cy">450+</div><div class="unit">UNITS SHIPPED</div><div class="bar"><div class="bf" style="--w:95%;width:95%"></div></div></div>
+          <div class="cell"><div class="lbl">THRUPUT</div><div class="val">220</div><div class="unit">POSTS / CYCLE</div><div class="bar"><div class="bf" style="--w:84%;width:84%"></div></div></div>
+          <div class="cell"><div class="lbl">REJECT</div><div class="val am">87%</div><div class="unit">ONLY THE BEST SHIP</div><div class="bar"><div class="bf am" style="--w:87%;width:87%"></div></div></div>
+          <div class="cell"><div class="lbl">MIN SCORE</div><div class="val">5.5</div><div class="unit">+ TOP-N FALLBACK</div><div class="bar"><div class="bf" style="--w:55%;width:55%"></div></div></div>
+          <div class="cell"><div class="lbl">AGENTS</div><div class="val cy">8</div><div class="unit">CLAUDE CODE TIERS</div><div class="bar"><div class="bf" style="--w:100%;width:100%"></div></div></div>
+          <div class="cell"><div class="lbl">CYCLE</div><div class="val">30m</div><div class="unit">RSRCH &#8594; SHIP</div><div class="bar"><div class="bf" style="--w:72%;width:72%"></div></div></div>
         </div>
       </div>
     </div>

@@ -3,200 +3,65 @@
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        @keyframes rise {
-          from { opacity: 0; transform: translateY(10px); }
-          to   { opacity: 1; transform: translateY(0); }
+        @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fill { from { width: 0; } to { width: var(--w); } }
+        @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+        .panel {
+          position: relative; width: 800px; height: 220px;
+          background: linear-gradient(180deg, #0e141d, #0b1017);
+          border: 1px solid rgba(64,200,200,0.16); border-radius: 10px; overflow: hidden; display: flex;
+          font-family: ui-monospace, 'Cascadia Mono', 'JetBrains Mono', 'SF Mono', Consolas, 'Liberation Mono', monospace;
         }
-        @keyframes barFill {
-          from { width: 0; }
-          to   { width: var(--bar-w); }
-        }
-        @keyframes glowPulse {
-          0%, 100% { box-shadow: 0 0 4px rgba(139,92,246,0.15); }
-          50%      { box-shadow: 0 0 14px rgba(139,92,246,0.4); }
-        }
-        @keyframes breathe {
-          0%, 100% { opacity: 0.4; }
-          50%      { opacity: 1; }
-        }
-        .ts-wrap {
-          width: 800px;
-          height: 220px;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-          background: #0d1117;
-          border-radius: 12px;
-          border: 1px solid rgba(48,54,61,0.6);
-          display: flex;
-          overflow: hidden;
-        }
-        .ts-left {
-          width: 320px;
-          padding: 18px 22px;
-          display: flex;
-          flex-direction: column;
-          gap: 7px;
-          border-right: 1px solid rgba(48,54,61,0.4);
-        }
-        .ts-title {
-          font-size: 10px;
-          font-weight: 700;
-          color: #8b949e;
-          letter-spacing: 2.5px;
-          text-transform: uppercase;
-          margin-bottom: 4px;
-        }
-        .ts-row {
-          display: flex;
-          align-items: center;
-          gap: 9px;
-          animation: rise 0.5s ease both;
-        }
-        .ts-row:nth-child(2) { animation-delay: 0.05s; }
-        .ts-row:nth-child(3) { animation-delay: 0.10s; }
-        .ts-row:nth-child(4) { animation-delay: 0.15s; }
-        .ts-row:nth-child(5) { animation-delay: 0.20s; }
-        .ts-row:nth-child(6) { animation-delay: 0.25s; }
-        .ts-row:nth-child(7) { animation-delay: 0.30s; }
-        .ts-label {
-          font-size: 11px;
-          font-weight: 600;
-          color: #c9d1d9;
-          width: 78px;
-          flex-shrink: 0;
-        }
-        .ts-bar-bg {
-          flex: 1;
-          height: 6px;
-          background: rgba(48,54,61,0.5);
-          border-radius: 4px;
-          overflow: hidden;
-        }
-        .ts-bar {
-          height: 100%;
-          border-radius: 4px;
-          background: linear-gradient(90deg, #6d28d9, #a78bfa);
-          animation: barFill 1.4s ease both;
-        }
-        .ts-pct {
-          font-size: 9px;
-          font-weight: 700;
-          color: #6e7681;
-          width: 30px;
-          text-align: right;
-          flex-shrink: 0;
-        }
-        .ts-right {
-          flex: 1;
-          padding: 18px 22px;
-          display: flex;
-          flex-direction: column;
-        }
-        .ts-grid {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 8px;
-          margin-top: 10px;
-        }
-        .ts-chip {
-          padding: 6px 11px;
-          border-radius: 8px;
-          font-size: 11px;
-          font-weight: 600;
-          animation: rise 0.5s ease both;
-          border: 1px solid rgba(48,54,61,0.7);
-          background: rgba(22,27,34,0.6);
-          color: #c9d1d9;
-        }
-        .ts-chip:nth-child(1) { animation-delay: 0.10s; }
-        .ts-chip:nth-child(2) { animation-delay: 0.15s; }
-        .ts-chip:nth-child(3) { animation-delay: 0.20s; }
-        .ts-chip:nth-child(4) { animation-delay: 0.25s; }
-        .ts-chip:nth-child(5) { animation-delay: 0.30s; }
-        .ts-chip:nth-child(6) { animation-delay: 0.35s; }
-        .ts-chip:nth-child(7) { animation-delay: 0.40s; }
-        .ts-chip:nth-child(8) { animation-delay: 0.45s; }
-        .ts-chip:nth-child(9) { animation-delay: 0.50s; }
-        .ts-chip:nth-child(10) { animation-delay: 0.55s; }
-        .ts-chip:nth-child(11) { animation-delay: 0.60s; }
-        .ts-chip:nth-child(12) { animation-delay: 0.65s; }
-        /* one accent for the AI layer, everything else neutral — minimal */
-        .c-ai {
-          background: rgba(139,92,246,0.12);
-          color: #a78bfa;
-          border-color: rgba(139,92,246,0.35);
-          animation: rise 0.5s ease both, glowPulse 3.5s ease infinite;
-        }
-        .ts-subtitle {
-          font-size: 9px;
-          color: #6e7681;
-          margin-top: auto;
-          padding-top: 8px;
-          border-top: 1px solid rgba(48,54,61,0.4);
-          display: flex;
-          align-items: center;
-          gap: 6px;
-        }
-        .dot {
-          width: 6px; height: 6px; border-radius: 50%;
-          background: #a78bfa;
-          display: inline-block;
-          animation: breathe 2.4s ease-in-out infinite;
-        }
+        .corner { position: absolute; width: 11px; height: 11px; border: 1.5px solid rgba(63,224,208,0.5); z-index: 2; }
+        .c-tl { top: 6px; left: 6px; border-right: 0; border-bottom: 0; } .c-tr { top: 6px; right: 6px; border-left: 0; border-bottom: 0; }
+        .c-bl { bottom: 6px; left: 6px; border-right: 0; border-top: 0; } .c-br { bottom: 6px; right: 6px; border-left: 0; border-top: 0; }
+        .left { width: 318px; padding: 15px 20px; border-right: 1px solid rgba(64,200,200,0.12); display: flex; flex-direction: column; gap: 7px; }
+        .eyebrow { font-size: 9px; font-weight: 700; letter-spacing: 2.5px; color: #5f8294; margin-bottom: 5px; }
+        .eyebrow b { color: #3fe0d0; }
+        .row { display: flex; align-items: center; gap: 9px; animation: rise 0.5s ease both; }
+        .row:nth-child(2){animation-delay:.05s} .row:nth-child(3){animation-delay:.1s} .row:nth-child(4){animation-delay:.15s} .row:nth-child(5){animation-delay:.2s} .row:nth-child(6){animation-delay:.25s} .row:nth-child(7){animation-delay:.3s}
+        .lang { font-size: 10.5px; font-weight: 600; color: #b9c8d4; width: 80px; flex-shrink: 0; }
+        .track { flex: 1; height: 6px; background: rgba(64,200,200,0.1); border-radius: 3px; overflow: hidden; }
+        .meter { height: 100%; background: linear-gradient(90deg, rgba(63,224,208,0.4), #3fe0d0); border-radius: 3px; animation: fill 1.4s ease both; }
+        .pct { font-size: 8.5px; font-weight: 700; color: #56697a; width: 28px; text-align: right; flex-shrink: 0; }
+        .right { flex: 1; padding: 15px 20px; display: flex; flex-direction: column; }
+        .grid { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 9px; align-content: flex-start; }
+        .chip { font-size: 10.5px; font-weight: 600; color: #b9c8d4; padding: 5px 10px; border: 1px solid rgba(64,200,200,0.16); border-radius: 6px; background: rgba(63,224,208,0.03); animation: rise 0.45s ease both; }
+        .chip.ai { color: #3fe0d0; border-color: rgba(63,224,208,0.4); background: rgba(63,224,208,0.09); }
+        .chip:nth-child(1){animation-delay:.08s} .chip:nth-child(2){animation-delay:.12s} .chip:nth-child(3){animation-delay:.16s} .chip:nth-child(4){animation-delay:.2s}
+        .chip:nth-child(5){animation-delay:.24s} .chip:nth-child(6){animation-delay:.28s} .chip:nth-child(7){animation-delay:.32s} .chip:nth-child(8){animation-delay:.36s}
+        .chip:nth-child(9){animation-delay:.4s} .chip:nth-child(10){animation-delay:.44s} .chip:nth-child(11){animation-delay:.48s} .chip:nth-child(12){animation-delay:.52s}
+        .foot { font-size: 9px; color: #6a8093; margin-top: auto; padding-top: 9px; border-top: 1px solid rgba(64,200,200,0.12); display: flex; align-items: center; gap: 7px; letter-spacing: 0.5px; }
+        .ld { width: 5px; height: 5px; border-radius: 50%; background: #3fe0d0; box-shadow: 0 0 6px rgba(63,224,208,0.7); animation: blink 2s ease infinite; flex-shrink: 0; }
       </style>
-      <div class="ts-wrap">
-        <div class="ts-left">
-          <div class="ts-title">Languages</div>
-          <div class="ts-row">
-            <div class="ts-label">TypeScript</div>
-            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:95%;width:95%"></div></div>
-            <div class="ts-pct">95%</div>
-          </div>
-          <div class="ts-row">
-            <div class="ts-label">JavaScript</div>
-            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:88%;width:88%"></div></div>
-            <div class="ts-pct">88%</div>
-          </div>
-          <div class="ts-row">
-            <div class="ts-label">Python</div>
-            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:80%;width:80%"></div></div>
-            <div class="ts-pct">80%</div>
-          </div>
-          <div class="ts-row">
-            <div class="ts-label">HTML/CSS</div>
-            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:92%;width:92%"></div></div>
-            <div class="ts-pct">92%</div>
-          </div>
-          <div class="ts-row">
-            <div class="ts-label">SQL</div>
-            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:78%;width:78%"></div></div>
-            <div class="ts-pct">78%</div>
-          </div>
-          <div class="ts-row">
-            <div class="ts-label">Shell</div>
-            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:68%;width:68%"></div></div>
-            <div class="ts-pct">68%</div>
-          </div>
+      <div class="panel">
+        <span class="corner c-tl"></span><span class="corner c-tr"></span><span class="corner c-bl"></span><span class="corner c-br"></span>
+        <div class="left">
+          <div class="eyebrow">SYS.04 <b>//</b> LANGUAGES</div>
+          <div class="row"><div class="lang">TypeScript</div><div class="track"><div class="meter" style="--w:95%;width:95%"></div></div><div class="pct">95</div></div>
+          <div class="row"><div class="lang">JavaScript</div><div class="track"><div class="meter" style="--w:88%;width:88%"></div></div><div class="pct">88</div></div>
+          <div class="row"><div class="lang">Python</div><div class="track"><div class="meter" style="--w:80%;width:80%"></div></div><div class="pct">80</div></div>
+          <div class="row"><div class="lang">HTML/CSS</div><div class="track"><div class="meter" style="--w:92%;width:92%"></div></div><div class="pct">92</div></div>
+          <div class="row"><div class="lang">SQL</div><div class="track"><div class="meter" style="--w:78%;width:78%"></div></div><div class="pct">78</div></div>
+          <div class="row"><div class="lang">Shell</div><div class="track"><div class="meter" style="--w:68%;width:68%"></div></div><div class="pct">68</div></div>
         </div>
-        <div class="ts-right">
-          <div class="ts-title">Frameworks &amp; Tools</div>
-          <div class="ts-grid">
-            <div class="ts-chip c-ai">Claude Code</div>
-            <div class="ts-chip c-ai">Claude Agent SDK</div>
-            <div class="ts-chip">Next.js 14</div>
-            <div class="ts-chip">React</div>
-            <div class="ts-chip">FastAPI</div>
-            <div class="ts-chip">Tailwind</div>
-            <div class="ts-chip">SQLite</div>
-            <div class="ts-chip">Playwright</div>
-            <div class="ts-chip">Vercel</div>
-            <div class="ts-chip">GitHub API</div>
-            <div class="ts-chip">WebSockets</div>
-            <div class="ts-chip">Python</div>
+        <div class="right">
+          <div class="eyebrow">SYS.05 <b>//</b> LOADOUT</div>
+          <div class="grid">
+            <div class="chip ai">Claude Code</div>
+            <div class="chip ai">Claude Agent SDK</div>
+            <div class="chip">Next.js 14</div>
+            <div class="chip">React</div>
+            <div class="chip">FastAPI</div>
+            <div class="chip">Tailwind</div>
+            <div class="chip">SQLite</div>
+            <div class="chip">Playwright</div>
+            <div class="chip">Vercel</div>
+            <div class="chip">GitHub API</div>
+            <div class="chip">WebSockets</div>
+            <div class="chip">Python</div>
           </div>
-          <div class="ts-subtitle">
-            <span class="dot"></span>
-            No LLM API key &#8212; agents run on local Claude Code (haiku &#183; sonnet &#183; opus)
-          </div>
+          <div class="foot"><span class="ld"></span>NO LLM API KEY &#183; AGENTS RUN ON LOCAL CLAUDE CODE (HAIKU / SONNET / OPUS)</div>
         </div>
       </div>
     </div>

@@ -186,24 +186,25 @@ def build_readme(repos):
     lines = []
 
     REPO_URL = f"https://github.com/{USERNAME}/{USERNAME}"
+    V = "?v=hud1"  # asset cache-buster — bump when SVGs change so GitHub's image cache refetches
 
     # ── Section 1: Animated Header ──
     lines.append('<div align="center">\n')
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/header.svg" width="800" alt="Saad Shafiq - MVP Factory" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/header.svg{V}" width="800" alt="MVP Factory — Mission Control · 8 agents online, autonomous software production" />\n')
     lines.append(f"**{total_mvp_count}+ products shipped.** Most of them before lunch.\n")
     lines.append("</div>\n")
 
     # ── Divider ──
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg" width="800" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg{V}" width="800" />\n')
 
     # ── Section 2: Live Activity Indicator ──
     lines.append('<div align="center">\n')
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/activity.svg" width="800" alt="Pipeline Active — Researching + Building 24/7" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/activity.svg{V}" width="800" alt="Pipeline active — researching and building 24/7" />\n')
     lines.append("</div>\n")
 
     # ── Section 3: Stats Dashboard ──
     lines.append('<div align="center">\n')
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/stats.svg" width="800" alt="{total_mvp_count}+ Products | 220+ Posts/Cycle | 87% Rejected | 8 AI Agents | 30m Cycles" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/stats.svg{V}" width="800" alt="Telemetry — {total_mvp_count}+ shipped | 220 posts/cycle | 87% rejected | min score 5.5 | 8 agents | 30m cycle" />\n')
     lines.append("</div>\n")
 
     # ── Section 4: Stats Badges ──
@@ -221,7 +222,7 @@ def build_readme(repos):
     lines.append("</div>\n")
 
     # ── Divider ──
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg" width="800" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg{V}" width="800" />\n')
 
     # ── Section 4: Latest Ships ──
     lines.append("### Latest Ships\n")
@@ -240,41 +241,39 @@ def build_readme(repos):
     lines.append(f"<sub>Auto-updated from GitHub API. Last refresh: {now_utc}</sub>\n")
 
     # ── Divider ──
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg" width="800" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg{V}" width="800" />\n')
 
-    # ── Section 5.5: AI Squadron ──
+    # ── Section 5.5: Subsystem status + signal flow ──
     lines.append('<div align="center">\n')
-    lines.append('<h3>AI Squadron</h3>\n')
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/agents.svg" width="800" alt="AI Squadron — 8 agents on Claude Code: Researcher, Verifier, CTO, Frontend Dev, Backend Dev, Tester, Deployer, QA" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/agents.svg{V}" width="800" alt="Subsystem status — 8 agents on Claude Code: Researcher, Verifier, CTO, Frontend Dev, Backend Dev, Tester, Deployer, QA (haiku/sonnet/opus tiers; Deployer deterministic)" />\n')
     lines.append(f'<br/>\n')
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/pipeline.svg" width="800" alt="Pipeline: Research → Verify → Queue, then per idea Plan → Build (FE → BE → Test) → Deploy → QA" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/pipeline.svg{V}" width="800" alt="Signal flow: Research → Verify → Queue, then per idea Plan → Build (FE → BE → Test) → Deploy → QA" />\n')
     lines.append("</div>\n")
 
     # ── Divider ──
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg" width="800" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg{V}" width="800" />\n')
 
-    # ── Section 5.6: Tech Stack ──
+    # ── Section 5.6: Loadout / tech stack ──
     lines.append('<div align="center">\n')
-    lines.append('<h3>Tech Stack</h3>\n')
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/tech-stack.svg" width="800" alt="Languages: TypeScript, JavaScript, Python, SQL | Frameworks: Claude Code, Claude Agent SDK, Next.js 14, React, FastAPI, Tailwind, SQLite, Playwright, Vercel" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/tech-stack.svg{V}" width="800" alt="Languages: TypeScript, JavaScript, Python, SQL | Loadout: Claude Code, Claude Agent SDK, Next.js 14, React, FastAPI, Tailwind, SQLite, Playwright, Vercel — no LLM API key" />\n')
     lines.append("</div>\n")
 
     # ── Divider ──
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg" width="800" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg{V}" width="800" />\n')
 
     # ── Section 5.7: GitHub Stats ──
     lines.append('<div align="center">\n')
-    lines.append('<h3>GitHub Stats</h3>\n')
+    lines.append('<h3>Operator Logs</h3>\n')
     lines.append(f'<a href="https://github.com/{USERNAME}">\n')
-    lines.append(f'<img src="https://github-readme-streak-stats.herokuapp.com?user={USERNAME}&theme=github-dark-blue&hide_border=true&background=0D1117&ring=7c3aed&fire=ec4899&currStreakLabel=c9d1d9&sideLabels=8b949e&dates=6e7681" width="49%" alt="GitHub Streak" />\n')
+    lines.append(f'<img src="https://github-readme-streak-stats.herokuapp.com?user={USERNAME}&theme=github-dark-blue&hide_border=true&background=0A0F15&ring=3fe0d0&fire=ffb02e&currStreakLabel=3fe0d0&sideLabels=8aa0b0&dates=56697a" width="49%" alt="GitHub Streak" />\n')
     lines.append("</a>\n")
     lines.append(f'<a href="https://github.com/{USERNAME}">\n')
-    lines.append(f'<img src="https://github-readme-stats.vercel.app/api/top-langs/?username={USERNAME}&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=7c3aed&text_color=c9d1d9&langs_count=8" width="38%" alt="Top Languages" />\n')
+    lines.append(f'<img src="https://github-readme-stats.vercel.app/api/top-langs/?username={USERNAME}&layout=compact&theme=github_dark&hide_border=true&bg_color=0A0F15&title_color=3fe0d0&text_color=c9d1d9&langs_count=8" width="38%" alt="Top Languages" />\n')
     lines.append("</a>\n")
     lines.append("</div>\n")
 
     # ── Divider ──
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg" width="800" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/divider.svg{V}" width="800" />\n')
 
     # ── Section 5: Featured Products ──
     lines.append("### Featured\n")
@@ -347,7 +346,7 @@ def build_readme(repos):
     # ── Section 8: Activity Graph ──
     lines.append('<div align="center">\n')
     lines.append(f'<a href="https://github.com/{USERNAME}">\n')
-    lines.append(f'<img src="https://github-readme-activity-graph.vercel.app/graph?username={USERNAME}&theme=github-dark&hide_border=true&bg_color=0D1117&color=c9d1d9&line=7c3aed&point=ec4899&area=true&area_color=7c3aed" width="98%" alt="Contribution Graph" />\n')
+    lines.append(f'<img src="https://github-readme-activity-graph.vercel.app/graph?username={USERNAME}&theme=github-dark&hide_border=true&bg_color=0A0F15&color=c9d1d9&line=3fe0d0&point=ffb02e&area=true&area_color=3fe0d0" width="98%" alt="Contribution Graph" />\n')
     lines.append("</a>\n")
     lines.append("</div>\n")
 
@@ -369,7 +368,7 @@ def build_readme(repos):
 
     # ── Section 10: Animated Footer ──
     lines.append('<div align="center">\n')
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/footer.svg" width="800" alt="Why ship one product when you can ship a hundred?" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/footer.svg{V}" width="800" alt="End of transmission — ship --count 100 --before lunch" />\n')
     lines.append("</div>\n")
 
     return "\n".join(lines)

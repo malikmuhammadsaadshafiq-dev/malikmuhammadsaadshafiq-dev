@@ -1,145 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="170" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="184" fill="none">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        @keyframes rise {
-          from { opacity: 0; transform: translateY(10px); }
-          to   { opacity: 1; transform: translateY(0); }
+        @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes flow { 0% { left: 0%; opacity: 0; } 12% { opacity: 1; } 88% { opacity: 1; } 100% { left: 100%; opacity: 0; } }
+        @keyframes ship { 0%,100% { box-shadow: 0 0 6px rgba(54,224,138,0.2); border-color: rgba(54,224,138,0.45); } 50% { box-shadow: 0 0 16px rgba(54,224,138,0.4); border-color: rgba(54,224,138,0.8); } }
+        @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+        .panel {
+          position: relative; width: 800px; height: 184px;
+          background: linear-gradient(180deg, #0e141d, #0b1017);
+          border: 1px solid rgba(64,200,200,0.16); border-radius: 10px; overflow: hidden;
+          font-family: ui-monospace, 'Cascadia Mono', 'JetBrains Mono', 'SF Mono', Consolas, 'Liberation Mono', monospace;
+          padding: 13px 18px;
         }
-        @keyframes flowDot {
-          0%   { left: 0%; opacity: 0; }
-          12%  { opacity: 1; }
-          88%  { opacity: 1; }
-          100% { left: 100%; opacity: 0; }
-        }
-        @keyframes shipGlow {
-          0%, 100% { box-shadow: 0 0 6px rgba(52,211,153,0.15); border-color: rgba(52,211,153,0.4); }
-          50%      { box-shadow: 0 0 16px rgba(52,211,153,0.35); border-color: rgba(52,211,153,0.7); }
-        }
-        @keyframes breathe {
-          0%, 100% { opacity: 0.4; }
-          50%      { opacity: 1; }
-        }
-        .pipe-wrap {
-          width: 800px;
-          height: 170px;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-          background: #0d1117;
-          border: 1px solid rgba(48,54,61,0.6);
-          border-radius: 12px;
-          padding: 16px 18px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          gap: 12px;
-        }
-        .loop-row { display: flex; align-items: center; }
-        .loop-label {
-          width: 82px;
-          flex-shrink: 0;
-          font-size: 9px;
-          font-weight: 700;
-          text-transform: uppercase;
-          letter-spacing: 1.5px;
-          text-align: right;
-          padding-right: 12px;
-          color: #8b949e;
-        }
-        .loop-time {
-          font-size: 8px;
-          font-weight: 500;
-          opacity: 0.7;
-          display: block;
-          margin-top: 2px;
-          color: #6e7681;
-        }
-        .stage {
-          flex: 1;
-          padding: 11px 8px;
-          border: 1px solid rgba(48,54,61,0.6);
-          border-radius: 10px;
-          text-align: center;
-          background: rgba(22,27,34,0.5);
-          animation: rise 0.55s ease both;
-        }
-        .loop-1 .stage:nth-of-type(1) { animation-delay: 0.00s; }
-        .loop-1 .stage:nth-of-type(2) { animation-delay: 0.10s; }
-        .loop-1 .stage:nth-of-type(3) { animation-delay: 0.20s; }
-        .loop-2 .stage:nth-of-type(1) { animation-delay: 0.25s; }
-        .loop-2 .stage:nth-of-type(2) { animation-delay: 0.35s; }
-        .loop-2 .stage:nth-of-type(3) { animation-delay: 0.45s; }
-        .ship { animation: rise 0.55s ease 0.55s both, shipGlow 2.4s ease-in-out infinite; }
-        .label { font-size: 12px; font-weight: 700; color: #c9d1d9; margin-bottom: 2px; }
-        .label.v { color: #a78bfa; }
-        .label.g { color: #34d399; }
-        .sub { font-size: 9px; color: #6e7681; }
-        .arrow {
-          width: 30px;
-          height: 28px;
-          display: flex;
-          align-items: center;
-          flex-shrink: 0;
-          position: relative;
-          overflow: hidden;
-        }
-        .arrow-line { width: 100%; height: 1.5px; background: rgba(75,85,99,0.45); position: relative; }
-        .arrow-dot {
-          position: absolute;
-          width: 5px; height: 5px;
-          border-radius: 50%;
-          top: -1.75px;
-          background: #a78bfa;
-          animation: flowDot 2s ease-in-out infinite;
-        }
-        .arrow-head {
-          position: absolute;
-          right: -1px;
-          width: 0; height: 0;
-          border-top: 4px solid transparent;
-          border-bottom: 4px solid transparent;
-          border-left: 5px solid rgba(75,85,99,0.45);
-        }
-        .divider {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          padding: 0 82px;
-        }
-        .divider-line { flex: 1; height: 1px; background: rgba(75,85,99,0.18); }
-        .divider-text {
-          font-size: 8px;
-          color: #6e7681;
-          font-weight: 600;
-          letter-spacing: 0.8px;
-          text-transform: uppercase;
-          white-space: nowrap;
-          animation: breathe 3.5s ease infinite;
-        }
+        .corner { position: absolute; width: 11px; height: 11px; border: 1.5px solid rgba(63,224,208,0.5); }
+        .c-tl { top: 6px; left: 6px; border-right: 0; border-bottom: 0; } .c-tr { top: 6px; right: 6px; border-left: 0; border-bottom: 0; }
+        .c-bl { bottom: 6px; left: 6px; border-right: 0; border-top: 0; } .c-br { bottom: 6px; right: 6px; border-left: 0; border-top: 0; }
+        .eyebrow { display: flex; justify-content: space-between; align-items: center; font-size: 9px; font-weight: 700; letter-spacing: 2.5px; color: #5f8294; margin-bottom: 12px; }
+        .eyebrow b { color: #3fe0d0; }
+        .lane { display: flex; align-items: center; }
+        .lane-lbl { width: 78px; flex-shrink: 0; text-align: right; padding-right: 12px; }
+        .lane-lbl .t { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; color: #8aa0b0; }
+        .lane-lbl .s { font-size: 7.5px; letter-spacing: 1px; color: #56697a; display: block; margin-top: 2px; }
+        .node { flex: 1; padding: 9px 6px; border: 1px solid rgba(64,200,200,0.18); border-radius: 8px; background: rgba(63,224,208,0.03); text-align: center; animation: rise 0.5s ease both; }
+        .lane-1 .node:nth-child(2){animation-delay:0s} .lane-1 .node:nth-child(4){animation-delay:.1s} .lane-1 .node:nth-child(6){animation-delay:.2s}
+        .lane-2 .node:nth-child(2){animation-delay:.25s} .lane-2 .node:nth-child(4){animation-delay:.35s} .lane-2 .node:nth-child(6){animation-delay:.45s}
+        .ship { animation: rise 0.5s ease 0.55s both, ship 2.4s ease-in-out infinite; border-color: rgba(54,224,138,0.45); }
+        .n-name { font-size: 12px; font-weight: 700; color: #cfe0ea; letter-spacing: 0.5px; }
+        .n-name.cy { color: #3fe0d0; } .n-name.g { color: #36e08a; }
+        .n-sub { font-size: 8px; color: #56697a; margin-top: 2px; letter-spacing: 0.5px; }
+        .arr { width: 30px; height: 24px; display: flex; align-items: center; flex-shrink: 0; position: relative; overflow: hidden; }
+        .arr-l { width: 100%; height: 1.5px; background: rgba(64,200,200,0.25); position: relative; }
+        .arr-d { position: absolute; width: 5px; height: 5px; border-radius: 50%; top: -1.75px; background: #3fe0d0; box-shadow: 0 0 6px rgba(63,224,208,0.8); animation: flow 2s ease-in-out infinite; }
+        .arr-h { position: absolute; right: -1px; width: 0; height: 0; border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-left: 5px solid rgba(64,200,200,0.3); }
+        .sep { display: flex; align-items: center; gap: 10px; padding: 0 78px; margin: 9px 0; }
+        .sep-l { flex: 1; height: 1px; background: rgba(64,200,200,0.12); }
+        .sep-t { font-size: 7.5px; color: #5f8294; font-weight: 600; letter-spacing: 1.5px; white-space: nowrap; }
       </style>
-      <div class="pipe-wrap">
-        <div class="loop-row loop-1">
-          <div class="loop-label">Research<span class="loop-time">continuous</span></div>
-          <div class="stage"><div class="label v">Research</div><div class="sub">4 sources</div></div>
-          <div class="arrow"><div class="arrow-line"><div class="arrow-dot"></div><div class="arrow-head"></div></div></div>
-          <div class="stage"><div class="label v">Verify</div><div class="sub">multi-dim score</div></div>
-          <div class="arrow"><div class="arrow-line"><div class="arrow-dot" style="animation-delay:0.6s"></div><div class="arrow-head"></div></div></div>
-          <div class="stage"><div class="label v">Queue</div><div class="sub">approved ideas</div></div>
+      <div class="panel">
+        <span class="corner c-tl"></span><span class="corner c-tr"></span><span class="corner c-bl"></span><span class="corner c-br"></span>
+        <div class="eyebrow"><span>SYS.03 <b>//</b> SIGNAL FLOW</span><span style="color:#3fe0d0;">DATA &#8594; PRODUCT</span></div>
+        <div class="lane lane-1">
+          <div class="lane-lbl"><span class="t">INTAKE</span><span class="s">continuous</span></div>
+          <div class="node"><div class="n-name cy">RESEARCH</div><div class="n-sub">4 SOURCES</div></div>
+          <div class="arr"><div class="arr-l"><div class="arr-d"></div><div class="arr-h"></div></div></div>
+          <div class="node"><div class="n-name cy">VERIFY</div><div class="n-sub">MULTI-DIM SCORE</div></div>
+          <div class="arr"><div class="arr-l"><div class="arr-d" style="animation-delay:.6s"></div><div class="arr-h"></div></div></div>
+          <div class="node"><div class="n-name cy">QUEUE</div><div class="n-sub">APPROVED IDEAS</div></div>
         </div>
-        <div class="divider">
-          <div class="divider-line"></div>
-          <div class="divider-text">one product built end-to-end at a time</div>
-          <div class="divider-line"></div>
-        </div>
-        <div class="loop-row loop-2">
-          <div class="loop-label">Build<span class="loop-time">per idea</span></div>
-          <div class="stage"><div class="label">Plan</div><div class="sub">CTO &#183; opus</div></div>
-          <div class="arrow"><div class="arrow-line"><div class="arrow-dot"></div><div class="arrow-head"></div></div></div>
-          <div class="stage"><div class="label">Build</div><div class="sub">FE &#8594; BE &#8594; Test</div></div>
-          <div class="arrow"><div class="arrow-line"><div class="arrow-dot" style="animation-delay:0.5s"></div><div class="arrow-head"></div></div></div>
-          <div class="stage"><div class="label">Deploy</div><div class="sub">GitHub + Vercel</div></div>
-          <div class="arrow"><div class="arrow-line"><div class="arrow-dot" style="animation-delay:1s"></div><div class="arrow-head"></div></div></div>
-          <div class="stage ship"><div class="label g">QA &#10003;</div><div class="sub">live-URL check</div></div>
+        <div class="sep"><div class="sep-l"></div><div class="sep-t">ONE PRODUCT BUILT END-TO-END AT A TIME</div><div class="sep-l"></div></div>
+        <div class="lane lane-2">
+          <div class="lane-lbl"><span class="t">BUILD</span><span class="s">per idea</span></div>
+          <div class="node"><div class="n-name">PLAN</div><div class="n-sub">CTO &#183; OPUS</div></div>
+          <div class="arr"><div class="arr-l"><div class="arr-d"></div><div class="arr-h"></div></div></div>
+          <div class="node"><div class="n-name">BUILD</div><div class="n-sub">FE &#8594; BE &#8594; TEST</div></div>
+          <div class="arr"><div class="arr-l"><div class="arr-d" style="animation-delay:.5s"></div><div class="arr-h"></div></div></div>
+          <div class="node"><div class="n-name">DEPLOY</div><div class="n-sub">GITHUB + VERCEL</div></div>
+          <div class="arr"><div class="arr-l"><div class="arr-d" style="animation-delay:1s"></div><div class="arr-h"></div></div></div>
+          <div class="node ship"><div class="n-name g">QA &#10003;</div><div class="n-sub">LIVE-URL CHECK</div></div>
         </div>
       </div>
     </div>

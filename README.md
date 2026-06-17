@@ -1,22 +1,22 @@
 <div align="center">
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/header.svg" width="800" alt="Saad Shafiq - MVP Factory" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/header.svg?v=hud1" width="800" alt="MVP Factory — Mission Control · 8 agents online, autonomous software production" />
 
 **289+ products shipped.** Most of them before lunch.
 
 </div>
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg?v=hud1" width="800" />
 
 <div align="center">
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/activity.svg" width="800" alt="Pipeline Active — Researching + Building 24/7" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/activity.svg?v=hud1" width="800" alt="Pipeline active — researching and building 24/7" />
 
 </div>
 
 <div align="center">
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/stats.svg" width="800" alt="289+ Products | 220+ Posts/Cycle | 87% Rejected | 8 AI Agents | 30m Cycles" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/stats.svg?v=hud1" width="800" alt="Telemetry — 289+ shipped | 220 posts/cycle | 87% rejected | min score 5.5 | 8 agents | 30m cycle" />
 
 </div>
 
@@ -31,7 +31,7 @@
 
 </div>
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg?v=hud1" width="800" />
 
 ### Latest Ships
 
@@ -44,53 +44,49 @@
 | [**mvp-focusforge**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-focusforge) | `Mobile App` | Body-doubling matchmaking app for ADHD professionals with optional crypto accountability staking |
 | [**mvp-substack-optimizer-5993**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-substack-optimizer-5993) | `SaaS` | SaaS subscription management platform calculating license utilization rates and identifying waste... |
 
-<sub>Auto-updated from GitHub API. Last refresh: 2026-06-17 13:15 UTC</sub>
+<sub>Auto-updated from GitHub API. Last refresh: 2026-06-17 13:45 UTC</sub>
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg?v=hud1" width="800" />
 
 <div align="center">
 
-<h3>AI Squadron</h3>
-
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/agents.svg" width="800" alt="AI Squadron — 8 agents on Claude Code: Researcher, Verifier, CTO, Frontend Dev, Backend Dev, Tester, Deployer, QA" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/agents.svg?v=hud1" width="800" alt="Subsystem status — 8 agents on Claude Code: Researcher, Verifier, CTO, Frontend Dev, Backend Dev, Tester, Deployer, QA (haiku/sonnet/opus tiers; Deployer deterministic)" />
 
 <br/>
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/pipeline.svg" width="800" alt="Pipeline: Research → Verify → Queue, then per idea Plan → Build (FE → BE → Test) → Deploy → QA" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/pipeline.svg?v=hud1" width="800" alt="Signal flow: Research → Verify → Queue, then per idea Plan → Build (FE → BE → Test) → Deploy → QA" />
 
 </div>
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg?v=hud1" width="800" />
 
 <div align="center">
 
-<h3>Tech Stack</h3>
-
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/tech-stack.svg" width="800" alt="Languages: TypeScript, JavaScript, Python, SQL | Frameworks: Claude Code, Claude Agent SDK, Next.js 14, React, FastAPI, Tailwind, SQLite, Playwright, Vercel" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/tech-stack.svg?v=hud1" width="800" alt="Languages: TypeScript, JavaScript, Python, SQL | Loadout: Claude Code, Claude Agent SDK, Next.js 14, React, FastAPI, Tailwind, SQLite, Playwright, Vercel — no LLM API key" />
 
 </div>
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg?v=hud1" width="800" />
 
 <div align="center">
 
-<h3>GitHub Stats</h3>
+<h3>Operator Logs</h3>
 
 <a href="https://github.com/malikmuhammadsaadshafiq-dev">
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=malikmuhammadsaadshafiq-dev&theme=github-dark-blue&hide_border=true&background=0D1117&ring=7c3aed&fire=ec4899&currStreakLabel=c9d1d9&sideLabels=8b949e&dates=6e7681" width="49%" alt="GitHub Streak" />
+<img src="https://github-readme-streak-stats.herokuapp.com?user=malikmuhammadsaadshafiq-dev&theme=github-dark-blue&hide_border=true&background=0A0F15&ring=3fe0d0&fire=ffb02e&currStreakLabel=3fe0d0&sideLabels=8aa0b0&dates=56697a" width="49%" alt="GitHub Streak" />
 
 </a>
 
 <a href="https://github.com/malikmuhammadsaadshafiq-dev">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=malikmuhammadsaadshafiq-dev&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=7c3aed&text_color=c9d1d9&langs_count=8" width="38%" alt="Top Languages" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=malikmuhammadsaadshafiq-dev&layout=compact&theme=github_dark&hide_border=true&bg_color=0A0F15&title_color=3fe0d0&text_color=c9d1d9&langs_count=8" width="38%" alt="Top Languages" />
 
 </a>
 
 </div>
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg?v=hud1" width="800" />
 
 ### Featured
 
@@ -423,7 +419,7 @@
 
 <a href="https://github.com/malikmuhammadsaadshafiq-dev">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=malikmuhammadsaadshafiq-dev&theme=github-dark&hide_border=true&bg_color=0D1117&color=c9d1d9&line=7c3aed&point=ec4899&area=true&area_color=7c3aed" width="98%" alt="Contribution Graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=malikmuhammadsaadshafiq-dev&theme=github-dark&hide_border=true&bg_color=0A0F15&color=c9d1d9&line=3fe0d0&point=ffb02e&area=true&area_color=3fe0d0" width="98%" alt="Contribution Graph" />
 
 </a>
 
@@ -446,6 +442,6 @@
 
 <div align="center">
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/footer.svg" width="800" alt="Why ship one product when you can ship a hundred?" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/footer.svg?v=hud1" width="800" alt="End of transmission — ship --count 100 --before lunch" />
 
 </div>

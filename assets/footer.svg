@@ -1,81 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="100" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="96" fill="none">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        @keyframes gradientShift {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
+        @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+        @keyframes caret { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+        @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+        .panel {
+          position: relative; width: 800px; height: 96px;
+          background: radial-gradient(120% 160% at 50% 120%, #0d1b25 0%, #0a0f15 60%);
+          border: 1px solid rgba(64,200,200,0.16); border-radius: 10px; overflow: hidden;
+          display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px;
+          font-family: ui-monospace, 'Cascadia Mono', 'JetBrains Mono', 'SF Mono', Consolas, monospace;
         }
-        @keyframes fadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-        @keyframes dotPulse {
-          0%, 100% { opacity: 0.2; transform: scale(0.8); }
-          50% { opacity: 0.8; transform: scale(1.2); }
-        }
-        .footer {
-          width: 800px;
-          height: 100px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-          position: relative;
-        }
-        .top-line {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 2px;
-          background: linear-gradient(90deg, #2563eb, #7c3aed, #ec4899, #10b981, #2563eb);
-          background-size: 300% 100%;
-          animation: gradientShift 5s ease infinite;
-        }
-        .quote {
-          font-size: 14px;
-          font-style: italic;
-          color: #8b949e;
-          animation: fadeIn 1s ease;
-          margin-bottom: 4px;
-        }
-        .subquote {
-          font-size: 11px;
-          color: #6e7681;
-          animation: fadeIn 1s ease 0.3s both;
-        }
-        .dots {
-          display: flex;
-          gap: 10px;
-          margin-top: 12px;
-        }
-        .dot {
-          width: 5px;
-          height: 5px;
-          border-radius: 50%;
-          animation: dotPulse 2s ease infinite;
-        }
-        .dot:nth-child(1) { background: #2563eb; animation-delay: 0s; }
-        .dot:nth-child(2) { background: #7c3aed; animation-delay: 0.25s; }
-        .dot:nth-child(3) { background: #ec4899; animation-delay: 0.5s; }
-        .dot:nth-child(4) { background: #10b981; animation-delay: 0.75s; }
-        .dot:nth-child(5) { background: #f59e0b; animation-delay: 1s; }
+        .corner { position: absolute; width: 11px; height: 11px; border: 1.5px solid rgba(63,224,208,0.5); }
+        .c-tl { top: 6px; left: 6px; border-right: 0; border-bottom: 0; } .c-tr { top: 6px; right: 6px; border-left: 0; border-bottom: 0; }
+        .c-bl { bottom: 6px; left: 6px; border-right: 0; border-top: 0; } .c-br { bottom: 6px; right: 6px; border-left: 0; border-top: 0; }
+        .eyebrow { font-size: 8.5px; font-weight: 700; letter-spacing: 3px; color: #5f8294; display: flex; align-items: center; gap: 8px; animation: rise 0.6s ease; }
+        .eyebrow .ld { width: 5px; height: 5px; border-radius: 50%; background: #36e08a; box-shadow: 0 0 6px rgba(54,224,138,0.7); animation: blink 1.7s ease infinite; }
+        .line { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; color: #cfe0ea; animation: rise 0.6s ease 0.1s both; }
+        .line .cy { color: #3fe0d0; }
+        .line .caret { color: #3fe0d0; animation: caret 1.1s step-end infinite; }
+        .sub { font-size: 9px; letter-spacing: 1.5px; color: #56697a; animation: rise 0.6s ease 0.2s both; }
       </style>
-      <div class="footer">
-        <div class="top-line"></div>
-        <div class="quote">Why ship one product when you can ship a hundred?</div>
-        <div class="subquote">AI writes the code. Taste decides what gets built. Reddit proves it's needed.</div>
-        <div class="dots">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
+      <div class="panel">
+        <span class="corner c-tl"></span><span class="corner c-tr"></span><span class="corner c-bl"></span><span class="corner c-br"></span>
+        <div class="eyebrow"><span class="ld"></span>SYS.&#8734; <span style="color:#3fe0d0">//</span> END OF TRANSMISSION</div>
+        <div class="line">$ ship --count <span class="cy">100</span> --before <span class="cy">lunch</span><span class="caret">_</span></div>
+        <div class="sub">AI WRITES THE CODE &#183; TASTE DECIDES WHAT GETS BUILT &#183; THE PIPELINE NEVER SLEEPS</div>
       </div>
     </div>
   </foreignObject>

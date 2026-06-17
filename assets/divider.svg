@@ -1,39 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="12" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="24" fill="none">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        @keyframes shimmer {
-          0% { background-position: -800px 0; }
-          100% { background-position: 800px 0; }
+        @keyframes run { 0% { left: -40px; } 100% { left: 800px; } }
+        .d {
+          width: 800px; height: 24px; position: relative; display: flex; align-items: center; overflow: hidden;
+          font-family: ui-monospace, 'Cascadia Mono', 'JetBrains Mono', Consolas, monospace;
         }
-        .divider {
-          width: 800px;
-          height: 12px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .line {
-          width: 600px;
-          height: 1px;
-          background: linear-gradient(90deg, transparent, rgba(139,92,246,0.4), rgba(236,72,153,0.4), transparent);
-          position: relative;
-          overflow: hidden;
-        }
-        .line::after {
-          content: '';
-          position: absolute;
-          top: -1px;
-          left: 0;
-          width: 100%;
-          height: 3px;
-          background: linear-gradient(90deg, transparent, rgba(139,92,246,0.8), transparent);
-          background-size: 200px 3px;
-          animation: shimmer 3s linear infinite;
-        }
+        .rule { width: 100%; height: 1px; background: repeating-linear-gradient(90deg, rgba(64,200,200,0.28) 0 6px, transparent 6px 12px); position: relative; }
+        .tag { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 8px; letter-spacing: 3px; color: #3fe0d0; background: #0a0f15; padding: 0 12px; }
+        .pip { position: absolute; top: -2px; width: 30px; height: 5px; background: linear-gradient(90deg, transparent, rgba(63,224,208,0.8), transparent); animation: run 4.5s linear infinite; }
       </style>
-      <div class="divider"><div class="line"></div></div>
+      <div class="d">
+        <div class="rule"><div class="pip"></div></div>
+        <div class="tag">&#9670;</div>
+      </div>
     </div>
   </foreignObject>
 </svg>

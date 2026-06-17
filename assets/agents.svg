@@ -1,173 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="312" fill="none">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        @keyframes rise {
-          from { opacity: 0; transform: translateY(8px); }
-          to   { opacity: 1; transform: translateY(0); }
+        @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
+        @keyframes fill { from { width: 0; } to { width: var(--w); } }
+        .panel {
+          position: relative; width: 800px; height: 312px;
+          background: linear-gradient(180deg, #0e141d, #0b1017);
+          border: 1px solid rgba(64,200,200,0.16); border-radius: 10px; overflow: hidden;
+          font-family: ui-monospace, 'Cascadia Mono', 'JetBrains Mono', 'SF Mono', Consolas, 'Liberation Mono', monospace;
+          padding: 14px 18px;
         }
-        @keyframes breathe {
-          0%, 100% { opacity: 0.35; }
-          50%      { opacity: 1; }
-        }
-        .scene {
-          width: 800px;
-          height: 300px;
-          background: #0d1117;
-          border: 1px solid rgba(48,54,61,0.6);
-          border-radius: 12px;
-          padding: 20px 22px;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-          display: flex;
-          flex-direction: column;
-        }
-        .head {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          margin-bottom: 16px;
-        }
-        .head .title {
-          font-size: 11px;
-          font-weight: 600;
-          letter-spacing: 3px;
-          text-transform: uppercase;
-          color: #8b949e;
-        }
-        .head .live {
-          display: flex;
-          align-items: center;
-          gap: 6px;
-          font-size: 9px;
-          font-weight: 600;
-          letter-spacing: 1.5px;
-          text-transform: uppercase;
-          color: #6e7681;
-        }
-        .head .dot {
-          width: 6px; height: 6px; border-radius: 50%;
-          background: #34d399;
-          animation: breathe 2.4s ease-in-out infinite;
-        }
-        .grid {
-          flex: 1;
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(2, 1fr);
-          gap: 12px;
-        }
-        .agent {
-          background: rgba(22,27,34,0.5);
-          border: 1px solid rgba(48,54,61,0.55);
-          border-radius: 10px;
-          padding: 10px 12px;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+        .corner { position: absolute; width: 12px; height: 12px; border: 1.5px solid rgba(63,224,208,0.5); }
+        .c-tl { top: 6px; left: 6px; border-right: 0; border-bottom: 0; }
+        .c-tr { top: 6px; right: 6px; border-left: 0; border-bottom: 0; }
+        .c-bl { bottom: 6px; left: 6px; border-right: 0; border-top: 0; }
+        .c-br { bottom: 6px; right: 6px; border-left: 0; border-top: 0; }
+        .eyebrow { display: flex; justify-content: space-between; align-items: center; font-size: 9px; font-weight: 700; letter-spacing: 2.5px; color: #5f8294; margin-bottom: 12px; }
+        .eyebrow b { color: #3fe0d0; }
+        .nom { display: flex; align-items: center; gap: 6px; color: #36e08a; }
+        .nom .ld { width: 6px; height: 6px; border-radius: 50%; background: #36e08a; box-shadow: 0 0 6px rgba(54,224,138,0.7); animation: blink 1.7s ease infinite; }
+        .grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr); gap: 10px; height: 232px; }
+        .st {
+          position: relative; border: 1px solid rgba(64,200,200,0.14); border-radius: 8px;
+          background: rgba(63,224,208,0.03); padding: 10px 11px; display: flex; flex-direction: column; justify-content: space-between;
           animation: rise 0.5s ease both;
         }
-        .agent:nth-child(1) { animation-delay: 0.00s; }
-        .agent:nth-child(2) { animation-delay: 0.06s; }
-        .agent:nth-child(3) { animation-delay: 0.12s; }
-        .agent:nth-child(4) { animation-delay: 0.18s; }
-        .agent:nth-child(5) { animation-delay: 0.24s; }
-        .agent:nth-child(6) { animation-delay: 0.30s; }
-        .agent:nth-child(7) { animation-delay: 0.36s; }
-        .agent:nth-child(8) { animation-delay: 0.42s; }
-        .row-top {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        }
-        .ord {
-          font-size: 9px;
-          font-weight: 700;
-          letter-spacing: 1px;
-          color: #484f58;
-          font-family: 'SF Mono', 'JetBrains Mono', monospace;
-        }
-        .tier {
-          font-size: 8px;
-          font-weight: 700;
-          letter-spacing: 0.5px;
-          text-transform: lowercase;
-          padding: 2px 6px;
-          border-radius: 5px;
-          border: 1px solid;
-        }
-        .t-haiku { color: #34d399; border-color: rgba(52,211,153,0.3); background: rgba(52,211,153,0.08); }
-        .t-sonnet { color: #a78bfa; border-color: rgba(167,139,250,0.3); background: rgba(167,139,250,0.08); }
-        .t-opus { color: #fbbf24; border-color: rgba(251,191,36,0.3); background: rgba(251,191,36,0.08); }
-        .t-det { color: #8b949e; border-color: rgba(139,148,158,0.3); background: rgba(139,148,158,0.06); }
-        .row-body {
-          display: flex;
-          align-items: center;
-          gap: 9px;
-        }
-        .ic {
-          width: 30px; height: 30px;
-          flex-shrink: 0;
-          border-radius: 8px;
-          background: rgba(139,92,246,0.10);
-          border: 1px solid rgba(139,92,246,0.18);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 15px;
-        }
-        .meta { overflow: hidden; }
-        .nm {
-          font-size: 12px;
-          font-weight: 700;
-          color: #e6edf3;
-          white-space: nowrap;
-        }
-        .rl {
-          font-size: 9px;
-          color: #6e7681;
-          margin-top: 1px;
-          white-space: nowrap;
-        }
+        .st:nth-child(1){animation-delay:0s} .st:nth-child(2){animation-delay:.06s} .st:nth-child(3){animation-delay:.12s} .st:nth-child(4){animation-delay:.18s}
+        .st:nth-child(5){animation-delay:.24s} .st:nth-child(6){animation-delay:.30s} .st:nth-child(7){animation-delay:.36s} .st:nth-child(8){animation-delay:.42s}
+        .st-top { display: flex; justify-content: space-between; align-items: center; }
+        .st-id { font-size: 8.5px; font-weight: 700; letter-spacing: 1.5px; color: #4a5d6c; }
+        .st-led { display: flex; align-items: center; gap: 4px; font-size: 7.5px; letter-spacing: 1px; color: #36e08a; }
+        .st-led i { width: 5px; height: 5px; border-radius: 50%; background: #36e08a; box-shadow: 0 0 5px rgba(54,224,138,0.7); animation: blink 2.2s ease infinite; }
+        .st:nth-child(2) .st-led i{animation-delay:.3s} .st:nth-child(3) .st-led i{animation-delay:.6s} .st:nth-child(4) .st-led i{animation-delay:.9s}
+        .st:nth-child(5) .st-led i{animation-delay:1.2s} .st:nth-child(6) .st-led i{animation-delay:1.5s} .st:nth-child(7) .st-led i{animation-delay:1.8s} .st:nth-child(8) .st-led i{animation-delay:2.1s}
+        .st-name { font-size: 13px; font-weight: 800; color: #eaf3f7; letter-spacing: 0.3px; }
+        .st-role { font-size: 8.5px; color: #6a8093; margin-top: 2px; letter-spacing: 0.5px; }
+        .st-foot { display: flex; align-items: center; gap: 6px; }
+        .model { font-size: 7.5px; font-weight: 700; letter-spacing: 0.8px; padding: 2px 5px; border-radius: 4px; border: 1px solid; flex-shrink: 0; }
+        .m-haiku { color: #3fe0d0; border-color: rgba(63,224,208,0.35); background: rgba(63,224,208,0.08); }
+        .m-sonnet { color: #ffb02e; border-color: rgba(255,176,46,0.35); background: rgba(255,176,46,0.08); }
+        .m-opus { color: #ff7eb6; border-color: rgba(255,126,182,0.35); background: rgba(255,126,182,0.08); }
+        .m-det { color: #7f93a3; border-color: rgba(127,147,163,0.3); background: rgba(127,147,163,0.06); }
+        .load { flex: 1; height: 3px; background: rgba(64,200,200,0.12); border-radius: 2px; overflow: hidden; }
+        .load i { display: block; height: 100%; background: rgba(63,224,208,0.5); border-radius: 2px; animation: fill 1.6s ease both; }
       </style>
-      <div class="scene">
-        <div class="head">
-          <div class="title">AI Squadron &#183; 8 Agents</div>
-          <div class="live"><span class="dot"></span>running on Claude Code</div>
-        </div>
+      <div class="panel">
+        <span class="corner c-tl"></span><span class="corner c-tr"></span><span class="corner c-bl"></span><span class="corner c-br"></span>
+        <div class="eyebrow"><span>SYS.02 <b>//</b> SUBSYSTEM STATUS &#183; 8 AGENTS</span><span class="nom"><span class="ld"></span>ALL NOMINAL</span></div>
         <div class="grid">
-          <div class="agent">
-            <div class="row-top"><span class="ord">01</span><span class="tier t-haiku">haiku</span></div>
-            <div class="row-body"><div class="ic">&#128269;</div><div class="meta"><div class="nm">Researcher</div><div class="rl">Idea Scout</div></div></div>
-          </div>
-          <div class="agent">
-            <div class="row-top"><span class="ord">02</span><span class="tier t-haiku">haiku</span></div>
-            <div class="row-body"><div class="ic">&#9989;</div><div class="meta"><div class="nm">Verifier</div><div class="rl">Idea Validator</div></div></div>
-          </div>
-          <div class="agent">
-            <div class="row-top"><span class="ord">03</span><span class="tier t-opus">opus</span></div>
-            <div class="row-body"><div class="ic">&#128421;</div><div class="meta"><div class="nm">CTO</div><div class="rl">Tech Strategist</div></div></div>
-          </div>
-          <div class="agent">
-            <div class="row-top"><span class="ord">04</span><span class="tier t-sonnet">sonnet</span></div>
-            <div class="row-body"><div class="ic">&#127912;</div><div class="meta"><div class="nm">Frontend Dev</div><div class="rl">UI/UX Engineer</div></div></div>
-          </div>
-          <div class="agent">
-            <div class="row-top"><span class="ord">05</span><span class="tier t-sonnet">sonnet</span></div>
-            <div class="row-body"><div class="ic">&#9881;</div><div class="meta"><div class="nm">Backend Dev</div><div class="rl">API Engineer</div></div></div>
-          </div>
-          <div class="agent">
-            <div class="row-top"><span class="ord">06</span><span class="tier t-haiku">haiku</span></div>
-            <div class="row-body"><div class="ic">&#129514;</div><div class="meta"><div class="nm">Tester</div><div class="rl">QA Engineer</div></div></div>
-          </div>
-          <div class="agent">
-            <div class="row-top"><span class="ord">07</span><span class="tier t-det">deterministic</span></div>
-            <div class="row-body"><div class="ic">&#128640;</div><div class="meta"><div class="nm">Deployer</div><div class="rl">DevOps Engineer</div></div></div>
-          </div>
-          <div class="agent">
-            <div class="row-top"><span class="ord">08</span><span class="tier t-sonnet">sonnet</span></div>
-            <div class="row-body"><div class="ic">&#128300;</div><div class="meta"><div class="nm">QA</div><div class="rl">Browser Tester</div></div></div>
-          </div>
+          <div class="st"><div class="st-top"><span class="st-id">ST-01</span><span class="st-led"><i></i>ONLINE</span></div>
+            <div><div class="st-name">Researcher</div><div class="st-role">IDEA SCOUT</div></div>
+            <div class="st-foot"><span class="model m-haiku">HAIKU</span><span class="load"><i style="--w:88%;width:88%"></i></span></div></div>
+          <div class="st"><div class="st-top"><span class="st-id">ST-02</span><span class="st-led"><i></i>ONLINE</span></div>
+            <div><div class="st-name">Verifier</div><div class="st-role">IDEA VALIDATOR</div></div>
+            <div class="st-foot"><span class="model m-haiku">HAIKU</span><span class="load"><i style="--w:74%;width:74%"></i></span></div></div>
+          <div class="st"><div class="st-top"><span class="st-id">ST-03</span><span class="st-led"><i></i>ONLINE</span></div>
+            <div><div class="st-name">CTO</div><div class="st-role">TECH STRATEGIST</div></div>
+            <div class="st-foot"><span class="model m-opus">OPUS</span><span class="load"><i style="--w:96%;width:96%"></i></span></div></div>
+          <div class="st"><div class="st-top"><span class="st-id">ST-04</span><span class="st-led"><i></i>ONLINE</span></div>
+            <div><div class="st-name">Frontend Dev</div><div class="st-role">UI/UX ENGINEER</div></div>
+            <div class="st-foot"><span class="model m-sonnet">SONNET</span><span class="load"><i style="--w:82%;width:82%"></i></span></div></div>
+          <div class="st"><div class="st-top"><span class="st-id">ST-05</span><span class="st-led"><i></i>ONLINE</span></div>
+            <div><div class="st-name">Backend Dev</div><div class="st-role">API ENGINEER</div></div>
+            <div class="st-foot"><span class="model m-sonnet">SONNET</span><span class="load"><i style="--w:80%;width:80%"></i></span></div></div>
+          <div class="st"><div class="st-top"><span class="st-id">ST-06</span><span class="st-led"><i></i>ONLINE</span></div>
+            <div><div class="st-name">Tester</div><div class="st-role">QA ENGINEER</div></div>
+            <div class="st-foot"><span class="model m-haiku">HAIKU</span><span class="load"><i style="--w:70%;width:70%"></i></span></div></div>
+          <div class="st"><div class="st-top"><span class="st-id">ST-07</span><span class="st-led"><i></i>ONLINE</span></div>
+            <div><div class="st-name">Deployer</div><div class="st-role">DEVOPS ENGINEER</div></div>
+            <div class="st-foot"><span class="model m-det">DETERMINISTIC</span><span class="load"><i style="--w:100%;width:100%"></i></span></div></div>
+          <div class="st"><div class="st-top"><span class="st-id">ST-08</span><span class="st-led"><i></i>ONLINE</span></div>
+            <div><div class="st-name">QA</div><div class="st-role">BROWSER TESTER</div></div>
+            <div class="st-foot"><span class="model m-sonnet">SONNET</span><span class="load"><i style="--w:86%;width:86%"></i></span></div></div>
         </div>
       </div>
     </div>
