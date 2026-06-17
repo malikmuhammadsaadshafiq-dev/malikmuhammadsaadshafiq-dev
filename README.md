@@ -16,7 +16,7 @@
 
 <div align="center">
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/stats.svg" width="800" alt="289+ Products | 220+ Posts/Cycle | 87% Rejected | 5 AI Agents | 30m Cycles" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/stats.svg" width="800" alt="289+ Products | 220+ Posts/Cycle | 87% Rejected | 8 AI Agents | 30m Cycles" />
 
 </div>
 
@@ -44,7 +44,7 @@
 | [**mvp-focusforge**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-focusforge) | `Mobile App` | Body-doubling matchmaking app for ADHD professionals with optional crypto accountability staking |
 | [**mvp-substack-optimizer-5993**](https://github.com/malikmuhammadsaadshafiq-dev/mvp-substack-optimizer-5993) | `SaaS` | SaaS subscription management platform calculating license utilization rates and identifying waste... |
 
-<sub>Auto-updated from GitHub API. Last refresh: 2026-06-17 10:49 UTC</sub>
+<sub>Auto-updated from GitHub API. Last refresh: 2026-06-17 13:10 UTC</sub>
 
 <img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/divider.svg" width="800" />
 
@@ -52,11 +52,11 @@
 
 <h3>AI Squadron</h3>
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/agents.svg" width="800" alt="AI Squadron — 5 agents collaborating: PM, Research, Validation, Frontend, Backend" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/agents.svg" width="800" alt="AI Squadron — 8 agents on Claude Code: Researcher, Verifier, CTO, Frontend Dev, Backend Dev, Tester, Deployer, QA" />
 
 <br/>
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/pipeline.svg" width="800" alt="Decoupled Pipeline: Loop 1 Research+Validate every 30m | Loop 2 Build+Deploy every 20m" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/pipeline.svg" width="800" alt="Pipeline: Research → Verify → Queue, then per idea Plan → Build (FE → BE → Test) → Deploy → QA" />
 
 </div>
 
@@ -66,7 +66,7 @@
 
 <h3>Tech Stack</h3>
 
-<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/tech-stack.svg" width="800" alt="Languages: TypeScript 95%, JavaScript 88%, Python 72%, Solidity 60% | Frameworks: React, Next.js, Node.js, Tailwind, Claude Code, Kimi K2.5" />
+<img src="https://github.com/malikmuhammadsaadshafiq-dev/malikmuhammadsaadshafiq-dev/raw/main/assets/tech-stack.svg" width="800" alt="Languages: TypeScript, JavaScript, Python, SQL | Frameworks: Claude Code, Claude Agent SDK, Next.js 14, React, FastAPI, Tailwind, SQLite, Playwright, Vercel" />
 
 </div>
 
@@ -439,8 +439,8 @@
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude_Code-191919?style=flat-square&logo=anthropic&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000?style=flat-square&logo=vercel&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 
 </div>
 

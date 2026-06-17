@@ -203,7 +203,7 @@ def build_readme(repos):
 
     # ── Section 3: Stats Dashboard ──
     lines.append('<div align="center">\n')
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/stats.svg" width="800" alt="{total_mvp_count}+ Products | 220+ Posts/Cycle | 87% Rejected | 5 AI Agents | 30m Cycles" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/stats.svg" width="800" alt="{total_mvp_count}+ Products | 220+ Posts/Cycle | 87% Rejected | 8 AI Agents | 30m Cycles" />\n')
     lines.append("</div>\n")
 
     # ── Section 4: Stats Badges ──
@@ -245,9 +245,9 @@ def build_readme(repos):
     # ── Section 5.5: AI Squadron ──
     lines.append('<div align="center">\n')
     lines.append('<h3>AI Squadron</h3>\n')
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/agents.svg" width="800" alt="AI Squadron — 5 agents collaborating: PM, Research, Validation, Frontend, Backend" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/agents.svg" width="800" alt="AI Squadron — 8 agents on Claude Code: Researcher, Verifier, CTO, Frontend Dev, Backend Dev, Tester, Deployer, QA" />\n')
     lines.append(f'<br/>\n')
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/pipeline.svg" width="800" alt="Decoupled Pipeline: Loop 1 Research+Validate every 30m | Loop 2 Build+Deploy every 20m" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/pipeline.svg" width="800" alt="Pipeline: Research → Verify → Queue, then per idea Plan → Build (FE → BE → Test) → Deploy → QA" />\n')
     lines.append("</div>\n")
 
     # ── Divider ──
@@ -256,7 +256,7 @@ def build_readme(repos):
     # ── Section 5.6: Tech Stack ──
     lines.append('<div align="center">\n')
     lines.append('<h3>Tech Stack</h3>\n')
-    lines.append(f'<img src="{REPO_URL}/raw/main/assets/tech-stack.svg" width="800" alt="Languages: TypeScript 95%, JavaScript 88%, Python 72%, Solidity 60% | Frameworks: React, Next.js, Node.js, Tailwind, Claude Code, Kimi K2.5" />\n')
+    lines.append(f'<img src="{REPO_URL}/raw/main/assets/tech-stack.svg" width="800" alt="Languages: TypeScript, JavaScript, Python, SQL | Frameworks: Claude Code, Claude Agent SDK, Next.js 14, React, FastAPI, Tailwind, SQLite, Playwright, Vercel" />\n')
     lines.append("</div>\n")
 
     # ── Divider ──
@@ -362,8 +362,8 @@ def build_readme(repos):
         "![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)\n"
         "![Claude](https://img.shields.io/badge/Claude_Code-191919?style=flat-square&logo=anthropic&logoColor=white)\n"
         "![Vercel](https://img.shields.io/badge/Vercel-000?style=flat-square&logo=vercel&logoColor=white)\n"
-        "![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)\n"
-        "![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)\n"
+        "![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)\n"
+        "![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)\n"
     )
     lines.append("</div>\n")
 

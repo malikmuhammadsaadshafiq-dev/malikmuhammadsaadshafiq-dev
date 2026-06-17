@@ -3,37 +3,21 @@
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(12px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes orbit {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-        @keyframes orbitReverse {
-          0% { transform: rotate(360deg); }
-          100% { transform: rotate(0deg); }
-        }
-        @keyframes glowPulse {
-          0%, 100% { box-shadow: 0 0 6px rgba(139,92,246,0.2); }
-          50% { box-shadow: 0 0 18px rgba(139,92,246,0.5); }
+        @keyframes rise {
+          from { opacity: 0; transform: translateY(10px); }
+          to   { opacity: 1; transform: translateY(0); }
         }
         @keyframes barFill {
           from { width: 0; }
-          to { width: var(--bar-w); }
+          to   { width: var(--bar-w); }
         }
-        @keyframes countUp {
-          from { opacity: 0; }
-          to { opacity: 1; }
+        @keyframes glowPulse {
+          0%, 100% { box-shadow: 0 0 4px rgba(139,92,246,0.15); }
+          50%      { box-shadow: 0 0 14px rgba(139,92,246,0.4); }
         }
-        @keyframes shimmer {
-          0% { background-position: -200px 0; }
-          100% { background-position: 200px 0; }
-        }
-        @keyframes float {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-4px); }
+        @keyframes breathe {
+          0%, 100% { opacity: 0.4; }
+          50%      { opacity: 1; }
         }
         .ts-wrap {
           width: 800px;
@@ -44,81 +28,66 @@
           border: 1px solid rgba(48,54,61,0.6);
           display: flex;
           overflow: hidden;
-          position: relative;
         }
         .ts-left {
-          width: 310px;
-          padding: 18px 20px;
+          width: 320px;
+          padding: 18px 22px;
           display: flex;
           flex-direction: column;
-          gap: 6px;
+          gap: 7px;
           border-right: 1px solid rgba(48,54,61,0.4);
         }
         .ts-title {
           font-size: 10px;
           font-weight: 700;
           color: #8b949e;
-          letter-spacing: 2px;
+          letter-spacing: 2.5px;
           text-transform: uppercase;
           margin-bottom: 4px;
         }
         .ts-row {
           display: flex;
           align-items: center;
-          gap: 8px;
-          animation: fadeInUp 0.5s ease both;
+          gap: 9px;
+          animation: rise 0.5s ease both;
         }
         .ts-row:nth-child(2) { animation-delay: 0.05s; }
-        .ts-row:nth-child(3) { animation-delay: 0.1s; }
+        .ts-row:nth-child(3) { animation-delay: 0.10s; }
         .ts-row:nth-child(4) { animation-delay: 0.15s; }
-        .ts-row:nth-child(5) { animation-delay: 0.2s; }
+        .ts-row:nth-child(5) { animation-delay: 0.20s; }
         .ts-row:nth-child(6) { animation-delay: 0.25s; }
-        .ts-row:nth-child(7) { animation-delay: 0.3s; }
-        .ts-row:nth-child(8) { animation-delay: 0.35s; }
-        .ts-row:nth-child(9) { animation-delay: 0.4s; }
+        .ts-row:nth-child(7) { animation-delay: 0.30s; }
         .ts-label {
           font-size: 11px;
           font-weight: 600;
           color: #c9d1d9;
-          width: 82px;
+          width: 78px;
           flex-shrink: 0;
         }
         .ts-bar-bg {
           flex: 1;
-          height: 8px;
+          height: 6px;
           background: rgba(48,54,61,0.5);
           border-radius: 4px;
           overflow: hidden;
-          position: relative;
         }
         .ts-bar {
           height: 100%;
           border-radius: 4px;
-          animation: barFill 1.5s ease both;
-          position: relative;
-        }
-        .ts-bar::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
-          background-size: 200px 100%;
-          animation: shimmer 2s linear infinite;
+          background: linear-gradient(90deg, #6d28d9, #a78bfa);
+          animation: barFill 1.4s ease both;
         }
         .ts-pct {
           font-size: 9px;
           font-weight: 700;
           color: #6e7681;
-          width: 32px;
+          width: 30px;
           text-align: right;
           flex-shrink: 0;
         }
         .ts-right {
           flex: 1;
-          padding: 18px 20px;
+          padding: 18px 22px;
           display: flex;
           flex-direction: column;
         }
@@ -126,59 +95,52 @@
           display: flex;
           flex-wrap: wrap;
           gap: 8px;
-          margin-top: 8px;
+          margin-top: 10px;
         }
         .ts-chip {
-          padding: 6px 12px;
+          padding: 6px 11px;
           border-radius: 8px;
           font-size: 11px;
-          font-weight: 700;
-          display: flex;
-          align-items: center;
-          gap: 5px;
-          animation: fadeInUp 0.5s ease both;
-          border: 1px solid;
+          font-weight: 600;
+          animation: rise 0.5s ease both;
+          border: 1px solid rgba(48,54,61,0.7);
+          background: rgba(22,27,34,0.6);
+          color: #c9d1d9;
         }
-        .ts-chip:nth-child(1) { animation-delay: 0.1s; }
+        .ts-chip:nth-child(1) { animation-delay: 0.10s; }
         .ts-chip:nth-child(2) { animation-delay: 0.15s; }
-        .ts-chip:nth-child(3) { animation-delay: 0.2s; }
+        .ts-chip:nth-child(3) { animation-delay: 0.20s; }
         .ts-chip:nth-child(4) { animation-delay: 0.25s; }
-        .ts-chip:nth-child(5) { animation-delay: 0.3s; }
+        .ts-chip:nth-child(5) { animation-delay: 0.30s; }
         .ts-chip:nth-child(6) { animation-delay: 0.35s; }
-        .ts-chip:nth-child(7) { animation-delay: 0.4s; }
+        .ts-chip:nth-child(7) { animation-delay: 0.40s; }
         .ts-chip:nth-child(8) { animation-delay: 0.45s; }
-        .ts-chip:nth-child(9) { animation-delay: 0.5s; }
+        .ts-chip:nth-child(9) { animation-delay: 0.50s; }
         .ts-chip:nth-child(10) { animation-delay: 0.55s; }
-        .ts-chip:nth-child(11) { animation-delay: 0.6s; }
+        .ts-chip:nth-child(11) { animation-delay: 0.60s; }
         .ts-chip:nth-child(12) { animation-delay: 0.65s; }
-        .c-ts { background: rgba(49,120,198,0.12); color: #58a6ff; border-color: rgba(49,120,198,0.3); }
-        .c-react { background: rgba(97,218,251,0.1); color: #61dafb; border-color: rgba(97,218,251,0.25); }
-        .c-next { background: rgba(255,255,255,0.06); color: #e6edf3; border-color: rgba(255,255,255,0.15); }
-        .c-node { background: rgba(51,153,51,0.12); color: #3fb950; border-color: rgba(51,153,51,0.3); }
-        .c-python { background: rgba(55,118,171,0.12); color: #4B8BBE; border-color: rgba(55,118,171,0.3); }
-        .c-tailwind { background: rgba(56,189,248,0.1); color: #38bdf8; border-color: rgba(56,189,248,0.25); }
-        .c-ai { background: rgba(139,92,246,0.12); color: #a78bfa; border-color: rgba(139,92,246,0.3); animation: glowPulse 3s ease infinite; }
-        .c-vercel { background: rgba(255,255,255,0.06); color: #e6edf3; border-color: rgba(255,255,255,0.15); }
-        .c-git { background: rgba(240,80,50,0.12); color: #f97583; border-color: rgba(240,80,50,0.3); }
-        .c-docker { background: rgba(36,150,237,0.12); color: #2496ed; border-color: rgba(36,150,237,0.3); }
-        .c-redis { background: rgba(220,58,51,0.12); color: #dc3a33; border-color: rgba(220,58,51,0.3); }
-        .c-nvidia { background: rgba(118,185,0,0.12); color: #76b900; border-color: rgba(118,185,0,0.3); }
+        /* one accent for the AI layer, everything else neutral — minimal */
+        .c-ai {
+          background: rgba(139,92,246,0.12);
+          color: #a78bfa;
+          border-color: rgba(139,92,246,0.35);
+          animation: rise 0.5s ease both, glowPulse 3.5s ease infinite;
+        }
         .ts-subtitle {
           font-size: 9px;
           color: #6e7681;
           margin-top: auto;
-          padding-top: 6px;
+          padding-top: 8px;
           border-top: 1px solid rgba(48,54,61,0.4);
           display: flex;
           align-items: center;
-          gap: 5px;
+          gap: 6px;
         }
-        .orbit-dot {
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
+        .dot {
+          width: 6px; height: 6px; border-radius: 50%;
+          background: #a78bfa;
           display: inline-block;
-          animation: float 2s ease-in-out infinite;
+          animation: breathe 2.4s ease-in-out infinite;
         }
       </style>
       <div class="ts-wrap">
@@ -186,64 +148,54 @@
           <div class="ts-title">Languages</div>
           <div class="ts-row">
             <div class="ts-label">TypeScript</div>
-            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:95%;width:95%;background:linear-gradient(90deg,#3178c6,#58a6ff)"></div></div>
+            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:95%;width:95%"></div></div>
             <div class="ts-pct">95%</div>
           </div>
           <div class="ts-row">
             <div class="ts-label">JavaScript</div>
-            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:88%;width:88%;background:linear-gradient(90deg,#f0db4f,#f7df1e)"></div></div>
+            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:88%;width:88%"></div></div>
             <div class="ts-pct">88%</div>
           </div>
           <div class="ts-row">
             <div class="ts-label">Python</div>
-            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:72%;width:72%;background:linear-gradient(90deg,#306998,#4B8BBE)"></div></div>
-            <div class="ts-pct">72%</div>
-          </div>
-          <div class="ts-row">
-            <div class="ts-label">Solidity</div>
-            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:60%;width:60%;background:linear-gradient(90deg,#363636,#6e7681)"></div></div>
-            <div class="ts-pct">60%</div>
-          </div>
-          <div class="ts-row">
-            <div class="ts-label">SQL</div>
-            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:78%;width:78%;background:linear-gradient(90deg,#e48900,#f59e0b)"></div></div>
-            <div class="ts-pct">78%</div>
+            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:80%;width:80%"></div></div>
+            <div class="ts-pct">80%</div>
           </div>
           <div class="ts-row">
             <div class="ts-label">HTML/CSS</div>
-            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:92%;width:92%;background:linear-gradient(90deg,#e44d26,#ec4899)"></div></div>
+            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:92%;width:92%"></div></div>
             <div class="ts-pct">92%</div>
           </div>
           <div class="ts-row">
-            <div class="ts-label">Rust</div>
-            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:35%;width:35%;background:linear-gradient(90deg,#b7410e,#dea584)"></div></div>
-            <div class="ts-pct">35%</div>
+            <div class="ts-label">SQL</div>
+            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:78%;width:78%"></div></div>
+            <div class="ts-pct">78%</div>
           </div>
           <div class="ts-row">
             <div class="ts-label">Shell</div>
-            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:68%;width:68%;background:linear-gradient(90deg,#3fb950,#56d364)"></div></div>
+            <div class="ts-bar-bg"><div class="ts-bar" style="--bar-w:68%;width:68%"></div></div>
             <div class="ts-pct">68%</div>
           </div>
         </div>
         <div class="ts-right">
           <div class="ts-title">Frameworks &amp; Tools</div>
           <div class="ts-grid">
-            <div class="ts-chip c-react">React</div>
-            <div class="ts-chip c-next">Next.js 14</div>
-            <div class="ts-chip c-node">Node.js</div>
-            <div class="ts-chip c-tailwind">Tailwind</div>
             <div class="ts-chip c-ai">Claude Code</div>
-            <div class="ts-chip c-ai">Kimi K2.5</div>
-            <div class="ts-chip c-vercel">Vercel</div>
-            <div class="ts-chip c-git">GitHub CI</div>
-            <div class="ts-chip c-docker">Docker</div>
-            <div class="ts-chip c-nvidia">NVIDIA API</div>
-            <div class="ts-chip c-python">FastAPI</div>
-            <div class="ts-chip c-redis">Redis</div>
+            <div class="ts-chip c-ai">Claude Agent SDK</div>
+            <div class="ts-chip">Next.js 14</div>
+            <div class="ts-chip">React</div>
+            <div class="ts-chip">FastAPI</div>
+            <div class="ts-chip">Tailwind</div>
+            <div class="ts-chip">SQLite</div>
+            <div class="ts-chip">Playwright</div>
+            <div class="ts-chip">Vercel</div>
+            <div class="ts-chip">GitHub API</div>
+            <div class="ts-chip">WebSockets</div>
+            <div class="ts-chip">Python</div>
           </div>
           <div class="ts-subtitle">
-            <span class="orbit-dot" style="background:#7c3aed"></span>
-            Stack evolves every sprint — optimized for shipping speed
+            <span class="dot"></span>
+            No LLM API key &#8212; agents run on local Claude Code (haiku &#183; sonnet &#183; opus)
           </div>
         </div>
       </div>

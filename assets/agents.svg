@@ -3,312 +3,171 @@
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-6px); }
+        @keyframes rise {
+          from { opacity: 0; transform: translateY(8px); }
+          to   { opacity: 1; transform: translateY(0); }
         }
-        @keyframes pulse {
-          0%, 100% { opacity: 0.4; transform: scale(1); }
-          50% { opacity: 1; transform: scale(1.15); }
-        }
-        @keyframes msgRight {
-          0% { left: 80px; opacity: 0; transform: scale(0.5); }
-          15% { opacity: 1; transform: scale(1); }
-          85% { opacity: 1; transform: scale(1); }
-          100% { left: calc(100% - 80px); opacity: 0; transform: scale(0.5); }
-        }
-        @keyframes msgLeft {
-          0% { right: 80px; opacity: 0; transform: scale(0.5); }
-          15% { opacity: 1; transform: scale(1); }
-          85% { opacity: 1; transform: scale(1); }
-          100% { right: calc(100% - 80px); opacity: 0; transform: scale(0.5); }
-        }
-        @keyframes statusBlink {
-          0%, 100% { background: #10b981; }
-          50% { background: #34d399; box-shadow: 0 0 8px rgba(16,185,129,0.6); }
-        }
-        @keyframes typing {
-          0%, 100% { opacity: 0.3; }
-          50% { opacity: 1; }
-        }
-        @keyframes codeScroll {
-          0% { transform: translateY(0); }
-          100% { transform: translateY(-30px); }
-        }
-        @keyframes fadeInScale {
-          from { opacity: 0; transform: scale(0.8); }
-          to { opacity: 1; transform: scale(1); }
+        @keyframes breathe {
+          0%, 100% { opacity: 0.35; }
+          50%      { opacity: 1; }
         }
         .scene {
           width: 800px;
           height: 300px;
           background: #0d1117;
-          position: relative;
-          overflow: hidden;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-          border-radius: 12px;
           border: 1px solid rgba(48,54,61,0.6);
+          border-radius: 12px;
+          padding: 20px 22px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+          display: flex;
+          flex-direction: column;
         }
-        .title-bar {
-          text-align: center;
-          padding: 10px 0 6px;
-          font-size: 12px;
+        .head {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 16px;
+        }
+        .head .title {
+          font-size: 11px;
           font-weight: 600;
-          color: #8b949e;
-          letter-spacing: 2px;
+          letter-spacing: 3px;
           text-transform: uppercase;
+          color: #8b949e;
         }
-        .grid-lines {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-image:
-            linear-gradient(rgba(48,54,61,0.15) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(48,54,61,0.15) 1px, transparent 1px);
-          background-size: 40px 40px;
-          pointer-events: none;
+        .head .live {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          font-size: 9px;
+          font-weight: 600;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+          color: #6e7681;
+        }
+        .head .dot {
+          width: 6px; height: 6px; border-radius: 50%;
+          background: #34d399;
+          animation: breathe 2.4s ease-in-out infinite;
+        }
+        .grid {
+          flex: 1;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          gap: 12px;
         }
         .agent {
-          position: absolute;
-          width: 100px;
-          text-align: center;
-          animation: fadeInScale 0.6s ease both;
+          background: rgba(22,27,34,0.5);
+          border: 1px solid rgba(48,54,61,0.55);
+          border-radius: 10px;
+          padding: 10px 12px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          animation: rise 0.5s ease both;
         }
-        .agent-icon {
-          width: 52px;
-          height: 52px;
-          border-radius: 14px;
-          margin: 0 auto 6px;
+        .agent:nth-child(1) { animation-delay: 0.00s; }
+        .agent:nth-child(2) { animation-delay: 0.06s; }
+        .agent:nth-child(3) { animation-delay: 0.12s; }
+        .agent:nth-child(4) { animation-delay: 0.18s; }
+        .agent:nth-child(5) { animation-delay: 0.24s; }
+        .agent:nth-child(6) { animation-delay: 0.30s; }
+        .agent:nth-child(7) { animation-delay: 0.36s; }
+        .agent:nth-child(8) { animation-delay: 0.42s; }
+        .row-top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .ord {
+          font-size: 9px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          color: #484f58;
+          font-family: 'SF Mono', 'JetBrains Mono', monospace;
+        }
+        .tier {
+          font-size: 8px;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          text-transform: lowercase;
+          padding: 2px 6px;
+          border-radius: 5px;
+          border: 1px solid;
+        }
+        .t-haiku { color: #34d399; border-color: rgba(52,211,153,0.3); background: rgba(52,211,153,0.08); }
+        .t-sonnet { color: #a78bfa; border-color: rgba(167,139,250,0.3); background: rgba(167,139,250,0.08); }
+        .t-opus { color: #fbbf24; border-color: rgba(251,191,36,0.3); background: rgba(251,191,36,0.08); }
+        .t-det { color: #8b949e; border-color: rgba(139,148,158,0.3); background: rgba(139,148,158,0.06); }
+        .row-body {
+          display: flex;
+          align-items: center;
+          gap: 9px;
+        }
+        .ic {
+          width: 30px; height: 30px;
+          flex-shrink: 0;
+          border-radius: 8px;
+          background: rgba(139,92,246,0.10);
+          border: 1px solid rgba(139,92,246,0.18);
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 20px;
-          font-weight: 800;
-          color: white;
-          position: relative;
+          font-size: 15px;
         }
-        .agent-icon .status {
-          position: absolute;
-          bottom: -2px;
-          right: -2px;
-          width: 12px;
-          height: 12px;
-          border-radius: 50%;
-          border: 2px solid #0d1117;
-          animation: statusBlink 2s ease infinite;
-        }
-        .agent-name {
-          font-size: 11px;
+        .meta { overflow: hidden; }
+        .nm {
+          font-size: 12px;
           font-weight: 700;
-          color: #c9d1d9;
+          color: #e6edf3;
+          white-space: nowrap;
         }
-        .agent-role {
+        .rl {
           font-size: 9px;
           color: #6e7681;
           margin-top: 1px;
-        }
-        /* 5 Agent positions - pentagon layout */
-        .a-pm { left: 350px; top: 36px; animation-delay: 0s; }
-        .a-pm .agent-icon { background: linear-gradient(135deg, #7c3aed, #6d28d9); animation: float 3s ease-in-out infinite; }
-        .a-research { left: 40px; top: 110px; animation-delay: 0.1s; }
-        .a-research .agent-icon { background: linear-gradient(135deg, #f59e0b, #d97706); animation: float 3s ease-in-out 0.4s infinite; }
-        .a-validation { left: 190px; top: 200px; animation-delay: 0.2s; }
-        .a-validation .agent-icon { background: linear-gradient(135deg, #ef4444, #dc2626); animation: float 3s ease-in-out 0.8s infinite; }
-        .a-front { left: 500px; top: 200px; animation-delay: 0.3s; }
-        .a-front .agent-icon { background: linear-gradient(135deg, #3b82f6, #2563eb); animation: float 3s ease-in-out 1.2s infinite; }
-        .a-back { left: 660px; top: 110px; animation-delay: 0.4s; }
-        .a-back .agent-icon { background: linear-gradient(135deg, #10b981, #059669); animation: float 3s ease-in-out 1.6s infinite; }
-        /* Connection lines */
-        .conn {
-          position: absolute;
-          border: 0;
-          height: 1px;
-          background: rgba(75,85,99,0.3);
-        }
-        .conn-pm-research { top: 88px; left: 110px; width: 268px; transform: rotate(-14deg); }
-        .conn-pm-back { top: 88px; left: 422px; width: 268px; transform: rotate(14deg); }
-        .conn-pm-validation { top: 130px; left: 300px; width: 120px; transform: rotate(48deg); }
-        .conn-pm-front { top: 130px; left: 420px; width: 120px; transform: rotate(-48deg); }
-        .conn-research-validation { top: 185px; left: 115px; width: 130px; transform: rotate(25deg); }
-        .conn-front-back { top: 185px; left: 580px; width: 130px; transform: rotate(-25deg); }
-        .conn-validation-front { top: 232px; left: 270px; width: 260px; }
-        /* Floating messages */
-        .msg {
-          position: absolute;
-          padding: 3px 8px;
-          border-radius: 6px;
-          font-size: 9px;
-          font-weight: 600;
           white-space: nowrap;
-          pointer-events: none;
         }
-        .msg-1 {
-          top: 72px;
-          background: rgba(245,158,11,0.2);
-          color: #fbbf24;
-          border: 1px solid rgba(245,158,11,0.3);
-          animation: msgRight 4s ease-in-out infinite;
-        }
-        .msg-2 {
-          top: 110px;
-          background: rgba(16,185,129,0.2);
-          color: #34d399;
-          border: 1px solid rgba(16,185,129,0.3);
-          animation: msgLeft 4.5s ease-in-out 1.5s infinite;
-        }
-        .msg-3 {
-          top: 175px;
-          background: rgba(239,68,68,0.2);
-          color: #f87171;
-          border: 1px solid rgba(239,68,68,0.3);
-          animation: msgRight 5s ease-in-out 0.8s infinite;
-        }
-        .msg-4 {
-          top: 245px;
-          background: rgba(59,130,246,0.2);
-          color: #60a5fa;
-          border: 1px solid rgba(59,130,246,0.3);
-          animation: msgLeft 3.8s ease-in-out 2.2s infinite;
-        }
-        /* Data packets */
-        .packet {
-          position: absolute;
-          width: 5px;
-          height: 5px;
-          border-radius: 50%;
-          animation: pulse 2s ease infinite;
-        }
-        .p1 { top: 78px; left: 220px; background: #fbbf24; animation-delay: 0s; }
-        .p2 { top: 78px; left: 570px; background: #34d399; animation-delay: 0.7s; }
-        .p3 { top: 155px; left: 340px; background: #f87171; animation-delay: 1.4s; }
-        .p4 { top: 155px; left: 470px; background: #60a5fa; animation-delay: 0.3s; }
-        .p5 { top: 232px; left: 400px; background: #a78bfa; animation-delay: 1s; }
-        /* Code output */
-        .output-box {
-          position: absolute;
-          bottom: 8px;
-          right: 12px;
-          width: 140px;
-          height: 40px;
-          background: rgba(22,27,34,0.8);
-          border: 1px solid rgba(48,54,61,0.5);
-          border-radius: 6px;
-          overflow: hidden;
-          padding: 4px 8px;
-          font-family: 'JetBrains Mono', 'Fira Code', monospace;
-          font-size: 7px;
-          color: #6e7681;
-          line-height: 1.5;
-        }
-        .output-box .code-inner {
-          animation: codeScroll 6s linear infinite;
-        }
-        .code-kw { color: #ff7b72; }
-        .code-fn { color: #d2a8ff; }
-        .code-str { color: #a5d6ff; }
-        /* Status box */
-        .status-box {
-          position: absolute;
-          bottom: 8px;
-          left: 12px;
-          padding: 4px 10px;
-          background: rgba(16,185,129,0.1);
-          border: 1px solid rgba(16,185,129,0.2);
-          border-radius: 6px;
-          font-size: 9px;
-          color: #34d399;
-          display: flex;
-          align-items: center;
-          gap: 5px;
-        }
-        .live-dot {
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          background: #10b981;
-          animation: statusBlink 1.5s ease infinite;
-        }
-        .typing-dots {
-          display: inline-flex;
-          gap: 2px;
-          margin-left: 3px;
-        }
-        .typing-dots span {
-          width: 3px;
-          height: 3px;
-          border-radius: 50%;
-          background: #6e7681;
-          animation: typing 1.2s ease infinite;
-        }
-        .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
-        .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
       </style>
       <div class="scene">
-        <div class="grid-lines"></div>
-        <div class="title-bar">AI Squadron — 5 Agents Collaborating</div>
-        <!-- Connection lines -->
-        <div class="conn conn-pm-research"></div>
-        <div class="conn conn-pm-back"></div>
-        <div class="conn conn-pm-validation"></div>
-        <div class="conn conn-pm-front"></div>
-        <div class="conn conn-research-validation"></div>
-        <div class="conn conn-front-back"></div>
-        <div class="conn conn-validation-front"></div>
-        <!-- Data packets -->
-        <div class="packet p1"></div>
-        <div class="packet p2"></div>
-        <div class="packet p3"></div>
-        <div class="packet p4"></div>
-        <div class="packet p5"></div>
-        <!-- Floating messages -->
-        <div class="msg msg-1">scrape: 220 posts from 5 sources</div>
-        <div class="msg msg-2">push: API routes complete</div>
-        <div class="msg msg-3">reject: score 4.5/10</div>
-        <div class="msg msg-4">deploy: Vercel live</div>
-        <!-- Agents -->
-        <div class="agent a-pm">
-          <div class="agent-icon">PM<div class="status"></div></div>
-          <div class="agent-name">PMAgent</div>
-          <div class="agent-role">Orchestrator</div>
+        <div class="head">
+          <div class="title">AI Squadron &#183; 8 Agents</div>
+          <div class="live"><span class="dot"></span>running on Claude Code</div>
         </div>
-        <div class="agent a-research">
-          <div class="agent-icon">RA<div class="status"></div></div>
-          <div class="agent-name">ResearchAgent</div>
-          <div class="agent-role">5 Data Sources</div>
-        </div>
-        <div class="agent a-validation">
-          <div class="agent-icon">VA<div class="status"></div></div>
-          <div class="agent-name">ValidationAgent</div>
-          <div class="agent-role">Market Scoring</div>
-        </div>
-        <div class="agent a-front">
-          <div class="agent-icon">FA<div class="status"></div></div>
-          <div class="agent-name">FrontendAgent</div>
-          <div class="agent-role">UX Psychology</div>
-        </div>
-        <div class="agent a-back">
-          <div class="agent-icon">BA<div class="status"></div></div>
-          <div class="agent-name">BackendAgent</div>
-          <div class="agent-role">APIs / Logic</div>
-        </div>
-        <!-- Code output -->
-        <div class="output-box">
-          <div class="code-inner">
-            <span class="code-kw">export</span> <span class="code-fn">buildMVP</span>();<br/>
-            <span class="code-kw">await</span> deploy(<span class="code-str">"prod"</span>);<br/>
-            <span class="code-fn">validate</span>(score: <span class="code-str">7.2</span>);<br/>
-            <span class="code-kw">const</span> ship = <span class="code-str">true</span>;<br/>
-            <span class="code-kw">export</span> <span class="code-fn">buildMVP</span>();<br/>
-            <span class="code-kw">await</span> deploy(<span class="code-str">"prod"</span>);<br/>
+        <div class="grid">
+          <div class="agent">
+            <div class="row-top"><span class="ord">01</span><span class="tier t-haiku">haiku</span></div>
+            <div class="row-body"><div class="ic">&#128269;</div><div class="meta"><div class="nm">Researcher</div><div class="rl">Idea Scout</div></div></div>
           </div>
-        </div>
-        <!-- Status -->
-        <div class="status-box">
-          <div class="live-dot"></div>
-          5 agents active
-          <div class="typing-dots"><span></span><span></span><span></span></div>
+          <div class="agent">
+            <div class="row-top"><span class="ord">02</span><span class="tier t-haiku">haiku</span></div>
+            <div class="row-body"><div class="ic">&#9989;</div><div class="meta"><div class="nm">Verifier</div><div class="rl">Idea Validator</div></div></div>
+          </div>
+          <div class="agent">
+            <div class="row-top"><span class="ord">03</span><span class="tier t-opus">opus</span></div>
+            <div class="row-body"><div class="ic">&#128421;</div><div class="meta"><div class="nm">CTO</div><div class="rl">Tech Strategist</div></div></div>
+          </div>
+          <div class="agent">
+            <div class="row-top"><span class="ord">04</span><span class="tier t-sonnet">sonnet</span></div>
+            <div class="row-body"><div class="ic">&#127912;</div><div class="meta"><div class="nm">Frontend Dev</div><div class="rl">UI/UX Engineer</div></div></div>
+          </div>
+          <div class="agent">
+            <div class="row-top"><span class="ord">05</span><span class="tier t-sonnet">sonnet</span></div>
+            <div class="row-body"><div class="ic">&#9881;</div><div class="meta"><div class="nm">Backend Dev</div><div class="rl">API Engineer</div></div></div>
+          </div>
+          <div class="agent">
+            <div class="row-top"><span class="ord">06</span><span class="tier t-haiku">haiku</span></div>
+            <div class="row-body"><div class="ic">&#129514;</div><div class="meta"><div class="nm">Tester</div><div class="rl">QA Engineer</div></div></div>
+          </div>
+          <div class="agent">
+            <div class="row-top"><span class="ord">07</span><span class="tier t-det">deterministic</span></div>
+            <div class="row-body"><div class="ic">&#128640;</div><div class="meta"><div class="nm">Deployer</div><div class="rl">DevOps Engineer</div></div></div>
+          </div>
+          <div class="agent">
+            <div class="row-top"><span class="ord">08</span><span class="tier t-sonnet">sonnet</span></div>
+            <div class="row-body"><div class="ic">&#128300;</div><div class="meta"><div class="nm">QA</div><div class="rl">Browser Tester</div></div></div>
+          </div>
         </div>
       </div>
     </div>
